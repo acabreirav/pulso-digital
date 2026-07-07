@@ -1,0 +1,14 @@
+# Secretos — el token de Apify vive en .env y NUNCA se commitea
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Editores / sistema
+.DS_Store
+.vscode/
+.idea/

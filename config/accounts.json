@@ -1,0 +1,8 @@
+{
+  "accounts": [
+    "khaby.lame",
+    "chefclub",
+    "natgeo"
+  ],
+  "_nota": "Cuentas públicas de prueba para la Fase 1 (2-3 máximo hasta validar costo). Edita esta lista con los handles que quieras monitorear, sin @."
+}

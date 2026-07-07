@@ -1,0 +1,4 @@
+# Dependencias del pipeline (Python 3.11+)
+requests>=2.31        # llamadas HTTP a la API de Apify
+python-dotenv>=1.0    # lee APIFY_TOKEN desde .env en local
+pytest>=8.0           # tests de las fórmulas de métricas
