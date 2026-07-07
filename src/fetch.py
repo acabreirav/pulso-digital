@@ -36,7 +36,7 @@ MAX_CUENTAS_FASE_1 = 5
 
 
 def cargar_cuentas() -> list[str]:
-    data = json.loads(RUTA_CUENTAS.read_text())
+    data = json.loads(RUTA_CUENTAS.read_text(encoding="utf-8"))
     return data["accounts"]
 
 
@@ -92,7 +92,10 @@ def main() -> int:
     CARPETA_RAW.mkdir(parents=True, exist_ok=True)
     marca = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M")
     ruta_salida = CARPETA_RAW / f"{marca}-raw.json"
-    ruta_salida.write_text(json.dumps(items, ensure_ascii=False, indent=2))
+    # encoding explícito: en Windows el default (cp1252) no soporta los emojis
+    # que traen los captions de TikTok
+    ruta_salida.write_text(json.dumps(items, ensure_ascii=False, indent=2),
+                           encoding="utf-8")
 
     # Resumen para inspección: cuántos items y qué campos trae el primero.
     print(f"\n[ok] {len(items)} items guardados en {ruta_salida.relative_to(ROOT)}")

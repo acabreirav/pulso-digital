@@ -49,7 +49,7 @@ def main() -> int:
     # 4. Lista de cuentas legible y con contenido
     ruta_cuentas = ROOT / "config" / "accounts.json"
     try:
-        cuentas = json.loads(ruta_cuentas.read_text())["accounts"]
+        cuentas = json.loads(ruta_cuentas.read_text(encoding="utf-8"))["accounts"]
         resultados.append(check(
             f"config/accounts.json legible ({len(cuentas)} cuentas: {', '.join(cuentas)})",
             1 <= len(cuentas),
