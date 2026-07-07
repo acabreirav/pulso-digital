@@ -1,0 +1,56 @@
+# Snapshot diario del Radar de Tracción (CLAUDE.md §3).
+#
+# Qué hace: todos los días a las 12:00 UTC (≈08:00 en Chile) corre el
+# pipeline completo — fetch desde Apify → snapshot → reporte — y commitea
+# el resultado al repo. GitHub Pages sirve docs/ y el dashboard se
+# actualiza solo. También se puede lanzar a mano desde la pestaña
+# Actions → "Snapshot diario" → Run workflow (workflow_dispatch).
+
+name: Snapshot diario
+
+on:
+  schedule:
+    - cron: "0 12 * * *"   # min hora día-mes mes día-semana, en UTC
+  workflow_dispatch: {}     # botón de lanzamiento manual
+
+permissions:
+  contents: write           # el workflow necesita poder commitear al repo
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repo
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      # Guarda barata: si los tests fallan, no se gasta crédito de Apify.
+      - name: Tests
+        run: python -m pytest tests/ -q
+
+      - name: Fetch desde Apify (snapshot del día)
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}   # secret del repo, nunca en el código
+        run: python src/fetch.py --si
+
+      - name: Generar reporte
+        run: python src/build_report.py
+
+      - name: Commitear snapshot y reporte
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots docs/data.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios que commitear."
+          else
+            git commit -m "snapshot automático $(date -u +%Y-%m-%d)"
+            git push
+          fi
