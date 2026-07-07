@@ -123,6 +123,36 @@ def views_por_seguidor(videos: list[dict], followers: int | None) -> float | Non
     return mediana([v["views"] / followers for v in videos if v.get("views") is not None])
 
 
+def delta_views_total(videos_inicio: list[dict], videos_fin: list[dict],
+                      fecha_inicio: str) -> int | None:
+    """Views nuevas capturadas en el período ("share of voice" individual).
+
+    Suma (a) el Δviews de los videos presentes en ambas fotos y (b) las views
+    completas de videos publicados dentro del período (no existían en la foto
+    inicial). None si no hay foto inicial que comparar.
+    """
+    if not videos_inicio:
+        return None
+    inicio_por_id = {v["id"]: v["views"] for v in videos_inicio
+                     if v.get("id") and v.get("views") is not None}
+    ini = _fecha(fecha_inicio)
+    total = 0
+    for v in videos_fin:
+        if v.get("views") is None:
+            continue
+        if v.get("id") in inicio_por_id:
+            total += v["views"] - inicio_por_id[v["id"]]
+        elif v.get("postedAt") and _fecha(v["postedAt"]) >= ini:
+            total += v["views"]
+    return total
+
+
+def ultima_publicacion(videos: list[dict]) -> str | None:
+    """Fecha ISO del video más reciente. Detecta cuentas dormidas."""
+    fechas = [v["postedAt"] for v in videos if v.get("postedAt")]
+    return max(fechas) if fechas else None
+
+
 # ---------- eventos ----------
 
 def detectar_breakouts(videos: list[dict], fecha_inicio: str, fecha_fin: str) -> list[dict]:

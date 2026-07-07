@@ -1,10 +1,228 @@
 {
-  "generatedAt": "2026-07-07T20:27:26Z",
+  "generatedAt": "2026-07-07T23:00:22Z",
   "snapshots": {
     "count": 4,
     "first": "2026-07-07T03:39:00Z",
     "last": "2026-07-07T20:27:26Z"
   },
+  "roster": [
+    {
+      "nombre": "Gonzalo Winter",
+      "cargo": "diputado",
+      "territorio": "D10",
+      "partido": "FA",
+      "coalicion": "Unidad por Chile",
+      "sector": "oposicion",
+      "handle": "gonzalowinter"
+    },
+    {
+      "nombre": "Emilia Schneider",
+      "cargo": "diputada",
+      "territorio": "D10",
+      "partido": "FA",
+      "coalicion": "Unidad por Chile",
+      "sector": "oposicion",
+      "handle": "emiliaschneiderv"
+    },
+    {
+      "nombre": "Lorena Fries",
+      "cargo": "diputada",
+      "territorio": "D10",
+      "partido": "FA",
+      "coalicion": "Unidad por Chile",
+      "sector": "oposicion",
+      "handle": "lorenafriesm"
+    },
+    {
+      "nombre": "Iraci Hassler",
+      "cargo": "diputada",
+      "territorio": "D10",
+      "partido": "PC",
+      "coalicion": "Unidad por Chile",
+      "sector": "oposicion",
+      "handle": "iracihassler"
+    },
+    {
+      "nombre": "Jorge Alessandri",
+      "cargo": "diputado",
+      "territorio": "D10",
+      "partido": "UDI",
+      "coalicion": "Chile Grande y Unido",
+      "sector": "gobierno",
+      "handle": "jorgealessandridiputado"
+    },
+    {
+      "nombre": "Francisco Orrego",
+      "cargo": "diputado",
+      "territorio": "D10",
+      "partido": "RN",
+      "coalicion": "Chile Grande y Unido",
+      "sector": "gobierno",
+      "handle": "pancho.orregog"
+    },
+    {
+      "nombre": "Jose Antonio Kast Adriasola",
+      "cargo": "diputado",
+      "territorio": "D10",
+      "partido": "REP",
+      "coalicion": "Cambio por Chile",
+      "sector": "gobierno",
+      "handle": "jakastadriasola"
+    },
+    {
+      "nombre": "Hans Marowski",
+      "cargo": "diputado",
+      "territorio": "D10",
+      "partido": "PNL",
+      "coalicion": "Cambio por Chile",
+      "sector": "gobierno",
+      "handle": "hans_marowski"
+    },
+    {
+      "nombre": "Constanza Schonhaut",
+      "cargo": "diputada",
+      "territorio": "D11",
+      "partido": "FA",
+      "coalicion": "Unidad por Chile",
+      "sector": "oposicion",
+      "handle": "conyschons"
+    },
+    {
+      "nombre": "Diego Schalper",
+      "cargo": "diputado",
+      "territorio": "D11",
+      "partido": "RN",
+      "coalicion": "Chile Grande y Unido",
+      "sector": "gobierno",
+      "handle": "diegoschalper"
+    },
+    {
+      "nombre": "Claudia Mora",
+      "cargo": "diputada",
+      "territorio": "D11",
+      "partido": "RN",
+      "coalicion": "Chile Grande y Unido",
+      "sector": "gobierno",
+      "handle": "claudiamoradistrito11"
+    },
+    {
+      "nombre": "Constanza Hube",
+      "cargo": "diputada",
+      "territorio": "D11",
+      "partido": "UDI",
+      "coalicion": "Chile Grande y Unido",
+      "sector": "gobierno",
+      "handle": "conihube"
+    },
+    {
+      "nombre": "Cristian Araya",
+      "cargo": "diputado",
+      "territorio": "D11",
+      "partido": "REP",
+      "coalicion": "Cambio por Chile",
+      "sector": "gobierno",
+      "handle": "cristianarayal"
+    },
+    {
+      "nombre": "Catalina Del Real",
+      "cargo": "diputada",
+      "territorio": "D11",
+      "partido": "REP",
+      "coalicion": "Cambio por Chile",
+      "sector": "gobierno",
+      "handle": "catadelrealcl"
+    },
+    {
+      "nombre": "Gael Yeomans",
+      "cargo": "diputada",
+      "territorio": "D13",
+      "partido": "FA",
+      "coalicion": "Unidad por Chile",
+      "sector": "oposicion",
+      "handle": "gaelyeomans"
+    },
+    {
+      "nombre": "Lorena Pizarro",
+      "cargo": "diputada",
+      "territorio": "D13",
+      "partido": "PC",
+      "coalicion": "Unidad por Chile",
+      "sector": "oposicion",
+      "handle": "lorenapizarrosierra"
+    },
+    {
+      "nombre": "Eduardo Duran",
+      "cargo": "diputado",
+      "territorio": "D13",
+      "partido": "RN",
+      "coalicion": "Chile Grande y Unido",
+      "sector": "gobierno",
+      "handle": "diputadoeduardoduran"
+    },
+    {
+      "nombre": "Felipe Ross",
+      "cargo": "diputado",
+      "territorio": "D13",
+      "partido": "REP",
+      "coalicion": "Cambio por Chile",
+      "sector": "gobierno",
+      "handle": "feliperossco"
+    },
+    {
+      "nombre": "Valentina Becerra",
+      "cargo": "diputada",
+      "territorio": "D13",
+      "partido": "REP",
+      "coalicion": "Cambio por Chile",
+      "sector": "gobierno",
+      "handle": "valebecerra.cl"
+    },
+    {
+      "nombre": "Fabiola Campillai",
+      "cargo": "senadora",
+      "territorio": "RM",
+      "partido": "IND",
+      "coalicion": "independiente",
+      "sector": "oposicion",
+      "handle": "dignidadfabiola"
+    },
+    {
+      "nombre": "Claudia Pascual",
+      "cargo": "senadora",
+      "territorio": "RM",
+      "partido": "PC",
+      "coalicion": "Unidad por Chile",
+      "sector": "oposicion",
+      "handle": null
+    },
+    {
+      "nombre": "Manuel Jose Ossandon",
+      "cargo": "senador",
+      "territorio": "RM",
+      "partido": "RN",
+      "coalicion": "Chile Grande y Unido",
+      "sector": "gobierno",
+      "handle": "manueljoseossandon"
+    },
+    {
+      "nombre": "Luciano Cruz-Coke",
+      "cargo": "senador",
+      "territorio": "RM",
+      "partido": "Evopoli",
+      "coalicion": "Chile Grande y Unido",
+      "sector": "gobierno",
+      "handle": "lcruzcoke"
+    },
+    {
+      "nombre": "Rojo Edwards",
+      "cargo": "senador",
+      "territorio": "RM",
+      "partido": "PSC",
+      "coalicion": "Cambio por Chile",
+      "sector": "gobierno",
+      "handle": "rojo.edwards"
+    }
+  ],
   "windows": {
     "7": {
       "days": 7,
@@ -23,13 +241,16 @@
           },
           "verified": false,
           "followers": 193700,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 0,
+            "porcentual": 0.0
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "estable"
           },
           "engagement": 13.542541336078978,
-          "velocidad": null,
+          "velocidad": 5.123190647235978,
           "cadencia": 2.0,
           "viewsPorSeguidor": 0.4367578729994837,
           "breakouts": [],
@@ -46,6 +267,40 @@
               "2026-07-07T20:27:26Z",
               193700
             ]
+          ],
+          "deltaViews": 11300,
+          "ultimaPublicacion": "2026-07-06T21:18:23.000Z",
+          "videosTop": [
+            {
+              "caption": "Nadie ha pedido cambiarle el nombre a la Cámara de Diputados y Diputadas, esa es una idea del señor Bobadilla. Fracasa, por lo demás.",
+              "views": 550100,
+              "likes": 85500,
+              "postedAt": "2026-06-18T15:32:15.000Z"
+            },
+            {
+              "caption": "Yo sé que en este hemiciclo existen diputados racionales y capaces de ponderar posiciones. La pregunta es por qué adoptan esta forma de legi",
+              "views": 296600,
+              "likes": 33200,
+              "postedAt": "2026-06-25T14:54:58.000Z"
+            },
+            {
+              "caption": "El Ministerio de Hacienda, que solía ser una institución seria, se ha prestado para una Acusación Constitucional cuyo efecto más grave es po",
+              "views": 288300,
+              "likes": 30400,
+              "postedAt": "2026-06-24T03:03:23.000Z"
+            },
+            {
+              "caption": "Ante el caso de los niños haitianos, nada más que decir: se lanzaron como hienas.",
+              "views": 106000,
+              "likes": 15500,
+              "postedAt": "2026-06-25T21:11:47.000Z"
+            },
+            {
+              "caption": "Intentaron generar un clima de conmoción nacional a costa de infancia vulnerable. Infancia que, hasta hace muy poco, hicieron todo lo posibl",
+              "views": 104500,
+              "likes": 11800,
+              "postedAt": "2026-06-22T19:42:39.000Z"
+            }
           ]
         },
         {
@@ -75,6 +330,40 @@
               "2026-07-07T20:27:26Z",
               38700
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-06T15:38:00.000Z",
+          "videosTop": [
+            {
+              "caption": "Dicen que la venganza nunca es buena, pero a veces toca el desquite @joseantoniokast #PadreHijo #AtreveteChile #Atrevi2 #Kast",
+              "views": 2100000,
+              "likes": 83700,
+              "postedAt": "2021-09-20T22:37:07.000Z"
+            },
+            {
+              "caption": "AHORA‼️‼️‼️ se aprueba de manera unánime el proyecto de ley que  autoriza el uso de agentes encubiertos en internet para perseguir delitos s",
+              "views": 199200,
+              "likes": 15900,
+              "postedAt": "2026-06-16T18:55:55.000Z"
+            },
+            {
+              "caption": "¿Una fotito?\n\nPreparándonos con todo para lo que se viene 🇨🇱\n\n#Kast\n@Jose Antonio Kast ",
+              "views": 104500,
+              "likes": 11500,
+              "postedAt": "2025-07-27T15:25:14.000Z"
+            },
+            {
+              "caption": "Hoy, durante la discusión de la moción sobre el monumento a Baldomero Lillo, les confesé algo: me gusta Illapu, me gustan Los Jaivas y me gu",
+              "views": 72900,
+              "likes": 3040,
+              "postedAt": "2026-06-23T03:14:55.000Z"
+            },
+            {
+              "caption": "Les dejo un resumen de lo que se aprobó hoy en el Congreso 💪🏻🇨🇱 #foryoupage #parati #chile🇨🇱 #congreso ",
+              "views": 38700,
+              "likes": 3589,
+              "postedAt": "2026-06-24T22:16:24.000Z"
+            }
           ]
         },
         {
@@ -112,6 +401,40 @@
               "2026-07-07T20:27:26Z",
               4924
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-03T16:13:03.000Z",
+          "videosTop": [
+            {
+              "caption": "Quedó grabado: el director del Servicio Nacional de Migraciones admite que la denuncia y la alarma nacional por presuntas desapariciones de ",
+              "views": 8464,
+              "likes": 315,
+              "postedAt": "2026-06-23T00:14:47.000Z"
+            },
+            {
+              "caption": "La protección de la infancia exige verdad, responsabilidad y rigor. Ni la infancia ni la migración pueden utilizarse para generar pánico, es",
+              "views": 8163,
+              "likes": 580,
+              "postedAt": "2026-06-22T18:08:48.000Z"
+            },
+            {
+              "caption": "Estamos enfrentando una crisis económica, y el gobierno de Kast ha decidido desde el comienzo que sean las familias quienes paguen el costo.",
+              "views": 4673,
+              "likes": 285,
+              "postedAt": "2026-07-03T16:13:03.000Z"
+            },
+            {
+              "caption": "¿La movilización social es sinónimo de violencia? Spoiler: NO.\n\nVolvemos a ver manifestaciones en las calles y es importante recordar: la ma",
+              "views": 3025,
+              "likes": 267,
+              "postedAt": "2026-06-03T20:07:42.000Z"
+            },
+            {
+              "caption": "¿Dónde están?\nImpulsamos la creación de una Comisión Especial Investigadora para reunir todos los antecedentes sobre la situación de niños, ",
+              "views": 1346,
+              "likes": 57,
+              "postedAt": "2026-06-17T23:19:12.000Z"
+            }
           ]
         },
         {
@@ -141,6 +464,40 @@
               "2026-07-07T20:27:26Z",
               111500
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-26T19:17:55.000Z",
+          "videosTop": [
+            {
+              "caption": "Avanzamos con el proyecto y estamos muy contentos por Chile. ",
+              "views": 86200,
+              "likes": 5235,
+              "postedAt": "2026-05-20T18:46:52.000Z"
+            },
+            {
+              "caption": "El INDH en guerra declarada contra la Ley Nain Retamal.",
+              "views": 28300,
+              "likes": 2125,
+              "postedAt": "2026-04-29T17:45:42.000Z"
+            },
+            {
+              "caption": "Tres detenidos tras el cobarde ataque a la Ministra Lincolao.",
+              "views": 24600,
+              "likes": 1717,
+              "postedAt": "2026-04-20T15:42:53.000Z"
+            },
+            {
+              "caption": "Hoy llegamos hasta La Moneda con propuestas concretas para avanzar en seguridad y mejorar la institución de Carabineros de Chile. \n\nFuimos r",
+              "views": 21900,
+              "likes": 1572,
+              "postedAt": "2026-05-18T17:24:58.000Z"
+            },
+            {
+              "caption": "Hoy comenzamos la discusión para autorizar el monumento en memoria del Presidente @sebastianpinerae 🇨🇱.",
+              "views": 21500,
+              "likes": 761,
+              "postedAt": "2026-04-14T15:16:24.000Z"
+            }
           ]
         },
         {
@@ -170,6 +527,40 @@
               "2026-07-07T20:27:26Z",
               18800
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-07T15:37:40.000Z",
+          "videosTop": [
+            {
+              "caption": "Les traigo este recuerdo del proyecto de “Electricidad Popular” de Daniel Jadue. \n\n#Chile #Jadue #Luz #PC ",
+              "views": 624300,
+              "likes": 22700,
+              "postedAt": "2024-06-28T19:20:42.000Z"
+            },
+            {
+              "caption": "Presidente @Gabriel Boric Font : actúe como el Presidente de Chile y sea responsable. No está el momento para juicios tajantes, carentes de ",
+              "views": 201300,
+              "likes": 8573,
+              "postedAt": "2025-06-22T02:54:55.000Z"
+            },
+            {
+              "caption": "Estabamos en la oficina de @Andres Longton y me di cuenta que tiene hartas curiosidades, acá les muestro un par de cosas 🤣\n\n#Chile #Longton ",
+              "views": 91600,
+              "likes": 2046,
+              "postedAt": "2024-12-16T23:15:17.000Z"
+            },
+            {
+              "caption": "Ayer recibimos en el Congreso a estudiantes que tuvieron la valentía de alzar la voz contra la violencia, las tomas y la paralización de sus",
+              "views": 5775,
+              "likes": 328,
+              "postedAt": "2026-06-11T13:14:50.000Z"
+            },
+            {
+              "caption": "Lo que pasó en San Bernardo no puede volver a ocurrir. \n\n#seguridad #sanbernardo #responsabilidadpenaljuvenil",
+              "views": 2186,
+              "likes": 44,
+              "postedAt": "2026-06-24T17:07:36.000Z"
+            }
           ]
         },
         {
@@ -199,6 +590,40 @@
               "2026-07-07T20:27:26Z",
               1505
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-04-10T22:43:51.000Z",
+          "videosTop": [
+            {
+              "caption": "@totiorellanag El rol de la Primera Dama ha sido muy importante y no tengo dudas de que @mariapiaadriasola lo hará increíble.\n#vitacura #las",
+              "views": 34100,
+              "likes": 2872,
+              "postedAt": "2025-12-19T17:12:37.000Z"
+            },
+            {
+              "caption": "PEÑALOLEN NECESITA APOYO URGENTE! \n\nYa que este gobierno no fue capaz de apoyarnos, le pedimos al próximo gobierno de @joseantoniokast que t",
+              "views": 31700,
+              "likes": 1010,
+              "postedAt": "2026-01-07T20:56:04.000Z"
+            },
+            {
+              "caption": "Los que comentan actos violentos tienen que pagar un alto precio.",
+              "views": 2134,
+              "likes": 110,
+              "postedAt": "2026-04-10T22:43:51.000Z"
+            },
+            {
+              "caption": "seguimos en cada rincón de #peñalolén #lobarnechea #Claudiamoradiputada #lareina #vitacura ",
+              "views": 1368,
+              "likes": 64,
+              "postedAt": "2025-11-03T18:03:02.000Z"
+            },
+            {
+              "caption": "Gracias @felipealessandri por tu tremendo apoyo! Mi compromiso es llevar al congreso las urgencias que tenemos en el distrito!\n\n#Claudiamora",
+              "views": 1306,
+              "likes": 68,
+              "postedAt": "2025-10-28T17:33:53.000Z"
+            }
           ]
         },
         {
@@ -213,13 +638,16 @@
           },
           "verified": false,
           "followers": 12600,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 100,
+            "porcentual": 0.8
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "acelera"
           },
           "engagement": 13.05408825795092,
-          "velocidad": null,
+          "velocidad": 2.3627667342133547,
           "cadencia": 5.0,
           "viewsPorSeguidor": 0.37396825396825395,
           "breakouts": [],
@@ -236,6 +664,40 @@
               "2026-07-07T20:27:26Z",
               12600
             ]
+          ],
+          "deltaViews": 604,
+          "ultimaPublicacion": "2026-07-07T17:37:33.000Z",
+          "videosTop": [
+            {
+              "caption": "Qué diferencia. ¿Qué opinan?",
+              "views": 1300000,
+              "likes": 178700,
+              "postedAt": "2026-06-26T04:21:14.000Z"
+            },
+            {
+              "caption": "Kast y Quiroz nos dicen una cosa y luego hacen todo lo contrario. Finalmente quieren tener a la ciudadanía confundida y engañada. \n#kast #ch",
+              "views": 219200,
+              "likes": 33900,
+              "postedAt": "2026-05-15T22:36:20.000Z"
+            },
+            {
+              "caption": "Kast tenía un discurso muy bien pensando para una elección pero no para gobernar. \n#kast #chile #politicaltiktok #gobiernodechile ",
+              "views": 7404,
+              "likes": 639,
+              "postedAt": "2026-07-04T03:58:22.000Z"
+            },
+            {
+              "caption": "Kast prometió muchas cosas pero lo NO prometió fue una reforma tributaria que beneficiará al 1% más rico. ",
+              "views": 6990,
+              "likes": 753,
+              "postedAt": "2026-06-29T17:15:12.000Z"
+            },
+            {
+              "caption": "Sin argumentos, sin evidencias ni razones técnicas se aprobó una acusación constitucional que no resiste el peso de la verdad. Aquí no pierd",
+              "views": 4736,
+              "likes": 471,
+              "postedAt": "2026-06-24T05:05:30.000Z"
+            }
           ]
         },
         {
@@ -265,6 +727,40 @@
               "2026-07-07T20:27:26Z",
               200000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-10-23T03:05:55.000Z",
+          "videosTop": [
+            {
+              "caption": "Unidad. Unidad. Unidad",
+              "views": 250300,
+              "likes": 22800,
+              "postedAt": "2025-07-30T23:21:44.000Z"
+            },
+            {
+              "caption": "Nicolás Grau en Hacienda: No es chiste. Cerremos por fuera. Que desastre de Gobierno.",
+              "views": 205400,
+              "likes": 17100,
+              "postedAt": "2025-08-21T17:52:21.000Z"
+            },
+            {
+              "caption": "Gabriel Boric: ¡Impresentable!",
+              "views": 162700,
+              "likes": 13400,
+              "postedAt": "2025-07-22T00:26:47.000Z"
+            },
+            {
+              "caption": "Chao contribuciones!",
+              "views": 113200,
+              "likes": 9375,
+              "postedAt": "2025-08-28T02:10:58.000Z"
+            },
+            {
+              "caption": "¡Es oficial muchachos! 😱",
+              "views": 74200,
+              "likes": 6847,
+              "postedAt": "2025-08-20T21:21:58.000Z"
+            }
           ]
         },
         {
@@ -294,6 +790,40 @@
               "2026-07-07T20:27:26Z",
               80300
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-14T01:12:34.000Z",
+          "videosTop": [
+            {
+              "caption": "Hoy es el último día de campaña y entregamos los últimos flyers con toda la energía y el compromiso de siempre. 🙌🇨🇱\n\nQuiero pedirles un favo",
+              "views": 2733,
+              "likes": 101,
+              "postedAt": "2025-11-14T01:12:34.000Z"
+            },
+            {
+              "caption": "Ayer vivimos un cierre desbordado de emociones y una energía que encendió cada rincón del Cierre de Campaña 💙\n\nEste domingo será crucial par",
+              "views": 2084,
+              "likes": 127,
+              "postedAt": "2025-11-13T00:02:29.000Z"
+            },
+            {
+              "caption": "Yo creo que la seguridad municipal debe tener la posibilidad de hacer un control de identidad, y de utilizar armas menos letales”, aseguró A",
+              "views": 1677,
+              "likes": 125,
+              "postedAt": "2025-11-02T23:57:39.000Z"
+            },
+            {
+              "caption": "#MiradaCrítica",
+              "views": 1668,
+              "likes": 66,
+              "postedAt": "2025-11-11T17:52:06.000Z"
+            },
+            {
+              "caption": "Se acabó el recreo.\nLlegó la hora de los honestos, de los que trabajan por Chile y no viven del Estado.\nUn gobierno austero, valiente y en t",
+              "views": 1509,
+              "likes": 275,
+              "postedAt": "2025-11-01T13:54:54.000Z"
+            }
           ]
         },
         {
@@ -308,13 +838,16 @@
           },
           "verified": false,
           "followers": 31500,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 0,
+            "porcentual": 0.0
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "estable"
           },
           "engagement": 9.844065591729144,
-          "velocidad": null,
+          "velocidad": 0.15751778228089033,
           "cadencia": 3.0,
           "viewsPorSeguidor": 0.06534920634920635,
           "breakouts": [
@@ -346,6 +879,40 @@
               "2026-07-07T20:27:26Z",
               31500
             ]
+          ],
+          "deltaViews": 33,
+          "ultimaPublicacion": "2026-07-03T14:20:03.000Z",
+          "videosTop": [
+            {
+              "caption": "⚠️ La Acusación Constitucional contra Grau es solo una distracción sobre el debate de la Reforma Tributaria de Quiroz. \nEsa reforma será lit",
+              "views": 10700,
+              "likes": 808,
+              "postedAt": "2026-06-23T20:17:39.000Z"
+            },
+            {
+              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos ",
+              "views": 9472,
+              "likes": 918,
+              "postedAt": "2026-07-01T21:37:37.000Z"
+            },
+            {
+              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
+              "views": 6314,
+              "likes": 167,
+              "postedAt": "2026-07-03T14:20:03.000Z"
+            },
+            {
+              "caption": "Parece que les preocupa más el orden público que las mujeres de Chile. No puede ser que se pretenda sancionar con más dureza a alguien por m",
+              "views": 3482,
+              "likes": 256,
+              "postedAt": "2026-06-25T21:43:05.000Z"
+            },
+            {
+              "caption": "Hoy iniciamos la Plenaria Nacional del Primer Congreso del @Frente Amplio Chile \nNuestra tarea principal debe ser que nuestro programa, nues",
+              "views": 2457,
+              "likes": 210,
+              "postedAt": "2026-06-26T22:35:43.000Z"
+            }
           ]
         },
         {
@@ -375,6 +942,40 @@
               "2026-07-07T20:27:26Z",
               1602
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2024-03-25T23:19:30.000Z",
+          "videosTop": [
+            {
+              "caption": "VOTÉ EN CONTRA DE UN NUEVO PROCESO CONSTITUCIONAL.  #NuevaConstitucion #Congreso #Rechazo",
+              "views": 9067,
+              "likes": 513,
+              "postedAt": "2023-01-12T05:00:23.000Z"
+            },
+            {
+              "caption": "Aprobamos nuestro Proyecto de Resolución para congelar Contribuciones para Adultos Mayores cuyos ingresos no superen las 20 UF\n#Contribucion",
+              "views": 2172,
+              "likes": 97,
+              "postedAt": "2023-04-05T01:30:49.000Z"
+            },
+            {
+              "caption": "La carta de protesta enviada por Chile fue una medida bastante suave, considero que Chile debe retirar al embajador, porque no se puede segu",
+              "views": 1406,
+              "likes": 73,
+              "postedAt": "2024-03-24T02:04:23.000Z"
+            },
+            {
+              "caption": "Hasta siempre Presidente Sebastián Piñera 🇨🇱",
+              "views": 448,
+              "likes": 78,
+              "postedAt": "2024-02-10T04:08:00.000Z"
+            },
+            {
+              "caption": "APROBAMOS PROYECTO PARA ENTONAR EL HIMNO NACIONAL EN LOS ESTABLECIMIENTOS EDUCACIONALES.\nProyecto de ley, iniciado en moción, que modifica l",
+              "views": 338,
+              "likes": 69,
+              "postedAt": "2024-01-14T13:53:50.000Z"
+            }
           ]
         },
         {
@@ -404,6 +1005,40 @@
               "2026-07-07T20:27:26Z",
               2664
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-23T23:00:36.000Z",
+          "videosTop": [
+            {
+              "caption": "🏥 Junto a vecinas y vecinos del Distrito 13, concejalas y autoridades locales, llegamos hasta el Hospital Barros Luco para denunciar el reco",
+              "views": 12500,
+              "likes": 306,
+              "postedAt": "2026-05-27T00:41:05.000Z"
+            },
+            {
+              "caption": "👉 La miseria humana hecha disfraz. Se pasea disfrazado del dictador, grita “viva mi general” frente a María Candelaria, hija de Sebastián Ac",
+              "views": 9334,
+              "likes": 170,
+              "postedAt": "2026-05-06T19:35:37.000Z"
+            },
+            {
+              "caption": "👉 ¿Que con qué me quedo de la Cuenta Pública de Kast?… Con aquel valiente que logró hablar por todas y todos: “¡mentiroso!”.",
+              "views": 6575,
+              "likes": 274,
+              "postedAt": "2026-06-02T01:04:41.000Z"
+            },
+            {
+              "caption": "",
+              "views": 6355,
+              "likes": 166,
+              "postedAt": "2026-04-08T00:57:35.000Z"
+            },
+            {
+              "caption": "⚠️ Este miércoles se ha presentado el mal llamado proyecto de “Reconstrucción”, inicoativa de este gobierno uñtraderechista y que busca, dir",
+              "views": 4858,
+              "likes": 166,
+              "postedAt": "2026-04-22T16:36:36.000Z"
+            }
           ]
         },
         {
@@ -433,6 +1068,40 @@
               "2026-07-07T20:27:26Z",
               97
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-05T21:29:25.000Z",
+          "videosTop": [
+            {
+              "caption": "ACUSACIÓN CONSTITUCIONAL PARA EL EX MINISTRO PARDOW‼️\n\nFirmamos la acusación constitucional contra el exministro Pardow, porque los chilenos",
+              "views": 2036,
+              "likes": 94,
+              "postedAt": "2025-10-28T13:51:02.000Z"
+            },
+            {
+              "caption": "LA PASIÓN NO JUSTIFICA EL DESORDEN🚫🚫\n\nComo diputado y vecino de La Cisterna, quiero ser claro: no estoy en contra de la hinchada ni de su am",
+              "views": 1164,
+              "likes": 7,
+              "postedAt": "2025-10-29T20:42:52.000Z"
+            },
+            {
+              "caption": "COMPROMETIDO CON LA SEGURIDAD DE NUESTRO DISTRITO 🚔\n\nEstuve en TVN, donde tuve la oportunidad de hablar sobre un tema que nos preocupa a tod",
+              "views": 899,
+              "likes": 21,
+              "postedAt": "2025-10-27T15:59:58.000Z"
+            },
+            {
+              "caption": "SOMOS MUCHOS CON UN SOLO PROPÓSITO: CHILE 🇨🇱\n\nPodemos llamarnos igual, venir de distintos lugares o pensar diferente, pero al final todos co",
+              "views": 700,
+              "likes": 27,
+              "postedAt": "2025-10-24T22:36:45.000Z"
+            },
+            {
+              "caption": "MANO FIRME CONTRA LA DELINCUENCIA 💪🇨🇱\n\nLa seguridad no puede seguir siendo una promesa, tiene que ser una realidad. Quiero jugármela para qu",
+              "views": 622,
+              "likes": 15,
+              "postedAt": "2025-10-17T15:58:01.000Z"
+            }
           ]
         },
         {
@@ -462,6 +1131,40 @@
               "2026-07-07T20:27:26Z",
               133600
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-06T22:51:26.000Z",
+          "videosTop": [
+            {
+              "caption": "Premio al Espiritu Maculino 2022, 21 de Diciembre del 2022 💖 #justiciapormoreno ",
+              "views": 2600000,
+              "likes": 49100,
+              "postedAt": "2023-12-13T18:05:28.000Z"
+            },
+            {
+              "caption": "Respuesta a @⚘Giovanna🌺🐶🐶🐶🐾 ❤️‍🩹",
+              "views": 178900,
+              "likes": 7254,
+              "postedAt": "2024-06-09T21:59:20.000Z"
+            },
+            {
+              "caption": "#ValeBecerra #Distrito13 #Diputada #PartidoRepublicano #Elecciones2025 ",
+              "views": 58100,
+              "likes": 3933,
+              "postedAt": "2025-08-23T13:11:07.000Z"
+            },
+            {
+              "caption": "No podemos permitir que formar una familia en la institución sea “inviable”.\nEstoy trabajando en proyectos de ley para garantizar derechos l",
+              "views": 8160,
+              "likes": 631,
+              "postedAt": "2026-07-04T23:07:27.000Z"
+            },
+            {
+              "caption": "Hoy asistimos a la Cuenta Pública de Carabineros de Chile, una instancia fundamental para conocer de cerca los avances, los resultados de la",
+              "views": 7431,
+              "likes": 412,
+              "postedAt": "2026-06-29T00:49:52.000Z"
+            }
           ]
         },
         {
@@ -491,6 +1194,40 @@
               "2026-07-07T20:27:26Z",
               2380
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-14T02:17:54.000Z",
+          "videosTop": [
+            {
+              "caption": "🚗 TODO LISTO PARA EL GRAN CIERRE DE CAMPAÑA DE #KASTPRESIDENTE\n\nEste 16 de noviembre súmate a #LaFuerzaDelCambio 💪🇨🇱\nNo tengo dudas, que @Jo",
+              "views": 3501,
+              "likes": 439,
+              "postedAt": "2025-11-11T22:07:42.000Z"
+            },
+            {
+              "caption": "🇨🇱 Gran banderazo en La Cisterna\n\nYa queda cada vez menos y estuvimos demostrando que #LaFuerzaDelCambio va a ganar en las comunas de La Cis",
+              "views": 1314,
+              "likes": 251,
+              "postedAt": "2025-11-10T00:02:10.000Z"
+            },
+            {
+              "caption": "¡GRACIAS VECINOS! 🇨🇱\n\nAsí se vivió nuestra caravana de cierre, un recorrido lleno de esperanza, cariño y con convicción de que sí podemos re",
+              "views": 1214,
+              "likes": 170,
+              "postedAt": "2025-11-14T02:17:54.000Z"
+            },
+            {
+              "caption": "¡VOTA ROSS, VOTA KAST! 💪🏻🇨🇱\n\nEste 16 de noviembre Chile se juega su futuro. Es el momento de elegir orden, libertad y seguridad.\n\nSúmate a q",
+              "views": 1002,
+              "likes": 297,
+              "postedAt": "2025-11-10T22:00:18.000Z"
+            },
+            {
+              "caption": "DEFENDER EL BOLSILLO DE LOS CHILENOS 🇨🇱\n\nEn la feria se entiende mejor que en cualquier oficina lo que viven las familias, cada peso cuenta ",
+              "views": 851,
+              "likes": 60,
+              "postedAt": "2025-11-13T14:48:35.000Z"
+            }
           ]
         },
         {
@@ -520,6 +1257,40 @@
               "2026-07-07T20:27:26Z",
               3622
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-03T17:53:14.000Z",
+          "videosTop": [
+            {
+              "caption": "Hoy el Senado aprobó el proyecto para erigir un monumento en honor al expresidente Piñera.\n\nEste es un intento de la derecha de reescribir l",
+              "views": 81600,
+              "likes": 443,
+              "postedAt": "2026-01-20T21:16:55.000Z"
+            },
+            {
+              "caption": "¿Qué tanto esconde la derecha que rechaza cada vez que puede el levantamiento del secreto bancario?",
+              "views": 25600,
+              "likes": 255,
+              "postedAt": "2026-06-09T23:02:35.000Z"
+            },
+            {
+              "caption": "Las declaraciones de la ministra Lincolao advierten algo gravísimo: hacer ver que los algunos ministros del gobierno de Kast no habrían decl",
+              "views": 17600,
+              "likes": 223,
+              "postedAt": "2026-05-12T23:59:43.000Z"
+            },
+            {
+              "caption": "Con mucho aprecio, respeto y admiración, como Comisión de Adulto Mayor y Discapacidad del Senado, hemos reconocido a todas las agrupaciones,",
+              "views": 11200,
+              "likes": 60,
+              "postedAt": "2026-01-22T18:32:12.000Z"
+            },
+            {
+              "caption": "Mentir no son metáforas ",
+              "views": 8742,
+              "likes": 85,
+              "postedAt": "2026-05-13T20:11:40.000Z"
+            }
           ]
         },
         {
@@ -549,6 +1320,40 @@
               "2026-07-07T20:27:26Z",
               2492
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2023-02-08T00:52:18.000Z",
+          "videosTop": [
+            {
+              "caption": "",
+              "views": 113100,
+              "likes": 3397,
+              "postedAt": "2023-02-08T00:52:18.000Z"
+            },
+            {
+              "caption": "¡Gracias Carabineros de Chile!  Yo siempre estaré con ustedes porque ustedes siempre están con los chilenos. Estos días, una vez más le han ",
+              "views": 98400,
+              "likes": 7356,
+              "postedAt": "2023-02-04T21:10:09.000Z"
+            },
+            {
+              "caption": "",
+              "views": 42700,
+              "likes": 1423,
+              "postedAt": "2023-01-03T20:19:20.000Z"
+            },
+            {
+              "caption": "Con esperanza, con alegría, este domingo votaremos #Rechazo, para seguir unidos construyendo el camino para un país más justo, más solidario",
+              "views": 27900,
+              "likes": 1083,
+              "postedAt": "2022-09-01T17:27:10.000Z"
+            },
+            {
+              "caption": "No más pitutos decía el Presidente Boric cuando estaba en campaña y hoy a 8 meses de su mandato, su Gobierno se ha vuelto el Gobierno del am",
+              "views": 26500,
+              "likes": 1281,
+              "postedAt": "2022-11-10T15:14:25.000Z"
+            }
           ]
         },
         {
@@ -578,6 +1383,40 @@
               "2026-07-07T20:27:26Z",
               2411
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2024-03-20T19:50:00.000Z",
+          "videosTop": [
+            {
+              "caption": "Tenemos una estrategia seria y responsable, que ha tomado tiempo y que tiene como objetivo recuperar inmuebles tomados y mantener este traba",
+              "views": 21400,
+              "likes": 2358,
+              "postedAt": "2024-03-17T16:39:23.000Z"
+            },
+            {
+              "caption": "#ReComiendoSTGO: ¡El Naturista un imperdible! 🍊🌱\n\nEn el marco del día mundial sin carne, fuimos a almorzar con el equipo al @naturista. Un r",
+              "views": 16500,
+              "likes": 191,
+              "postedAt": "2024-03-20T19:50:00.000Z"
+            },
+            {
+              "caption": "#ReComiendoSTGO: La Diana restaurant, parte de los clásicos Juegos Diana! 🎡🎪🩷\n\n🍽️ Nos hicimos un espacio en la tarde del domingo pasado, des",
+              "views": 10700,
+              "likes": 222,
+              "postedAt": "2024-03-07T21:03:46.000Z"
+            },
+            {
+              "caption": "💜 ¡Día internacional de las mujeres! 💜\n\nConmemoramos un nuevo 8 de marzo saludando y enviando un fuerte abrazo a las mujeres en toda su dive",
+              "views": 9275,
+              "likes": 352,
+              "postedAt": "2024-03-08T18:39:08.000Z"
+            },
+            {
+              "caption": "💬 #AlcaldesaResponde | Retiro de kioscos abandonados para barrios más seguros. En ello estamos avanzando decididamente, con el Plan de Recup",
+              "views": 9111,
+              "likes": 387,
+              "postedAt": "2024-03-11T22:41:11.000Z"
+            }
           ]
         },
         {
@@ -607,6 +1446,22 @@
               "2026-07-07T20:27:26Z",
               894
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2022-10-10T22:05:13.000Z",
+          "videosTop": [
+            {
+              "caption": "Vamos a revisar algunas de las noticias falsas que los sectores que se oponen al #tpp11 han tratado de instalar en #chile y explicar los ver",
+              "views": 10400,
+              "likes": 101,
+              "postedAt": "2022-10-04T14:42:25.000Z"
+            },
+            {
+              "caption": "Hoy visitamos #SanFernando y con Paulina Monti almorzamos con los militantes de Evópoli para escuchar sus prioridades para el futuro de Evóp",
+              "views": 3933,
+              "likes": 25,
+              "postedAt": "2022-10-10T22:05:13.000Z"
+            }
           ]
         },
         {
@@ -636,6 +1491,40 @@
               "2026-07-07T20:27:26Z",
               73000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-25T16:31:04.000Z",
+          "videosTop": [
+            {
+              "caption": "¡El Gobierno debe reconocer a Edmundo González como el Presidente electo de Venezuela 🇻🇪!\n\nPedirle al régimen del dictador las misma actas q",
+              "views": 3400000,
+              "likes": 403900,
+              "postedAt": "2024-07-30T22:04:36.000Z"
+            },
+            {
+              "caption": "En Sala, durante la discusión de #pensiones, anuncié mi voto en contra. \n\nEste proyecto pone en riesgo la estabilidad fiscal e introduce el ",
+              "views": 215400,
+              "likes": 15800,
+              "postedAt": "2025-01-28T00:12:34.000Z"
+            },
+            {
+              "caption": "Para bailar Tango, se necesitan dos.. #PlandeReconstrucción ",
+              "views": 77900,
+              "likes": 1990,
+              "postedAt": "2026-06-09T01:44:45.000Z"
+            },
+            {
+              "caption": "Cambiar las recetas del pasado por las que sí funcionan… #CAE #Neme #RojoEdwards ",
+              "views": 48000,
+              "likes": 1296,
+              "postedAt": "2026-06-10T22:11:13.000Z"
+            },
+            {
+              "caption": "El fallo del TC es prodelincuentes y proviolencia. ",
+              "views": 45200,
+              "likes": 1670,
+              "postedAt": "2026-06-25T16:31:04.000Z"
+            }
           ]
         },
         {
@@ -665,6 +1554,40 @@
               "2026-07-07T20:27:26Z",
               36000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-07T16:32:54.000Z",
+          "videosTop": [
+            {
+              "caption": "¡APROBAMOS LAS #40HORAS Y SERÁ LEY! 👏🏻⏰✅\n\nVamos avanzando en derechos para los y las trabajadoras y en mejorar la calidad de vida de las per",
+              "views": 792200,
+              "likes": 94200,
+              "postedAt": "2023-04-11T22:56:05.000Z"
+            },
+            {
+              "caption": "El plan anunciado por Kast no es reconstrucción, es un retroceso para las personas! Restringir la gratuidad es restringir el derecho a la ed",
+              "views": 285200,
+              "likes": 4025,
+              "postedAt": "2026-03-14T19:59:12.000Z"
+            },
+            {
+              "caption": "La violencia en los colegios no se resuelve revisando mochilas ni aumentando castigos, esas medidas pueden sonar duras pero no van al fondo ",
+              "views": 138600,
+              "likes": 864,
+              "postedAt": "2026-04-09T04:59:33.000Z"
+            },
+            {
+              "caption": "No todo lo que se vende como “megareforma” mejora la vida de las personas. Cuando una propuesta termina beneficiando a los súper ricos mient",
+              "views": 64700,
+              "likes": 512,
+              "postedAt": "2026-05-29T01:54:35.000Z"
+            },
+            {
+              "caption": "La misma derecha que quiso rebajar el presupuesto de Carabineros hoy pretende erigirse como su principal defensora. En esa contradicción, in",
+              "views": 52800,
+              "likes": 887,
+              "postedAt": "2026-04-09T05:03:18.000Z"
+            }
           ]
         },
         {
@@ -694,6 +1617,40 @@
               "2026-07-07T20:27:26Z",
               42
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-24T10:40:30.000Z",
+          "videosTop": [
+            {
+              "caption": "El problema no es solo la bencina\n\nHoy sube el combustible, pero esto no partió hoy. Cuando el gasto se desordena por años, la cuenta siempr",
+              "views": 1761,
+              "likes": 43,
+              "postedAt": "2026-05-06T01:16:05.000Z"
+            },
+            {
+              "caption": "",
+              "views": 19,
+              "likes": 0,
+              "postedAt": "2026-06-24T10:40:30.000Z"
+            },
+            {
+              "caption": "¿BORIC 2030? no por favor 😅",
+              "views": 17,
+              "likes": 1,
+              "postedAt": "2026-06-03T01:28:32.000Z"
+            },
+            {
+              "caption": "",
+              "views": 13,
+              "likes": 0,
+              "postedAt": "2026-06-15T20:36:58.000Z"
+            },
+            {
+              "caption": "",
+              "views": 11,
+              "likes": 1,
+              "postedAt": "2026-05-29T01:13:28.000Z"
+            }
           ]
         },
         {
@@ -723,11 +1680,45 @@
               "2026-07-07T20:27:26Z",
               16400
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-05T23:32:51.000Z",
+          "videosTop": [
+            {
+              "caption": "¿Quién de la izquierda habla de Julia Chuñil ahora? Nadie porque al final del día, el problema nunca fue la justicia. El problema fue que la",
+              "views": 53200,
+              "likes": 2936,
+              "postedAt": "2026-01-21T21:50:02.000Z"
+            },
+            {
+              "caption": "CAE: Cuando el sistema premia al que no paga y castiga al que sí cumple, deja de ser un problema financiero. Pasa a ser un problema moral.",
+              "views": 33600,
+              "likes": 2347,
+              "postedAt": "2026-04-07T01:42:00.000Z"
+            },
+            {
+              "caption": "",
+              "views": 12600,
+              "likes": 800,
+              "postedAt": "2026-03-08T23:54:20.000Z"
+            },
+            {
+              "caption": "En menos de dos minutos te explico por qué Chile no estaba preparado para amortiguar el alza brutal de los combustibles.",
+              "views": 9865,
+              "likes": 577,
+              "postedAt": "2026-03-28T02:07:24.000Z"
+            },
+            {
+              "caption": "A ciertos dirigentes de izquierda les dan tiritones las medidas para crear empleo. Lo que debiera darles tiritones es el casi millón de dese",
+              "views": 9408,
+              "likes": 696,
+              "postedAt": "2026-07-05T23:32:51.000Z"
+            }
           ]
         }
       ],
       "insights": [
-        "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
+        "@conyschons lidera el crecimiento de la ventana de 7 días: +100 seguidores (0.8%).",
         "@conyschons está acelerando: la segunda mitad del período creció más que la primera.",
         "@lorenapizarrosierra rinde sobre su tamaño: su video típico hace 1.7× views que seguidores tiene.",
         "@diputadoeduardoduran rinde sobre su tamaño: su video típico hace 5.1× views que seguidores tiene.",
@@ -763,7 +1754,11 @@
         }
       ],
       "titulares": {
-        "mayorCrecimiento": null,
+        "mayorCrecimiento": {
+          "handle": "conyschons",
+          "pct": 0.8,
+          "abs": 100
+        },
         "breakoutMasCaliente": {
           "handle": "gaelyeomans",
           "views": 9472,
@@ -793,13 +1788,16 @@
           },
           "verified": false,
           "followers": 193700,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 0,
+            "porcentual": 0.0
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "estable"
           },
           "engagement": 13.542541336078978,
-          "velocidad": null,
+          "velocidad": 5.123190647235978,
           "cadencia": 2.5,
           "viewsPorSeguidor": 0.4367578729994837,
           "breakouts": [
@@ -831,6 +1829,40 @@
               "2026-07-07T20:27:26Z",
               193700
             ]
+          ],
+          "deltaViews": 11300,
+          "ultimaPublicacion": "2026-07-06T21:18:23.000Z",
+          "videosTop": [
+            {
+              "caption": "Nadie ha pedido cambiarle el nombre a la Cámara de Diputados y Diputadas, esa es una idea del señor Bobadilla. Fracasa, por lo demás.",
+              "views": 550100,
+              "likes": 85500,
+              "postedAt": "2026-06-18T15:32:15.000Z"
+            },
+            {
+              "caption": "Yo sé que en este hemiciclo existen diputados racionales y capaces de ponderar posiciones. La pregunta es por qué adoptan esta forma de legi",
+              "views": 296600,
+              "likes": 33200,
+              "postedAt": "2026-06-25T14:54:58.000Z"
+            },
+            {
+              "caption": "El Ministerio de Hacienda, que solía ser una institución seria, se ha prestado para una Acusación Constitucional cuyo efecto más grave es po",
+              "views": 288300,
+              "likes": 30400,
+              "postedAt": "2026-06-24T03:03:23.000Z"
+            },
+            {
+              "caption": "Ante el caso de los niños haitianos, nada más que decir: se lanzaron como hienas.",
+              "views": 106000,
+              "likes": 15500,
+              "postedAt": "2026-06-25T21:11:47.000Z"
+            },
+            {
+              "caption": "Intentaron generar un clima de conmoción nacional a costa de infancia vulnerable. Infancia que, hasta hace muy poco, hicieron todo lo posibl",
+              "views": 104500,
+              "likes": 11800,
+              "postedAt": "2026-06-22T19:42:39.000Z"
+            }
           ]
         },
         {
@@ -860,6 +1892,40 @@
               "2026-07-07T20:27:26Z",
               38700
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-06T15:38:00.000Z",
+          "videosTop": [
+            {
+              "caption": "Dicen que la venganza nunca es buena, pero a veces toca el desquite @joseantoniokast #PadreHijo #AtreveteChile #Atrevi2 #Kast",
+              "views": 2100000,
+              "likes": 83700,
+              "postedAt": "2021-09-20T22:37:07.000Z"
+            },
+            {
+              "caption": "AHORA‼️‼️‼️ se aprueba de manera unánime el proyecto de ley que  autoriza el uso de agentes encubiertos en internet para perseguir delitos s",
+              "views": 199200,
+              "likes": 15900,
+              "postedAt": "2026-06-16T18:55:55.000Z"
+            },
+            {
+              "caption": "¿Una fotito?\n\nPreparándonos con todo para lo que se viene 🇨🇱\n\n#Kast\n@Jose Antonio Kast ",
+              "views": 104500,
+              "likes": 11500,
+              "postedAt": "2025-07-27T15:25:14.000Z"
+            },
+            {
+              "caption": "Hoy, durante la discusión de la moción sobre el monumento a Baldomero Lillo, les confesé algo: me gusta Illapu, me gustan Los Jaivas y me gu",
+              "views": 72900,
+              "likes": 3040,
+              "postedAt": "2026-06-23T03:14:55.000Z"
+            },
+            {
+              "caption": "Les dejo un resumen de lo que se aprobó hoy en el Congreso 💪🏻🇨🇱 #foryoupage #parati #chile🇨🇱 #congreso ",
+              "views": 38700,
+              "likes": 3589,
+              "postedAt": "2026-06-24T22:16:24.000Z"
+            }
           ]
         },
         {
@@ -897,6 +1963,40 @@
               "2026-07-07T20:27:26Z",
               4924
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-03T16:13:03.000Z",
+          "videosTop": [
+            {
+              "caption": "Quedó grabado: el director del Servicio Nacional de Migraciones admite que la denuncia y la alarma nacional por presuntas desapariciones de ",
+              "views": 8464,
+              "likes": 315,
+              "postedAt": "2026-06-23T00:14:47.000Z"
+            },
+            {
+              "caption": "La protección de la infancia exige verdad, responsabilidad y rigor. Ni la infancia ni la migración pueden utilizarse para generar pánico, es",
+              "views": 8163,
+              "likes": 580,
+              "postedAt": "2026-06-22T18:08:48.000Z"
+            },
+            {
+              "caption": "Estamos enfrentando una crisis económica, y el gobierno de Kast ha decidido desde el comienzo que sean las familias quienes paguen el costo.",
+              "views": 4673,
+              "likes": 285,
+              "postedAt": "2026-07-03T16:13:03.000Z"
+            },
+            {
+              "caption": "¿La movilización social es sinónimo de violencia? Spoiler: NO.\n\nVolvemos a ver manifestaciones en las calles y es importante recordar: la ma",
+              "views": 3025,
+              "likes": 267,
+              "postedAt": "2026-06-03T20:07:42.000Z"
+            },
+            {
+              "caption": "¿Dónde están?\nImpulsamos la creación de una Comisión Especial Investigadora para reunir todos los antecedentes sobre la situación de niños, ",
+              "views": 1346,
+              "likes": 57,
+              "postedAt": "2026-06-17T23:19:12.000Z"
+            }
           ]
         },
         {
@@ -926,6 +2026,40 @@
               "2026-07-07T20:27:26Z",
               111500
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-26T19:17:55.000Z",
+          "videosTop": [
+            {
+              "caption": "Avanzamos con el proyecto y estamos muy contentos por Chile. ",
+              "views": 86200,
+              "likes": 5235,
+              "postedAt": "2026-05-20T18:46:52.000Z"
+            },
+            {
+              "caption": "El INDH en guerra declarada contra la Ley Nain Retamal.",
+              "views": 28300,
+              "likes": 2125,
+              "postedAt": "2026-04-29T17:45:42.000Z"
+            },
+            {
+              "caption": "Tres detenidos tras el cobarde ataque a la Ministra Lincolao.",
+              "views": 24600,
+              "likes": 1717,
+              "postedAt": "2026-04-20T15:42:53.000Z"
+            },
+            {
+              "caption": "Hoy llegamos hasta La Moneda con propuestas concretas para avanzar en seguridad y mejorar la institución de Carabineros de Chile. \n\nFuimos r",
+              "views": 21900,
+              "likes": 1572,
+              "postedAt": "2026-05-18T17:24:58.000Z"
+            },
+            {
+              "caption": "Hoy comenzamos la discusión para autorizar el monumento en memoria del Presidente @sebastianpinerae 🇨🇱.",
+              "views": 21500,
+              "likes": 761,
+              "postedAt": "2026-04-14T15:16:24.000Z"
+            }
           ]
         },
         {
@@ -955,6 +2089,40 @@
               "2026-07-07T20:27:26Z",
               18800
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-07T15:37:40.000Z",
+          "videosTop": [
+            {
+              "caption": "Les traigo este recuerdo del proyecto de “Electricidad Popular” de Daniel Jadue. \n\n#Chile #Jadue #Luz #PC ",
+              "views": 624300,
+              "likes": 22700,
+              "postedAt": "2024-06-28T19:20:42.000Z"
+            },
+            {
+              "caption": "Presidente @Gabriel Boric Font : actúe como el Presidente de Chile y sea responsable. No está el momento para juicios tajantes, carentes de ",
+              "views": 201300,
+              "likes": 8573,
+              "postedAt": "2025-06-22T02:54:55.000Z"
+            },
+            {
+              "caption": "Estabamos en la oficina de @Andres Longton y me di cuenta que tiene hartas curiosidades, acá les muestro un par de cosas 🤣\n\n#Chile #Longton ",
+              "views": 91600,
+              "likes": 2046,
+              "postedAt": "2024-12-16T23:15:17.000Z"
+            },
+            {
+              "caption": "Ayer recibimos en el Congreso a estudiantes que tuvieron la valentía de alzar la voz contra la violencia, las tomas y la paralización de sus",
+              "views": 5775,
+              "likes": 328,
+              "postedAt": "2026-06-11T13:14:50.000Z"
+            },
+            {
+              "caption": "Lo que pasó en San Bernardo no puede volver a ocurrir. \n\n#seguridad #sanbernardo #responsabilidadpenaljuvenil",
+              "views": 2186,
+              "likes": 44,
+              "postedAt": "2026-06-24T17:07:36.000Z"
+            }
           ]
         },
         {
@@ -984,6 +2152,40 @@
               "2026-07-07T20:27:26Z",
               1505
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-04-10T22:43:51.000Z",
+          "videosTop": [
+            {
+              "caption": "@totiorellanag El rol de la Primera Dama ha sido muy importante y no tengo dudas de que @mariapiaadriasola lo hará increíble.\n#vitacura #las",
+              "views": 34100,
+              "likes": 2872,
+              "postedAt": "2025-12-19T17:12:37.000Z"
+            },
+            {
+              "caption": "PEÑALOLEN NECESITA APOYO URGENTE! \n\nYa que este gobierno no fue capaz de apoyarnos, le pedimos al próximo gobierno de @joseantoniokast que t",
+              "views": 31700,
+              "likes": 1010,
+              "postedAt": "2026-01-07T20:56:04.000Z"
+            },
+            {
+              "caption": "Los que comentan actos violentos tienen que pagar un alto precio.",
+              "views": 2134,
+              "likes": 110,
+              "postedAt": "2026-04-10T22:43:51.000Z"
+            },
+            {
+              "caption": "seguimos en cada rincón de #peñalolén #lobarnechea #Claudiamoradiputada #lareina #vitacura ",
+              "views": 1368,
+              "likes": 64,
+              "postedAt": "2025-11-03T18:03:02.000Z"
+            },
+            {
+              "caption": "Gracias @felipealessandri por tu tremendo apoyo! Mi compromiso es llevar al congreso las urgencias que tenemos en el distrito!\n\n#Claudiamora",
+              "views": 1306,
+              "likes": 68,
+              "postedAt": "2025-10-28T17:33:53.000Z"
+            }
           ]
         },
         {
@@ -998,13 +2200,16 @@
           },
           "verified": false,
           "followers": 12600,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 100,
+            "porcentual": 0.8
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "acelera"
           },
           "engagement": 13.05408825795092,
-          "velocidad": null,
+          "velocidad": 2.3627667342133547,
           "cadencia": 4.0,
           "viewsPorSeguidor": 0.37396825396825395,
           "breakouts": [
@@ -1029,6 +2234,40 @@
               "2026-07-07T20:27:26Z",
               12600
             ]
+          ],
+          "deltaViews": 604,
+          "ultimaPublicacion": "2026-07-07T17:37:33.000Z",
+          "videosTop": [
+            {
+              "caption": "Qué diferencia. ¿Qué opinan?",
+              "views": 1300000,
+              "likes": 178700,
+              "postedAt": "2026-06-26T04:21:14.000Z"
+            },
+            {
+              "caption": "Kast y Quiroz nos dicen una cosa y luego hacen todo lo contrario. Finalmente quieren tener a la ciudadanía confundida y engañada. \n#kast #ch",
+              "views": 219200,
+              "likes": 33900,
+              "postedAt": "2026-05-15T22:36:20.000Z"
+            },
+            {
+              "caption": "Kast tenía un discurso muy bien pensando para una elección pero no para gobernar. \n#kast #chile #politicaltiktok #gobiernodechile ",
+              "views": 7404,
+              "likes": 639,
+              "postedAt": "2026-07-04T03:58:22.000Z"
+            },
+            {
+              "caption": "Kast prometió muchas cosas pero lo NO prometió fue una reforma tributaria que beneficiará al 1% más rico. ",
+              "views": 6990,
+              "likes": 753,
+              "postedAt": "2026-06-29T17:15:12.000Z"
+            },
+            {
+              "caption": "Sin argumentos, sin evidencias ni razones técnicas se aprobó una acusación constitucional que no resiste el peso de la verdad. Aquí no pierd",
+              "views": 4736,
+              "likes": 471,
+              "postedAt": "2026-06-24T05:05:30.000Z"
+            }
           ]
         },
         {
@@ -1058,6 +2297,40 @@
               "2026-07-07T20:27:26Z",
               200000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-10-23T03:05:55.000Z",
+          "videosTop": [
+            {
+              "caption": "Unidad. Unidad. Unidad",
+              "views": 250300,
+              "likes": 22800,
+              "postedAt": "2025-07-30T23:21:44.000Z"
+            },
+            {
+              "caption": "Nicolás Grau en Hacienda: No es chiste. Cerremos por fuera. Que desastre de Gobierno.",
+              "views": 205400,
+              "likes": 17100,
+              "postedAt": "2025-08-21T17:52:21.000Z"
+            },
+            {
+              "caption": "Gabriel Boric: ¡Impresentable!",
+              "views": 162700,
+              "likes": 13400,
+              "postedAt": "2025-07-22T00:26:47.000Z"
+            },
+            {
+              "caption": "Chao contribuciones!",
+              "views": 113200,
+              "likes": 9375,
+              "postedAt": "2025-08-28T02:10:58.000Z"
+            },
+            {
+              "caption": "¡Es oficial muchachos! 😱",
+              "views": 74200,
+              "likes": 6847,
+              "postedAt": "2025-08-20T21:21:58.000Z"
+            }
           ]
         },
         {
@@ -1087,6 +2360,40 @@
               "2026-07-07T20:27:26Z",
               80300
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-14T01:12:34.000Z",
+          "videosTop": [
+            {
+              "caption": "Hoy es el último día de campaña y entregamos los últimos flyers con toda la energía y el compromiso de siempre. 🙌🇨🇱\n\nQuiero pedirles un favo",
+              "views": 2733,
+              "likes": 101,
+              "postedAt": "2025-11-14T01:12:34.000Z"
+            },
+            {
+              "caption": "Ayer vivimos un cierre desbordado de emociones y una energía que encendió cada rincón del Cierre de Campaña 💙\n\nEste domingo será crucial par",
+              "views": 2084,
+              "likes": 127,
+              "postedAt": "2025-11-13T00:02:29.000Z"
+            },
+            {
+              "caption": "Yo creo que la seguridad municipal debe tener la posibilidad de hacer un control de identidad, y de utilizar armas menos letales”, aseguró A",
+              "views": 1677,
+              "likes": 125,
+              "postedAt": "2025-11-02T23:57:39.000Z"
+            },
+            {
+              "caption": "#MiradaCrítica",
+              "views": 1668,
+              "likes": 66,
+              "postedAt": "2025-11-11T17:52:06.000Z"
+            },
+            {
+              "caption": "Se acabó el recreo.\nLlegó la hora de los honestos, de los que trabajan por Chile y no viven del Estado.\nUn gobierno austero, valiente y en t",
+              "views": 1509,
+              "likes": 275,
+              "postedAt": "2025-11-01T13:54:54.000Z"
+            }
           ]
         },
         {
@@ -1101,13 +2408,16 @@
           },
           "verified": false,
           "followers": 31500,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 0,
+            "porcentual": 0.0
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "estable"
           },
           "engagement": 9.844065591729144,
-          "velocidad": null,
+          "velocidad": 0.15751778228089033,
           "cadencia": 4.5,
           "viewsPorSeguidor": 0.06534920634920635,
           "breakouts": [
@@ -1139,6 +2449,40 @@
               "2026-07-07T20:27:26Z",
               31500
             ]
+          ],
+          "deltaViews": 33,
+          "ultimaPublicacion": "2026-07-03T14:20:03.000Z",
+          "videosTop": [
+            {
+              "caption": "⚠️ La Acusación Constitucional contra Grau es solo una distracción sobre el debate de la Reforma Tributaria de Quiroz. \nEsa reforma será lit",
+              "views": 10700,
+              "likes": 808,
+              "postedAt": "2026-06-23T20:17:39.000Z"
+            },
+            {
+              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos ",
+              "views": 9472,
+              "likes": 918,
+              "postedAt": "2026-07-01T21:37:37.000Z"
+            },
+            {
+              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
+              "views": 6314,
+              "likes": 167,
+              "postedAt": "2026-07-03T14:20:03.000Z"
+            },
+            {
+              "caption": "Parece que les preocupa más el orden público que las mujeres de Chile. No puede ser que se pretenda sancionar con más dureza a alguien por m",
+              "views": 3482,
+              "likes": 256,
+              "postedAt": "2026-06-25T21:43:05.000Z"
+            },
+            {
+              "caption": "Hoy iniciamos la Plenaria Nacional del Primer Congreso del @Frente Amplio Chile \nNuestra tarea principal debe ser que nuestro programa, nues",
+              "views": 2457,
+              "likes": 210,
+              "postedAt": "2026-06-26T22:35:43.000Z"
+            }
           ]
         },
         {
@@ -1168,6 +2512,40 @@
               "2026-07-07T20:27:26Z",
               1602
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2024-03-25T23:19:30.000Z",
+          "videosTop": [
+            {
+              "caption": "VOTÉ EN CONTRA DE UN NUEVO PROCESO CONSTITUCIONAL.  #NuevaConstitucion #Congreso #Rechazo",
+              "views": 9067,
+              "likes": 513,
+              "postedAt": "2023-01-12T05:00:23.000Z"
+            },
+            {
+              "caption": "Aprobamos nuestro Proyecto de Resolución para congelar Contribuciones para Adultos Mayores cuyos ingresos no superen las 20 UF\n#Contribucion",
+              "views": 2172,
+              "likes": 97,
+              "postedAt": "2023-04-05T01:30:49.000Z"
+            },
+            {
+              "caption": "La carta de protesta enviada por Chile fue una medida bastante suave, considero que Chile debe retirar al embajador, porque no se puede segu",
+              "views": 1406,
+              "likes": 73,
+              "postedAt": "2024-03-24T02:04:23.000Z"
+            },
+            {
+              "caption": "Hasta siempre Presidente Sebastián Piñera 🇨🇱",
+              "views": 448,
+              "likes": 78,
+              "postedAt": "2024-02-10T04:08:00.000Z"
+            },
+            {
+              "caption": "APROBAMOS PROYECTO PARA ENTONAR EL HIMNO NACIONAL EN LOS ESTABLECIMIENTOS EDUCACIONALES.\nProyecto de ley, iniciado en moción, que modifica l",
+              "views": 338,
+              "likes": 69,
+              "postedAt": "2024-01-14T13:53:50.000Z"
+            }
           ]
         },
         {
@@ -1197,6 +2575,40 @@
               "2026-07-07T20:27:26Z",
               2664
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-23T23:00:36.000Z",
+          "videosTop": [
+            {
+              "caption": "🏥 Junto a vecinas y vecinos del Distrito 13, concejalas y autoridades locales, llegamos hasta el Hospital Barros Luco para denunciar el reco",
+              "views": 12500,
+              "likes": 306,
+              "postedAt": "2026-05-27T00:41:05.000Z"
+            },
+            {
+              "caption": "👉 La miseria humana hecha disfraz. Se pasea disfrazado del dictador, grita “viva mi general” frente a María Candelaria, hija de Sebastián Ac",
+              "views": 9334,
+              "likes": 170,
+              "postedAt": "2026-05-06T19:35:37.000Z"
+            },
+            {
+              "caption": "👉 ¿Que con qué me quedo de la Cuenta Pública de Kast?… Con aquel valiente que logró hablar por todas y todos: “¡mentiroso!”.",
+              "views": 6575,
+              "likes": 274,
+              "postedAt": "2026-06-02T01:04:41.000Z"
+            },
+            {
+              "caption": "",
+              "views": 6355,
+              "likes": 166,
+              "postedAt": "2026-04-08T00:57:35.000Z"
+            },
+            {
+              "caption": "⚠️ Este miércoles se ha presentado el mal llamado proyecto de “Reconstrucción”, inicoativa de este gobierno uñtraderechista y que busca, dir",
+              "views": 4858,
+              "likes": 166,
+              "postedAt": "2026-04-22T16:36:36.000Z"
+            }
           ]
         },
         {
@@ -1226,6 +2638,40 @@
               "2026-07-07T20:27:26Z",
               97
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-05T21:29:25.000Z",
+          "videosTop": [
+            {
+              "caption": "ACUSACIÓN CONSTITUCIONAL PARA EL EX MINISTRO PARDOW‼️\n\nFirmamos la acusación constitucional contra el exministro Pardow, porque los chilenos",
+              "views": 2036,
+              "likes": 94,
+              "postedAt": "2025-10-28T13:51:02.000Z"
+            },
+            {
+              "caption": "LA PASIÓN NO JUSTIFICA EL DESORDEN🚫🚫\n\nComo diputado y vecino de La Cisterna, quiero ser claro: no estoy en contra de la hinchada ni de su am",
+              "views": 1164,
+              "likes": 7,
+              "postedAt": "2025-10-29T20:42:52.000Z"
+            },
+            {
+              "caption": "COMPROMETIDO CON LA SEGURIDAD DE NUESTRO DISTRITO 🚔\n\nEstuve en TVN, donde tuve la oportunidad de hablar sobre un tema que nos preocupa a tod",
+              "views": 899,
+              "likes": 21,
+              "postedAt": "2025-10-27T15:59:58.000Z"
+            },
+            {
+              "caption": "SOMOS MUCHOS CON UN SOLO PROPÓSITO: CHILE 🇨🇱\n\nPodemos llamarnos igual, venir de distintos lugares o pensar diferente, pero al final todos co",
+              "views": 700,
+              "likes": 27,
+              "postedAt": "2025-10-24T22:36:45.000Z"
+            },
+            {
+              "caption": "MANO FIRME CONTRA LA DELINCUENCIA 💪🇨🇱\n\nLa seguridad no puede seguir siendo una promesa, tiene que ser una realidad. Quiero jugármela para qu",
+              "views": 622,
+              "likes": 15,
+              "postedAt": "2025-10-17T15:58:01.000Z"
+            }
           ]
         },
         {
@@ -1255,6 +2701,40 @@
               "2026-07-07T20:27:26Z",
               133600
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-06T22:51:26.000Z",
+          "videosTop": [
+            {
+              "caption": "Premio al Espiritu Maculino 2022, 21 de Diciembre del 2022 💖 #justiciapormoreno ",
+              "views": 2600000,
+              "likes": 49100,
+              "postedAt": "2023-12-13T18:05:28.000Z"
+            },
+            {
+              "caption": "Respuesta a @⚘Giovanna🌺🐶🐶🐶🐾 ❤️‍🩹",
+              "views": 178900,
+              "likes": 7254,
+              "postedAt": "2024-06-09T21:59:20.000Z"
+            },
+            {
+              "caption": "#ValeBecerra #Distrito13 #Diputada #PartidoRepublicano #Elecciones2025 ",
+              "views": 58100,
+              "likes": 3933,
+              "postedAt": "2025-08-23T13:11:07.000Z"
+            },
+            {
+              "caption": "No podemos permitir que formar una familia en la institución sea “inviable”.\nEstoy trabajando en proyectos de ley para garantizar derechos l",
+              "views": 8160,
+              "likes": 631,
+              "postedAt": "2026-07-04T23:07:27.000Z"
+            },
+            {
+              "caption": "Hoy asistimos a la Cuenta Pública de Carabineros de Chile, una instancia fundamental para conocer de cerca los avances, los resultados de la",
+              "views": 7431,
+              "likes": 412,
+              "postedAt": "2026-06-29T00:49:52.000Z"
+            }
           ]
         },
         {
@@ -1284,6 +2764,40 @@
               "2026-07-07T20:27:26Z",
               2380
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-14T02:17:54.000Z",
+          "videosTop": [
+            {
+              "caption": "🚗 TODO LISTO PARA EL GRAN CIERRE DE CAMPAÑA DE #KASTPRESIDENTE\n\nEste 16 de noviembre súmate a #LaFuerzaDelCambio 💪🇨🇱\nNo tengo dudas, que @Jo",
+              "views": 3501,
+              "likes": 439,
+              "postedAt": "2025-11-11T22:07:42.000Z"
+            },
+            {
+              "caption": "🇨🇱 Gran banderazo en La Cisterna\n\nYa queda cada vez menos y estuvimos demostrando que #LaFuerzaDelCambio va a ganar en las comunas de La Cis",
+              "views": 1314,
+              "likes": 251,
+              "postedAt": "2025-11-10T00:02:10.000Z"
+            },
+            {
+              "caption": "¡GRACIAS VECINOS! 🇨🇱\n\nAsí se vivió nuestra caravana de cierre, un recorrido lleno de esperanza, cariño y con convicción de que sí podemos re",
+              "views": 1214,
+              "likes": 170,
+              "postedAt": "2025-11-14T02:17:54.000Z"
+            },
+            {
+              "caption": "¡VOTA ROSS, VOTA KAST! 💪🏻🇨🇱\n\nEste 16 de noviembre Chile se juega su futuro. Es el momento de elegir orden, libertad y seguridad.\n\nSúmate a q",
+              "views": 1002,
+              "likes": 297,
+              "postedAt": "2025-11-10T22:00:18.000Z"
+            },
+            {
+              "caption": "DEFENDER EL BOLSILLO DE LOS CHILENOS 🇨🇱\n\nEn la feria se entiende mejor que en cualquier oficina lo que viven las familias, cada peso cuenta ",
+              "views": 851,
+              "likes": 60,
+              "postedAt": "2025-11-13T14:48:35.000Z"
+            }
           ]
         },
         {
@@ -1313,6 +2827,40 @@
               "2026-07-07T20:27:26Z",
               3622
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-03T17:53:14.000Z",
+          "videosTop": [
+            {
+              "caption": "Hoy el Senado aprobó el proyecto para erigir un monumento en honor al expresidente Piñera.\n\nEste es un intento de la derecha de reescribir l",
+              "views": 81600,
+              "likes": 443,
+              "postedAt": "2026-01-20T21:16:55.000Z"
+            },
+            {
+              "caption": "¿Qué tanto esconde la derecha que rechaza cada vez que puede el levantamiento del secreto bancario?",
+              "views": 25600,
+              "likes": 255,
+              "postedAt": "2026-06-09T23:02:35.000Z"
+            },
+            {
+              "caption": "Las declaraciones de la ministra Lincolao advierten algo gravísimo: hacer ver que los algunos ministros del gobierno de Kast no habrían decl",
+              "views": 17600,
+              "likes": 223,
+              "postedAt": "2026-05-12T23:59:43.000Z"
+            },
+            {
+              "caption": "Con mucho aprecio, respeto y admiración, como Comisión de Adulto Mayor y Discapacidad del Senado, hemos reconocido a todas las agrupaciones,",
+              "views": 11200,
+              "likes": 60,
+              "postedAt": "2026-01-22T18:32:12.000Z"
+            },
+            {
+              "caption": "Mentir no son metáforas ",
+              "views": 8742,
+              "likes": 85,
+              "postedAt": "2026-05-13T20:11:40.000Z"
+            }
           ]
         },
         {
@@ -1342,6 +2890,40 @@
               "2026-07-07T20:27:26Z",
               2492
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2023-02-08T00:52:18.000Z",
+          "videosTop": [
+            {
+              "caption": "",
+              "views": 113100,
+              "likes": 3397,
+              "postedAt": "2023-02-08T00:52:18.000Z"
+            },
+            {
+              "caption": "¡Gracias Carabineros de Chile!  Yo siempre estaré con ustedes porque ustedes siempre están con los chilenos. Estos días, una vez más le han ",
+              "views": 98400,
+              "likes": 7356,
+              "postedAt": "2023-02-04T21:10:09.000Z"
+            },
+            {
+              "caption": "",
+              "views": 42700,
+              "likes": 1423,
+              "postedAt": "2023-01-03T20:19:20.000Z"
+            },
+            {
+              "caption": "Con esperanza, con alegría, este domingo votaremos #Rechazo, para seguir unidos construyendo el camino para un país más justo, más solidario",
+              "views": 27900,
+              "likes": 1083,
+              "postedAt": "2022-09-01T17:27:10.000Z"
+            },
+            {
+              "caption": "No más pitutos decía el Presidente Boric cuando estaba en campaña y hoy a 8 meses de su mandato, su Gobierno se ha vuelto el Gobierno del am",
+              "views": 26500,
+              "likes": 1281,
+              "postedAt": "2022-11-10T15:14:25.000Z"
+            }
           ]
         },
         {
@@ -1371,6 +2953,40 @@
               "2026-07-07T20:27:26Z",
               2411
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2024-03-20T19:50:00.000Z",
+          "videosTop": [
+            {
+              "caption": "Tenemos una estrategia seria y responsable, que ha tomado tiempo y que tiene como objetivo recuperar inmuebles tomados y mantener este traba",
+              "views": 21400,
+              "likes": 2358,
+              "postedAt": "2024-03-17T16:39:23.000Z"
+            },
+            {
+              "caption": "#ReComiendoSTGO: ¡El Naturista un imperdible! 🍊🌱\n\nEn el marco del día mundial sin carne, fuimos a almorzar con el equipo al @naturista. Un r",
+              "views": 16500,
+              "likes": 191,
+              "postedAt": "2024-03-20T19:50:00.000Z"
+            },
+            {
+              "caption": "#ReComiendoSTGO: La Diana restaurant, parte de los clásicos Juegos Diana! 🎡🎪🩷\n\n🍽️ Nos hicimos un espacio en la tarde del domingo pasado, des",
+              "views": 10700,
+              "likes": 222,
+              "postedAt": "2024-03-07T21:03:46.000Z"
+            },
+            {
+              "caption": "💜 ¡Día internacional de las mujeres! 💜\n\nConmemoramos un nuevo 8 de marzo saludando y enviando un fuerte abrazo a las mujeres en toda su dive",
+              "views": 9275,
+              "likes": 352,
+              "postedAt": "2024-03-08T18:39:08.000Z"
+            },
+            {
+              "caption": "💬 #AlcaldesaResponde | Retiro de kioscos abandonados para barrios más seguros. En ello estamos avanzando decididamente, con el Plan de Recup",
+              "views": 9111,
+              "likes": 387,
+              "postedAt": "2024-03-11T22:41:11.000Z"
+            }
           ]
         },
         {
@@ -1400,6 +3016,22 @@
               "2026-07-07T20:27:26Z",
               894
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2022-10-10T22:05:13.000Z",
+          "videosTop": [
+            {
+              "caption": "Vamos a revisar algunas de las noticias falsas que los sectores que se oponen al #tpp11 han tratado de instalar en #chile y explicar los ver",
+              "views": 10400,
+              "likes": 101,
+              "postedAt": "2022-10-04T14:42:25.000Z"
+            },
+            {
+              "caption": "Hoy visitamos #SanFernando y con Paulina Monti almorzamos con los militantes de Evópoli para escuchar sus prioridades para el futuro de Evóp",
+              "views": 3933,
+              "likes": 25,
+              "postedAt": "2022-10-10T22:05:13.000Z"
+            }
           ]
         },
         {
@@ -1429,6 +3061,40 @@
               "2026-07-07T20:27:26Z",
               73000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-25T16:31:04.000Z",
+          "videosTop": [
+            {
+              "caption": "¡El Gobierno debe reconocer a Edmundo González como el Presidente electo de Venezuela 🇻🇪!\n\nPedirle al régimen del dictador las misma actas q",
+              "views": 3400000,
+              "likes": 403900,
+              "postedAt": "2024-07-30T22:04:36.000Z"
+            },
+            {
+              "caption": "En Sala, durante la discusión de #pensiones, anuncié mi voto en contra. \n\nEste proyecto pone en riesgo la estabilidad fiscal e introduce el ",
+              "views": 215400,
+              "likes": 15800,
+              "postedAt": "2025-01-28T00:12:34.000Z"
+            },
+            {
+              "caption": "Para bailar Tango, se necesitan dos.. #PlandeReconstrucción ",
+              "views": 77900,
+              "likes": 1990,
+              "postedAt": "2026-06-09T01:44:45.000Z"
+            },
+            {
+              "caption": "Cambiar las recetas del pasado por las que sí funcionan… #CAE #Neme #RojoEdwards ",
+              "views": 48000,
+              "likes": 1296,
+              "postedAt": "2026-06-10T22:11:13.000Z"
+            },
+            {
+              "caption": "El fallo del TC es prodelincuentes y proviolencia. ",
+              "views": 45200,
+              "likes": 1670,
+              "postedAt": "2026-06-25T16:31:04.000Z"
+            }
           ]
         },
         {
@@ -1458,6 +3124,40 @@
               "2026-07-07T20:27:26Z",
               36000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-07T16:32:54.000Z",
+          "videosTop": [
+            {
+              "caption": "¡APROBAMOS LAS #40HORAS Y SERÁ LEY! 👏🏻⏰✅\n\nVamos avanzando en derechos para los y las trabajadoras y en mejorar la calidad de vida de las per",
+              "views": 792200,
+              "likes": 94200,
+              "postedAt": "2023-04-11T22:56:05.000Z"
+            },
+            {
+              "caption": "El plan anunciado por Kast no es reconstrucción, es un retroceso para las personas! Restringir la gratuidad es restringir el derecho a la ed",
+              "views": 285200,
+              "likes": 4025,
+              "postedAt": "2026-03-14T19:59:12.000Z"
+            },
+            {
+              "caption": "La violencia en los colegios no se resuelve revisando mochilas ni aumentando castigos, esas medidas pueden sonar duras pero no van al fondo ",
+              "views": 138600,
+              "likes": 864,
+              "postedAt": "2026-04-09T04:59:33.000Z"
+            },
+            {
+              "caption": "No todo lo que se vende como “megareforma” mejora la vida de las personas. Cuando una propuesta termina beneficiando a los súper ricos mient",
+              "views": 64700,
+              "likes": 512,
+              "postedAt": "2026-05-29T01:54:35.000Z"
+            },
+            {
+              "caption": "La misma derecha que quiso rebajar el presupuesto de Carabineros hoy pretende erigirse como su principal defensora. En esa contradicción, in",
+              "views": 52800,
+              "likes": 887,
+              "postedAt": "2026-04-09T05:03:18.000Z"
+            }
           ]
         },
         {
@@ -1487,6 +3187,40 @@
               "2026-07-07T20:27:26Z",
               42
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-24T10:40:30.000Z",
+          "videosTop": [
+            {
+              "caption": "El problema no es solo la bencina\n\nHoy sube el combustible, pero esto no partió hoy. Cuando el gasto se desordena por años, la cuenta siempr",
+              "views": 1761,
+              "likes": 43,
+              "postedAt": "2026-05-06T01:16:05.000Z"
+            },
+            {
+              "caption": "",
+              "views": 19,
+              "likes": 0,
+              "postedAt": "2026-06-24T10:40:30.000Z"
+            },
+            {
+              "caption": "¿BORIC 2030? no por favor 😅",
+              "views": 17,
+              "likes": 1,
+              "postedAt": "2026-06-03T01:28:32.000Z"
+            },
+            {
+              "caption": "",
+              "views": 13,
+              "likes": 0,
+              "postedAt": "2026-06-15T20:36:58.000Z"
+            },
+            {
+              "caption": "",
+              "views": 11,
+              "likes": 1,
+              "postedAt": "2026-05-29T01:13:28.000Z"
+            }
           ]
         },
         {
@@ -1516,11 +3250,45 @@
               "2026-07-07T20:27:26Z",
               16400
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-05T23:32:51.000Z",
+          "videosTop": [
+            {
+              "caption": "¿Quién de la izquierda habla de Julia Chuñil ahora? Nadie porque al final del día, el problema nunca fue la justicia. El problema fue que la",
+              "views": 53200,
+              "likes": 2936,
+              "postedAt": "2026-01-21T21:50:02.000Z"
+            },
+            {
+              "caption": "CAE: Cuando el sistema premia al que no paga y castiga al que sí cumple, deja de ser un problema financiero. Pasa a ser un problema moral.",
+              "views": 33600,
+              "likes": 2347,
+              "postedAt": "2026-04-07T01:42:00.000Z"
+            },
+            {
+              "caption": "",
+              "views": 12600,
+              "likes": 800,
+              "postedAt": "2026-03-08T23:54:20.000Z"
+            },
+            {
+              "caption": "En menos de dos minutos te explico por qué Chile no estaba preparado para amortiguar el alza brutal de los combustibles.",
+              "views": 9865,
+              "likes": 577,
+              "postedAt": "2026-03-28T02:07:24.000Z"
+            },
+            {
+              "caption": "A ciertos dirigentes de izquierda les dan tiritones las medidas para crear empleo. Lo que debiera darles tiritones es el casi millón de dese",
+              "views": 9408,
+              "likes": 696,
+              "postedAt": "2026-07-05T23:32:51.000Z"
+            }
           ]
         }
       ],
       "insights": [
-        "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
+        "@conyschons lidera el crecimiento de la ventana de 14 días: +100 seguidores (0.8%).",
         "@conyschons está acelerando: la segunda mitad del período creció más que la primera.",
         "@lorenapizarrosierra rinde sobre su tamaño: su video típico hace 1.7× views que seguidores tiene.",
         "@diputadoeduardoduran rinde sobre su tamaño: su video típico hace 5.1× views que seguidores tiene.",
@@ -1573,7 +3341,11 @@
         }
       ],
       "titulares": {
-        "mayorCrecimiento": null,
+        "mayorCrecimiento": {
+          "handle": "conyschons",
+          "pct": 0.8,
+          "abs": 100
+        },
         "breakoutMasCaliente": {
           "handle": "conyschons",
           "views": 1300000,
@@ -1603,13 +3375,16 @@
           },
           "verified": false,
           "followers": 193700,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 0,
+            "porcentual": 0.0
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "estable"
           },
           "engagement": 13.542541336078978,
-          "velocidad": null,
+          "velocidad": 5.123190647235978,
           "cadencia": 2.3333333333333335,
           "viewsPorSeguidor": 0.4367578729994837,
           "breakouts": [
@@ -1648,6 +3423,40 @@
               "2026-07-07T20:27:26Z",
               193700
             ]
+          ],
+          "deltaViews": 11300,
+          "ultimaPublicacion": "2026-07-06T21:18:23.000Z",
+          "videosTop": [
+            {
+              "caption": "Nadie ha pedido cambiarle el nombre a la Cámara de Diputados y Diputadas, esa es una idea del señor Bobadilla. Fracasa, por lo demás.",
+              "views": 550100,
+              "likes": 85500,
+              "postedAt": "2026-06-18T15:32:15.000Z"
+            },
+            {
+              "caption": "Yo sé que en este hemiciclo existen diputados racionales y capaces de ponderar posiciones. La pregunta es por qué adoptan esta forma de legi",
+              "views": 296600,
+              "likes": 33200,
+              "postedAt": "2026-06-25T14:54:58.000Z"
+            },
+            {
+              "caption": "El Ministerio de Hacienda, que solía ser una institución seria, se ha prestado para una Acusación Constitucional cuyo efecto más grave es po",
+              "views": 288300,
+              "likes": 30400,
+              "postedAt": "2026-06-24T03:03:23.000Z"
+            },
+            {
+              "caption": "Ante el caso de los niños haitianos, nada más que decir: se lanzaron como hienas.",
+              "views": 106000,
+              "likes": 15500,
+              "postedAt": "2026-06-25T21:11:47.000Z"
+            },
+            {
+              "caption": "Intentaron generar un clima de conmoción nacional a costa de infancia vulnerable. Infancia que, hasta hace muy poco, hicieron todo lo posibl",
+              "views": 104500,
+              "likes": 11800,
+              "postedAt": "2026-06-22T19:42:39.000Z"
+            }
           ]
         },
         {
@@ -1692,6 +3501,40 @@
               "2026-07-07T20:27:26Z",
               38700
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-06T15:38:00.000Z",
+          "videosTop": [
+            {
+              "caption": "Dicen que la venganza nunca es buena, pero a veces toca el desquite @joseantoniokast #PadreHijo #AtreveteChile #Atrevi2 #Kast",
+              "views": 2100000,
+              "likes": 83700,
+              "postedAt": "2021-09-20T22:37:07.000Z"
+            },
+            {
+              "caption": "AHORA‼️‼️‼️ se aprueba de manera unánime el proyecto de ley que  autoriza el uso de agentes encubiertos en internet para perseguir delitos s",
+              "views": 199200,
+              "likes": 15900,
+              "postedAt": "2026-06-16T18:55:55.000Z"
+            },
+            {
+              "caption": "¿Una fotito?\n\nPreparándonos con todo para lo que se viene 🇨🇱\n\n#Kast\n@Jose Antonio Kast ",
+              "views": 104500,
+              "likes": 11500,
+              "postedAt": "2025-07-27T15:25:14.000Z"
+            },
+            {
+              "caption": "Hoy, durante la discusión de la moción sobre el monumento a Baldomero Lillo, les confesé algo: me gusta Illapu, me gustan Los Jaivas y me gu",
+              "views": 72900,
+              "likes": 3040,
+              "postedAt": "2026-06-23T03:14:55.000Z"
+            },
+            {
+              "caption": "Les dejo un resumen de lo que se aprobó hoy en el Congreso 💪🏻🇨🇱 #foryoupage #parati #chile🇨🇱 #congreso ",
+              "views": 38700,
+              "likes": 3589,
+              "postedAt": "2026-06-24T22:16:24.000Z"
+            }
           ]
         },
         {
@@ -1743,6 +3586,40 @@
               "2026-07-07T20:27:26Z",
               4924
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-03T16:13:03.000Z",
+          "videosTop": [
+            {
+              "caption": "Quedó grabado: el director del Servicio Nacional de Migraciones admite que la denuncia y la alarma nacional por presuntas desapariciones de ",
+              "views": 8464,
+              "likes": 315,
+              "postedAt": "2026-06-23T00:14:47.000Z"
+            },
+            {
+              "caption": "La protección de la infancia exige verdad, responsabilidad y rigor. Ni la infancia ni la migración pueden utilizarse para generar pánico, es",
+              "views": 8163,
+              "likes": 580,
+              "postedAt": "2026-06-22T18:08:48.000Z"
+            },
+            {
+              "caption": "Estamos enfrentando una crisis económica, y el gobierno de Kast ha decidido desde el comienzo que sean las familias quienes paguen el costo.",
+              "views": 4673,
+              "likes": 285,
+              "postedAt": "2026-07-03T16:13:03.000Z"
+            },
+            {
+              "caption": "¿La movilización social es sinónimo de violencia? Spoiler: NO.\n\nVolvemos a ver manifestaciones en las calles y es importante recordar: la ma",
+              "views": 3025,
+              "likes": 267,
+              "postedAt": "2026-06-03T20:07:42.000Z"
+            },
+            {
+              "caption": "¿Dónde están?\nImpulsamos la creación de una Comisión Especial Investigadora para reunir todos los antecedentes sobre la situación de niños, ",
+              "views": 1346,
+              "likes": 57,
+              "postedAt": "2026-06-17T23:19:12.000Z"
+            }
           ]
         },
         {
@@ -1772,6 +3649,40 @@
               "2026-07-07T20:27:26Z",
               111500
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-26T19:17:55.000Z",
+          "videosTop": [
+            {
+              "caption": "Avanzamos con el proyecto y estamos muy contentos por Chile. ",
+              "views": 86200,
+              "likes": 5235,
+              "postedAt": "2026-05-20T18:46:52.000Z"
+            },
+            {
+              "caption": "El INDH en guerra declarada contra la Ley Nain Retamal.",
+              "views": 28300,
+              "likes": 2125,
+              "postedAt": "2026-04-29T17:45:42.000Z"
+            },
+            {
+              "caption": "Tres detenidos tras el cobarde ataque a la Ministra Lincolao.",
+              "views": 24600,
+              "likes": 1717,
+              "postedAt": "2026-04-20T15:42:53.000Z"
+            },
+            {
+              "caption": "Hoy llegamos hasta La Moneda con propuestas concretas para avanzar en seguridad y mejorar la institución de Carabineros de Chile. \n\nFuimos r",
+              "views": 21900,
+              "likes": 1572,
+              "postedAt": "2026-05-18T17:24:58.000Z"
+            },
+            {
+              "caption": "Hoy comenzamos la discusión para autorizar el monumento en memoria del Presidente @sebastianpinerae 🇨🇱.",
+              "views": 21500,
+              "likes": 761,
+              "postedAt": "2026-04-14T15:16:24.000Z"
+            }
           ]
         },
         {
@@ -1801,6 +3712,40 @@
               "2026-07-07T20:27:26Z",
               18800
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-07T15:37:40.000Z",
+          "videosTop": [
+            {
+              "caption": "Les traigo este recuerdo del proyecto de “Electricidad Popular” de Daniel Jadue. \n\n#Chile #Jadue #Luz #PC ",
+              "views": 624300,
+              "likes": 22700,
+              "postedAt": "2024-06-28T19:20:42.000Z"
+            },
+            {
+              "caption": "Presidente @Gabriel Boric Font : actúe como el Presidente de Chile y sea responsable. No está el momento para juicios tajantes, carentes de ",
+              "views": 201300,
+              "likes": 8573,
+              "postedAt": "2025-06-22T02:54:55.000Z"
+            },
+            {
+              "caption": "Estabamos en la oficina de @Andres Longton y me di cuenta que tiene hartas curiosidades, acá les muestro un par de cosas 🤣\n\n#Chile #Longton ",
+              "views": 91600,
+              "likes": 2046,
+              "postedAt": "2024-12-16T23:15:17.000Z"
+            },
+            {
+              "caption": "Ayer recibimos en el Congreso a estudiantes que tuvieron la valentía de alzar la voz contra la violencia, las tomas y la paralización de sus",
+              "views": 5775,
+              "likes": 328,
+              "postedAt": "2026-06-11T13:14:50.000Z"
+            },
+            {
+              "caption": "Lo que pasó en San Bernardo no puede volver a ocurrir. \n\n#seguridad #sanbernardo #responsabilidadpenaljuvenil",
+              "views": 2186,
+              "likes": 44,
+              "postedAt": "2026-06-24T17:07:36.000Z"
+            }
           ]
         },
         {
@@ -1830,6 +3775,40 @@
               "2026-07-07T20:27:26Z",
               1505
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-04-10T22:43:51.000Z",
+          "videosTop": [
+            {
+              "caption": "@totiorellanag El rol de la Primera Dama ha sido muy importante y no tengo dudas de que @mariapiaadriasola lo hará increíble.\n#vitacura #las",
+              "views": 34100,
+              "likes": 2872,
+              "postedAt": "2025-12-19T17:12:37.000Z"
+            },
+            {
+              "caption": "PEÑALOLEN NECESITA APOYO URGENTE! \n\nYa que este gobierno no fue capaz de apoyarnos, le pedimos al próximo gobierno de @joseantoniokast que t",
+              "views": 31700,
+              "likes": 1010,
+              "postedAt": "2026-01-07T20:56:04.000Z"
+            },
+            {
+              "caption": "Los que comentan actos violentos tienen que pagar un alto precio.",
+              "views": 2134,
+              "likes": 110,
+              "postedAt": "2026-04-10T22:43:51.000Z"
+            },
+            {
+              "caption": "seguimos en cada rincón de #peñalolén #lobarnechea #Claudiamoradiputada #lareina #vitacura ",
+              "views": 1368,
+              "likes": 64,
+              "postedAt": "2025-11-03T18:03:02.000Z"
+            },
+            {
+              "caption": "Gracias @felipealessandri por tu tremendo apoyo! Mi compromiso es llevar al congreso las urgencias que tenemos en el distrito!\n\n#Claudiamora",
+              "views": 1306,
+              "likes": 68,
+              "postedAt": "2025-10-28T17:33:53.000Z"
+            }
           ]
         },
         {
@@ -1844,13 +3823,16 @@
           },
           "verified": false,
           "followers": 12600,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 100,
+            "porcentual": 0.8
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "acelera"
           },
           "engagement": 13.05408825795092,
-          "velocidad": null,
+          "velocidad": 2.3627667342133547,
           "cadencia": 2.1,
           "viewsPorSeguidor": 0.37396825396825395,
           "breakouts": [
@@ -1875,6 +3857,40 @@
               "2026-07-07T20:27:26Z",
               12600
             ]
+          ],
+          "deltaViews": 604,
+          "ultimaPublicacion": "2026-07-07T17:37:33.000Z",
+          "videosTop": [
+            {
+              "caption": "Qué diferencia. ¿Qué opinan?",
+              "views": 1300000,
+              "likes": 178700,
+              "postedAt": "2026-06-26T04:21:14.000Z"
+            },
+            {
+              "caption": "Kast y Quiroz nos dicen una cosa y luego hacen todo lo contrario. Finalmente quieren tener a la ciudadanía confundida y engañada. \n#kast #ch",
+              "views": 219200,
+              "likes": 33900,
+              "postedAt": "2026-05-15T22:36:20.000Z"
+            },
+            {
+              "caption": "Kast tenía un discurso muy bien pensando para una elección pero no para gobernar. \n#kast #chile #politicaltiktok #gobiernodechile ",
+              "views": 7404,
+              "likes": 639,
+              "postedAt": "2026-07-04T03:58:22.000Z"
+            },
+            {
+              "caption": "Kast prometió muchas cosas pero lo NO prometió fue una reforma tributaria que beneficiará al 1% más rico. ",
+              "views": 6990,
+              "likes": 753,
+              "postedAt": "2026-06-29T17:15:12.000Z"
+            },
+            {
+              "caption": "Sin argumentos, sin evidencias ni razones técnicas se aprobó una acusación constitucional que no resiste el peso de la verdad. Aquí no pierd",
+              "views": 4736,
+              "likes": 471,
+              "postedAt": "2026-06-24T05:05:30.000Z"
+            }
           ]
         },
         {
@@ -1904,6 +3920,40 @@
               "2026-07-07T20:27:26Z",
               200000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-10-23T03:05:55.000Z",
+          "videosTop": [
+            {
+              "caption": "Unidad. Unidad. Unidad",
+              "views": 250300,
+              "likes": 22800,
+              "postedAt": "2025-07-30T23:21:44.000Z"
+            },
+            {
+              "caption": "Nicolás Grau en Hacienda: No es chiste. Cerremos por fuera. Que desastre de Gobierno.",
+              "views": 205400,
+              "likes": 17100,
+              "postedAt": "2025-08-21T17:52:21.000Z"
+            },
+            {
+              "caption": "Gabriel Boric: ¡Impresentable!",
+              "views": 162700,
+              "likes": 13400,
+              "postedAt": "2025-07-22T00:26:47.000Z"
+            },
+            {
+              "caption": "Chao contribuciones!",
+              "views": 113200,
+              "likes": 9375,
+              "postedAt": "2025-08-28T02:10:58.000Z"
+            },
+            {
+              "caption": "¡Es oficial muchachos! 😱",
+              "views": 74200,
+              "likes": 6847,
+              "postedAt": "2025-08-20T21:21:58.000Z"
+            }
           ]
         },
         {
@@ -1933,6 +3983,40 @@
               "2026-07-07T20:27:26Z",
               80300
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-14T01:12:34.000Z",
+          "videosTop": [
+            {
+              "caption": "Hoy es el último día de campaña y entregamos los últimos flyers con toda la energía y el compromiso de siempre. 🙌🇨🇱\n\nQuiero pedirles un favo",
+              "views": 2733,
+              "likes": 101,
+              "postedAt": "2025-11-14T01:12:34.000Z"
+            },
+            {
+              "caption": "Ayer vivimos un cierre desbordado de emociones y una energía que encendió cada rincón del Cierre de Campaña 💙\n\nEste domingo será crucial par",
+              "views": 2084,
+              "likes": 127,
+              "postedAt": "2025-11-13T00:02:29.000Z"
+            },
+            {
+              "caption": "Yo creo que la seguridad municipal debe tener la posibilidad de hacer un control de identidad, y de utilizar armas menos letales”, aseguró A",
+              "views": 1677,
+              "likes": 125,
+              "postedAt": "2025-11-02T23:57:39.000Z"
+            },
+            {
+              "caption": "#MiradaCrítica",
+              "views": 1668,
+              "likes": 66,
+              "postedAt": "2025-11-11T17:52:06.000Z"
+            },
+            {
+              "caption": "Se acabó el recreo.\nLlegó la hora de los honestos, de los que trabajan por Chile y no viven del Estado.\nUn gobierno austero, valiente y en t",
+              "views": 1509,
+              "likes": 275,
+              "postedAt": "2025-11-01T13:54:54.000Z"
+            }
           ]
         },
         {
@@ -1947,13 +4031,16 @@
           },
           "verified": false,
           "followers": 31500,
-          "crecimiento": null,
+          "crecimiento": {
+            "absoluto": 0,
+            "porcentual": 0.0
+          },
           "aceleracion": {
             "ratio": null,
             "estado": "estable"
           },
           "engagement": 9.844065591729144,
-          "velocidad": null,
+          "velocidad": 0.15751778228089033,
           "cadencia": 2.3333333333333335,
           "viewsPorSeguidor": 0.06534920634920635,
           "breakouts": [
@@ -1992,6 +4079,40 @@
               "2026-07-07T20:27:26Z",
               31500
             ]
+          ],
+          "deltaViews": 33,
+          "ultimaPublicacion": "2026-07-03T14:20:03.000Z",
+          "videosTop": [
+            {
+              "caption": "⚠️ La Acusación Constitucional contra Grau es solo una distracción sobre el debate de la Reforma Tributaria de Quiroz. \nEsa reforma será lit",
+              "views": 10700,
+              "likes": 808,
+              "postedAt": "2026-06-23T20:17:39.000Z"
+            },
+            {
+              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos ",
+              "views": 9472,
+              "likes": 918,
+              "postedAt": "2026-07-01T21:37:37.000Z"
+            },
+            {
+              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
+              "views": 6314,
+              "likes": 167,
+              "postedAt": "2026-07-03T14:20:03.000Z"
+            },
+            {
+              "caption": "Parece que les preocupa más el orden público que las mujeres de Chile. No puede ser que se pretenda sancionar con más dureza a alguien por m",
+              "views": 3482,
+              "likes": 256,
+              "postedAt": "2026-06-25T21:43:05.000Z"
+            },
+            {
+              "caption": "Hoy iniciamos la Plenaria Nacional del Primer Congreso del @Frente Amplio Chile \nNuestra tarea principal debe ser que nuestro programa, nues",
+              "views": 2457,
+              "likes": 210,
+              "postedAt": "2026-06-26T22:35:43.000Z"
+            }
           ]
         },
         {
@@ -2021,6 +4142,40 @@
               "2026-07-07T20:27:26Z",
               1602
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2024-03-25T23:19:30.000Z",
+          "videosTop": [
+            {
+              "caption": "VOTÉ EN CONTRA DE UN NUEVO PROCESO CONSTITUCIONAL.  #NuevaConstitucion #Congreso #Rechazo",
+              "views": 9067,
+              "likes": 513,
+              "postedAt": "2023-01-12T05:00:23.000Z"
+            },
+            {
+              "caption": "Aprobamos nuestro Proyecto de Resolución para congelar Contribuciones para Adultos Mayores cuyos ingresos no superen las 20 UF\n#Contribucion",
+              "views": 2172,
+              "likes": 97,
+              "postedAt": "2023-04-05T01:30:49.000Z"
+            },
+            {
+              "caption": "La carta de protesta enviada por Chile fue una medida bastante suave, considero que Chile debe retirar al embajador, porque no se puede segu",
+              "views": 1406,
+              "likes": 73,
+              "postedAt": "2024-03-24T02:04:23.000Z"
+            },
+            {
+              "caption": "Hasta siempre Presidente Sebastián Piñera 🇨🇱",
+              "views": 448,
+              "likes": 78,
+              "postedAt": "2024-02-10T04:08:00.000Z"
+            },
+            {
+              "caption": "APROBAMOS PROYECTO PARA ENTONAR EL HIMNO NACIONAL EN LOS ESTABLECIMIENTOS EDUCACIONALES.\nProyecto de ley, iniciado en moción, que modifica l",
+              "views": 338,
+              "likes": 69,
+              "postedAt": "2024-01-14T13:53:50.000Z"
+            }
           ]
         },
         {
@@ -2050,6 +4205,40 @@
               "2026-07-07T20:27:26Z",
               2664
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-23T23:00:36.000Z",
+          "videosTop": [
+            {
+              "caption": "🏥 Junto a vecinas y vecinos del Distrito 13, concejalas y autoridades locales, llegamos hasta el Hospital Barros Luco para denunciar el reco",
+              "views": 12500,
+              "likes": 306,
+              "postedAt": "2026-05-27T00:41:05.000Z"
+            },
+            {
+              "caption": "👉 La miseria humana hecha disfraz. Se pasea disfrazado del dictador, grita “viva mi general” frente a María Candelaria, hija de Sebastián Ac",
+              "views": 9334,
+              "likes": 170,
+              "postedAt": "2026-05-06T19:35:37.000Z"
+            },
+            {
+              "caption": "👉 ¿Que con qué me quedo de la Cuenta Pública de Kast?… Con aquel valiente que logró hablar por todas y todos: “¡mentiroso!”.",
+              "views": 6575,
+              "likes": 274,
+              "postedAt": "2026-06-02T01:04:41.000Z"
+            },
+            {
+              "caption": "",
+              "views": 6355,
+              "likes": 166,
+              "postedAt": "2026-04-08T00:57:35.000Z"
+            },
+            {
+              "caption": "⚠️ Este miércoles se ha presentado el mal llamado proyecto de “Reconstrucción”, inicoativa de este gobierno uñtraderechista y que busca, dir",
+              "views": 4858,
+              "likes": 166,
+              "postedAt": "2026-04-22T16:36:36.000Z"
+            }
           ]
         },
         {
@@ -2079,6 +4268,40 @@
               "2026-07-07T20:27:26Z",
               97
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-05T21:29:25.000Z",
+          "videosTop": [
+            {
+              "caption": "ACUSACIÓN CONSTITUCIONAL PARA EL EX MINISTRO PARDOW‼️\n\nFirmamos la acusación constitucional contra el exministro Pardow, porque los chilenos",
+              "views": 2036,
+              "likes": 94,
+              "postedAt": "2025-10-28T13:51:02.000Z"
+            },
+            {
+              "caption": "LA PASIÓN NO JUSTIFICA EL DESORDEN🚫🚫\n\nComo diputado y vecino de La Cisterna, quiero ser claro: no estoy en contra de la hinchada ni de su am",
+              "views": 1164,
+              "likes": 7,
+              "postedAt": "2025-10-29T20:42:52.000Z"
+            },
+            {
+              "caption": "COMPROMETIDO CON LA SEGURIDAD DE NUESTRO DISTRITO 🚔\n\nEstuve en TVN, donde tuve la oportunidad de hablar sobre un tema que nos preocupa a tod",
+              "views": 899,
+              "likes": 21,
+              "postedAt": "2025-10-27T15:59:58.000Z"
+            },
+            {
+              "caption": "SOMOS MUCHOS CON UN SOLO PROPÓSITO: CHILE 🇨🇱\n\nPodemos llamarnos igual, venir de distintos lugares o pensar diferente, pero al final todos co",
+              "views": 700,
+              "likes": 27,
+              "postedAt": "2025-10-24T22:36:45.000Z"
+            },
+            {
+              "caption": "MANO FIRME CONTRA LA DELINCUENCIA 💪🇨🇱\n\nLa seguridad no puede seguir siendo una promesa, tiene que ser una realidad. Quiero jugármela para qu",
+              "views": 622,
+              "likes": 15,
+              "postedAt": "2025-10-17T15:58:01.000Z"
+            }
           ]
         },
         {
@@ -2108,6 +4331,40 @@
               "2026-07-07T20:27:26Z",
               133600
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-06T22:51:26.000Z",
+          "videosTop": [
+            {
+              "caption": "Premio al Espiritu Maculino 2022, 21 de Diciembre del 2022 💖 #justiciapormoreno ",
+              "views": 2600000,
+              "likes": 49100,
+              "postedAt": "2023-12-13T18:05:28.000Z"
+            },
+            {
+              "caption": "Respuesta a @⚘Giovanna🌺🐶🐶🐶🐾 ❤️‍🩹",
+              "views": 178900,
+              "likes": 7254,
+              "postedAt": "2024-06-09T21:59:20.000Z"
+            },
+            {
+              "caption": "#ValeBecerra #Distrito13 #Diputada #PartidoRepublicano #Elecciones2025 ",
+              "views": 58100,
+              "likes": 3933,
+              "postedAt": "2025-08-23T13:11:07.000Z"
+            },
+            {
+              "caption": "No podemos permitir que formar una familia en la institución sea “inviable”.\nEstoy trabajando en proyectos de ley para garantizar derechos l",
+              "views": 8160,
+              "likes": 631,
+              "postedAt": "2026-07-04T23:07:27.000Z"
+            },
+            {
+              "caption": "Hoy asistimos a la Cuenta Pública de Carabineros de Chile, una instancia fundamental para conocer de cerca los avances, los resultados de la",
+              "views": 7431,
+              "likes": 412,
+              "postedAt": "2026-06-29T00:49:52.000Z"
+            }
           ]
         },
         {
@@ -2137,6 +4394,40 @@
               "2026-07-07T20:27:26Z",
               2380
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2025-11-14T02:17:54.000Z",
+          "videosTop": [
+            {
+              "caption": "🚗 TODO LISTO PARA EL GRAN CIERRE DE CAMPAÑA DE #KASTPRESIDENTE\n\nEste 16 de noviembre súmate a #LaFuerzaDelCambio 💪🇨🇱\nNo tengo dudas, que @Jo",
+              "views": 3501,
+              "likes": 439,
+              "postedAt": "2025-11-11T22:07:42.000Z"
+            },
+            {
+              "caption": "🇨🇱 Gran banderazo en La Cisterna\n\nYa queda cada vez menos y estuvimos demostrando que #LaFuerzaDelCambio va a ganar en las comunas de La Cis",
+              "views": 1314,
+              "likes": 251,
+              "postedAt": "2025-11-10T00:02:10.000Z"
+            },
+            {
+              "caption": "¡GRACIAS VECINOS! 🇨🇱\n\nAsí se vivió nuestra caravana de cierre, un recorrido lleno de esperanza, cariño y con convicción de que sí podemos re",
+              "views": 1214,
+              "likes": 170,
+              "postedAt": "2025-11-14T02:17:54.000Z"
+            },
+            {
+              "caption": "¡VOTA ROSS, VOTA KAST! 💪🏻🇨🇱\n\nEste 16 de noviembre Chile se juega su futuro. Es el momento de elegir orden, libertad y seguridad.\n\nSúmate a q",
+              "views": 1002,
+              "likes": 297,
+              "postedAt": "2025-11-10T22:00:18.000Z"
+            },
+            {
+              "caption": "DEFENDER EL BOLSILLO DE LOS CHILENOS 🇨🇱\n\nEn la feria se entiende mejor que en cualquier oficina lo que viven las familias, cada peso cuenta ",
+              "views": 851,
+              "likes": 60,
+              "postedAt": "2025-11-13T14:48:35.000Z"
+            }
           ]
         },
         {
@@ -2174,6 +4465,40 @@
               "2026-07-07T20:27:26Z",
               3622
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-03T17:53:14.000Z",
+          "videosTop": [
+            {
+              "caption": "Hoy el Senado aprobó el proyecto para erigir un monumento en honor al expresidente Piñera.\n\nEste es un intento de la derecha de reescribir l",
+              "views": 81600,
+              "likes": 443,
+              "postedAt": "2026-01-20T21:16:55.000Z"
+            },
+            {
+              "caption": "¿Qué tanto esconde la derecha que rechaza cada vez que puede el levantamiento del secreto bancario?",
+              "views": 25600,
+              "likes": 255,
+              "postedAt": "2026-06-09T23:02:35.000Z"
+            },
+            {
+              "caption": "Las declaraciones de la ministra Lincolao advierten algo gravísimo: hacer ver que los algunos ministros del gobierno de Kast no habrían decl",
+              "views": 17600,
+              "likes": 223,
+              "postedAt": "2026-05-12T23:59:43.000Z"
+            },
+            {
+              "caption": "Con mucho aprecio, respeto y admiración, como Comisión de Adulto Mayor y Discapacidad del Senado, hemos reconocido a todas las agrupaciones,",
+              "views": 11200,
+              "likes": 60,
+              "postedAt": "2026-01-22T18:32:12.000Z"
+            },
+            {
+              "caption": "Mentir no son metáforas ",
+              "views": 8742,
+              "likes": 85,
+              "postedAt": "2026-05-13T20:11:40.000Z"
+            }
           ]
         },
         {
@@ -2203,6 +4528,40 @@
               "2026-07-07T20:27:26Z",
               2492
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2023-02-08T00:52:18.000Z",
+          "videosTop": [
+            {
+              "caption": "",
+              "views": 113100,
+              "likes": 3397,
+              "postedAt": "2023-02-08T00:52:18.000Z"
+            },
+            {
+              "caption": "¡Gracias Carabineros de Chile!  Yo siempre estaré con ustedes porque ustedes siempre están con los chilenos. Estos días, una vez más le han ",
+              "views": 98400,
+              "likes": 7356,
+              "postedAt": "2023-02-04T21:10:09.000Z"
+            },
+            {
+              "caption": "",
+              "views": 42700,
+              "likes": 1423,
+              "postedAt": "2023-01-03T20:19:20.000Z"
+            },
+            {
+              "caption": "Con esperanza, con alegría, este domingo votaremos #Rechazo, para seguir unidos construyendo el camino para un país más justo, más solidario",
+              "views": 27900,
+              "likes": 1083,
+              "postedAt": "2022-09-01T17:27:10.000Z"
+            },
+            {
+              "caption": "No más pitutos decía el Presidente Boric cuando estaba en campaña y hoy a 8 meses de su mandato, su Gobierno se ha vuelto el Gobierno del am",
+              "views": 26500,
+              "likes": 1281,
+              "postedAt": "2022-11-10T15:14:25.000Z"
+            }
           ]
         },
         {
@@ -2232,6 +4591,40 @@
               "2026-07-07T20:27:26Z",
               2411
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2024-03-20T19:50:00.000Z",
+          "videosTop": [
+            {
+              "caption": "Tenemos una estrategia seria y responsable, que ha tomado tiempo y que tiene como objetivo recuperar inmuebles tomados y mantener este traba",
+              "views": 21400,
+              "likes": 2358,
+              "postedAt": "2024-03-17T16:39:23.000Z"
+            },
+            {
+              "caption": "#ReComiendoSTGO: ¡El Naturista un imperdible! 🍊🌱\n\nEn el marco del día mundial sin carne, fuimos a almorzar con el equipo al @naturista. Un r",
+              "views": 16500,
+              "likes": 191,
+              "postedAt": "2024-03-20T19:50:00.000Z"
+            },
+            {
+              "caption": "#ReComiendoSTGO: La Diana restaurant, parte de los clásicos Juegos Diana! 🎡🎪🩷\n\n🍽️ Nos hicimos un espacio en la tarde del domingo pasado, des",
+              "views": 10700,
+              "likes": 222,
+              "postedAt": "2024-03-07T21:03:46.000Z"
+            },
+            {
+              "caption": "💜 ¡Día internacional de las mujeres! 💜\n\nConmemoramos un nuevo 8 de marzo saludando y enviando un fuerte abrazo a las mujeres en toda su dive",
+              "views": 9275,
+              "likes": 352,
+              "postedAt": "2024-03-08T18:39:08.000Z"
+            },
+            {
+              "caption": "💬 #AlcaldesaResponde | Retiro de kioscos abandonados para barrios más seguros. En ello estamos avanzando decididamente, con el Plan de Recup",
+              "views": 9111,
+              "likes": 387,
+              "postedAt": "2024-03-11T22:41:11.000Z"
+            }
           ]
         },
         {
@@ -2261,6 +4654,22 @@
               "2026-07-07T20:27:26Z",
               894
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2022-10-10T22:05:13.000Z",
+          "videosTop": [
+            {
+              "caption": "Vamos a revisar algunas de las noticias falsas que los sectores que se oponen al #tpp11 han tratado de instalar en #chile y explicar los ver",
+              "views": 10400,
+              "likes": 101,
+              "postedAt": "2022-10-04T14:42:25.000Z"
+            },
+            {
+              "caption": "Hoy visitamos #SanFernando y con Paulina Monti almorzamos con los militantes de Evópoli para escuchar sus prioridades para el futuro de Evóp",
+              "views": 3933,
+              "likes": 25,
+              "postedAt": "2022-10-10T22:05:13.000Z"
+            }
           ]
         },
         {
@@ -2290,6 +4699,40 @@
               "2026-07-07T20:27:26Z",
               73000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-25T16:31:04.000Z",
+          "videosTop": [
+            {
+              "caption": "¡El Gobierno debe reconocer a Edmundo González como el Presidente electo de Venezuela 🇻🇪!\n\nPedirle al régimen del dictador las misma actas q",
+              "views": 3400000,
+              "likes": 403900,
+              "postedAt": "2024-07-30T22:04:36.000Z"
+            },
+            {
+              "caption": "En Sala, durante la discusión de #pensiones, anuncié mi voto en contra. \n\nEste proyecto pone en riesgo la estabilidad fiscal e introduce el ",
+              "views": 215400,
+              "likes": 15800,
+              "postedAt": "2025-01-28T00:12:34.000Z"
+            },
+            {
+              "caption": "Para bailar Tango, se necesitan dos.. #PlandeReconstrucción ",
+              "views": 77900,
+              "likes": 1990,
+              "postedAt": "2026-06-09T01:44:45.000Z"
+            },
+            {
+              "caption": "Cambiar las recetas del pasado por las que sí funcionan… #CAE #Neme #RojoEdwards ",
+              "views": 48000,
+              "likes": 1296,
+              "postedAt": "2026-06-10T22:11:13.000Z"
+            },
+            {
+              "caption": "El fallo del TC es prodelincuentes y proviolencia. ",
+              "views": 45200,
+              "likes": 1670,
+              "postedAt": "2026-06-25T16:31:04.000Z"
+            }
           ]
         },
         {
@@ -2319,6 +4762,40 @@
               "2026-07-07T20:27:26Z",
               36000
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-07T16:32:54.000Z",
+          "videosTop": [
+            {
+              "caption": "¡APROBAMOS LAS #40HORAS Y SERÁ LEY! 👏🏻⏰✅\n\nVamos avanzando en derechos para los y las trabajadoras y en mejorar la calidad de vida de las per",
+              "views": 792200,
+              "likes": 94200,
+              "postedAt": "2023-04-11T22:56:05.000Z"
+            },
+            {
+              "caption": "El plan anunciado por Kast no es reconstrucción, es un retroceso para las personas! Restringir la gratuidad es restringir el derecho a la ed",
+              "views": 285200,
+              "likes": 4025,
+              "postedAt": "2026-03-14T19:59:12.000Z"
+            },
+            {
+              "caption": "La violencia en los colegios no se resuelve revisando mochilas ni aumentando castigos, esas medidas pueden sonar duras pero no van al fondo ",
+              "views": 138600,
+              "likes": 864,
+              "postedAt": "2026-04-09T04:59:33.000Z"
+            },
+            {
+              "caption": "No todo lo que se vende como “megareforma” mejora la vida de las personas. Cuando una propuesta termina beneficiando a los súper ricos mient",
+              "views": 64700,
+              "likes": 512,
+              "postedAt": "2026-05-29T01:54:35.000Z"
+            },
+            {
+              "caption": "La misma derecha que quiso rebajar el presupuesto de Carabineros hoy pretende erigirse como su principal defensora. En esa contradicción, in",
+              "views": 52800,
+              "likes": 887,
+              "postedAt": "2026-04-09T05:03:18.000Z"
+            }
           ]
         },
         {
@@ -2348,6 +4825,40 @@
               "2026-07-07T20:27:26Z",
               42
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-06-24T10:40:30.000Z",
+          "videosTop": [
+            {
+              "caption": "El problema no es solo la bencina\n\nHoy sube el combustible, pero esto no partió hoy. Cuando el gasto se desordena por años, la cuenta siempr",
+              "views": 1761,
+              "likes": 43,
+              "postedAt": "2026-05-06T01:16:05.000Z"
+            },
+            {
+              "caption": "",
+              "views": 19,
+              "likes": 0,
+              "postedAt": "2026-06-24T10:40:30.000Z"
+            },
+            {
+              "caption": "¿BORIC 2030? no por favor 😅",
+              "views": 17,
+              "likes": 1,
+              "postedAt": "2026-06-03T01:28:32.000Z"
+            },
+            {
+              "caption": "",
+              "views": 13,
+              "likes": 0,
+              "postedAt": "2026-06-15T20:36:58.000Z"
+            },
+            {
+              "caption": "",
+              "views": 11,
+              "likes": 1,
+              "postedAt": "2026-05-29T01:13:28.000Z"
+            }
           ]
         },
         {
@@ -2377,11 +4888,45 @@
               "2026-07-07T20:27:26Z",
               16400
             ]
+          ],
+          "deltaViews": null,
+          "ultimaPublicacion": "2026-07-05T23:32:51.000Z",
+          "videosTop": [
+            {
+              "caption": "¿Quién de la izquierda habla de Julia Chuñil ahora? Nadie porque al final del día, el problema nunca fue la justicia. El problema fue que la",
+              "views": 53200,
+              "likes": 2936,
+              "postedAt": "2026-01-21T21:50:02.000Z"
+            },
+            {
+              "caption": "CAE: Cuando el sistema premia al que no paga y castiga al que sí cumple, deja de ser un problema financiero. Pasa a ser un problema moral.",
+              "views": 33600,
+              "likes": 2347,
+              "postedAt": "2026-04-07T01:42:00.000Z"
+            },
+            {
+              "caption": "",
+              "views": 12600,
+              "likes": 800,
+              "postedAt": "2026-03-08T23:54:20.000Z"
+            },
+            {
+              "caption": "En menos de dos minutos te explico por qué Chile no estaba preparado para amortiguar el alza brutal de los combustibles.",
+              "views": 9865,
+              "likes": 577,
+              "postedAt": "2026-03-28T02:07:24.000Z"
+            },
+            {
+              "caption": "A ciertos dirigentes de izquierda les dan tiritones las medidas para crear empleo. Lo que debiera darles tiritones es el casi millón de dese",
+              "views": 9408,
+              "likes": 696,
+              "postedAt": "2026-07-05T23:32:51.000Z"
+            }
           ]
         }
       ],
       "insights": [
-        "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
+        "@conyschons lidera el crecimiento de la ventana de 30 días: +100 seguidores (0.8%).",
         "@conyschons está acelerando: la segunda mitad del período creció más que la primera.",
         "@lorenapizarrosierra rinde sobre su tamaño: su video típico hace 1.7× views que seguidores tiene.",
         "@diputadoeduardoduran rinde sobre su tamaño: su video típico hace 5.1× views que seguidores tiene.",
@@ -2471,7 +5016,11 @@
         }
       ],
       "titulares": {
-        "mayorCrecimiento": null,
+        "mayorCrecimiento": {
+          "handle": "conyschons",
+          "pct": 0.8,
+          "abs": 100
+        },
         "breakoutMasCaliente": {
           "handle": "conyschons",
           "views": 1300000,

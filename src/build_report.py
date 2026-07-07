@@ -17,9 +17,11 @@ from metrics import (
     aceleracion,
     cadencia_semanal,
     crecimiento_seguidores,
+    delta_views_total,
     detectar_breakouts,
     engagement_rate,
     mediana,
+    ultima_publicacion,
     velocidad_views,
     views_por_seguidor,
 )
@@ -32,29 +34,35 @@ RUTA_SALIDA = ROOT / "docs" / "data.json"
 VENTANAS = (7, 14, 30)
 
 
-def cargar_metadata() -> dict[str, dict]:
-    """Ficha política por handle desde config/legisladores.csv.
+def cargar_roster() -> list[dict]:
+    """Base completa de legisladores desde config/legisladores.csv.
 
-    Se pega a cada cuenta del reporte para permitir filtros por partido,
-    coalición, sector y territorio en el dashboard. Handles que no estén
-    en la base (ej. cuentas de prueba históricas) quedan sin ficha.
+    Incluye a quienes NO tienen cuenta (handle=None): la ausencia de TikTok
+    es un dato del producto (sección "terreno cedido" y cobertura por bloque).
     """
     if not RUTA_LEGISLADORES.exists():
-        return {}
+        return []
     with open(RUTA_LEGISLADORES, encoding="utf-8") as f:
         filas = csv.DictReader(f)
-        return {
-            f_["handle_tiktok"].strip(): {
+        return [
+            {
                 "nombre": f_["nombre"],
                 "cargo": f_["cargo"],
                 "territorio": f_["territorio"],
                 "partido": f_["partido"],
                 "coalicion": f_["coalicion"],
                 "sector": f_["sector"],
+                "handle": (h if (h := f_["handle_tiktok"].strip()) not in ("", "sin cuenta")
+                           else None),
             }
             for f_ in filas
-            if f_["handle_tiktok"].strip() not in ("", "sin cuenta")
-        }
+        ]
+
+
+def cargar_metadata() -> dict[str, dict]:
+    """Ficha política por handle (solo quienes tienen cuenta), para el join."""
+    return {leg["handle"]: {k: v for k, v in leg.items() if k != "handle"}
+            for leg in cargar_roster() if leg["handle"]}
 
 
 def cargar_snapshots() -> list[dict]:
@@ -81,15 +89,21 @@ def calcular_ventana(snapshots: list[dict], dias: int, metadata: dict) -> dict:
     limite = _ts(fecha_fin) - dias * 86400
     en_ventana = [s for s in snapshots if _ts(s["date"]) >= limite]
     hay_crecimiento = len(en_ventana) >= 2  # con una sola foto no hay deltas
-    primero = en_ventana[0]
-    dias_reales = (_ts(fecha_fin) - _ts(primero["date"])) / 86400
     fecha_inicio_ventana = datetime.fromtimestamp(limite, tz=timezone.utc) \
         .strftime("%Y-%m-%dT%H:%M:%SZ")
 
     cuentas = []
     for cuenta in ultimo["accounts"]:
         handle = cuenta["handle"]
-        inicial = _cuenta_en(primero, handle) if hay_crecimiento else None
+        # Línea base POR CUENTA: su primera aparición dentro de la ventana
+        # (la lista de cuentas puede cambiar entre snapshots; comparar contra
+        # un snapshot donde la cuenta no existe daría deltas vacíos).
+        primero = next((s for s in en_ventana if _cuenta_en(s, handle)), None)
+        inicial = None
+        if primero is not None and primero is not ultimo:
+            inicial = _cuenta_en(primero, handle)
+        dias_reales = ((_ts(fecha_fin) - _ts(primero["date"])) / 86400
+                       if primero is not None else 0)
         serie = [
             (s["date"], c["followers"])
             for s in en_ventana
@@ -114,6 +128,19 @@ def calcular_ventana(snapshots: list[dict], dias: int, metadata: dict) -> dict:
             "viewsPorSeguidor": views_por_seguidor(cuenta["videos"], cuenta["followers"]),
             "breakouts": detectar_breakouts(cuenta["videos"], fecha_inicio_ventana, fecha_fin),
             "serieSeguidores": serie,
+            # share of voice individual: views nuevas capturadas en el período
+            "deltaViews": delta_views_total(
+                inicial["videos"] if inicial else [], cuenta["videos"],
+                primero["date"] if primero else fecha_fin,
+            ),
+            "ultimaPublicacion": ultima_publicacion(cuenta["videos"]),
+            # top 5 videos por views, para la ficha individual del dashboard
+            "videosTop": [
+                {"caption": (v.get("caption") or "")[:140], "views": v["views"],
+                 "likes": v.get("likes"), "postedAt": v.get("postedAt")}
+                for v in sorted((v for v in cuenta["videos"] if v.get("views") is not None),
+                                key=lambda v: -v["views"])[:5]
+            ],
         })
 
     return {
@@ -242,6 +269,8 @@ def main() -> int:
             "first": snapshots[0]["date"],
             "last": snapshots[-1]["date"],
         },
+        # base completa (incluye "sin cuenta") para cobertura y terreno cedido
+        "roster": cargar_roster(),
         "windows": {str(d): calcular_ventana(snapshots, d, cargar_metadata())
                     for d in VENTANAS},
     }

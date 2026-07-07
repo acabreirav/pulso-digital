@@ -3,571 +3,704 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Radar de Tracción</title>
+<title>Radar de Tracción · Legisladores RM en TikTok</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>📡</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ====== tokens del proyecto (CLAUDE.md §7 — no cambiar la semántica) ====== */
+/* ====== tema ejecutivo claro (decisión 2026-07-07, reemplaza al oscuro) ====== */
 :root{
-  --fondo:#0B1019; --panel:#121A29; --panel-borde:#1C2739; --grid:#1C2739;
-  --cian:#25D3E8;         /* crecimiento de audiencia */
-  --ambar:#FF7A3D;        /* tracción / velocidad de views */
-  --verde:#42D6A0;        /* subidas */
-  --rosa:#FF6084;         /* bajadas */
-  --tinta:#E8EEF7; --tinta-2:#93A1B8; --tinta-3:#5B6879;
+  --fondo:#F7F8FA; --card:#FFFFFF; --borde:#E4E8EF; --grid:#EDF0F5;
+  --tinta:#1A2233; --tinta-2:#5B6472; --tinta-3:#98A1AE;
+  --gobierno:#17679E;            /* bloque gobierno */
+  --oposicion:#C2410C;           /* bloque oposición */
+  --neutro:#6B7280;              /* independientes / sin bloque */
+  --sube:#15803D; --baja:#DC2626;
   --radio:12px;
+  --sombra:0 1px 3px rgba(26,34,51,.06), 0 1px 2px rgba(26,34,51,.04);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
   background:var(--fondo); color:var(--tinta);
   font-family:Inter,system-ui,sans-serif; font-size:14px; line-height:1.5;
-  padding:28px 20px 60px; max-width:1100px; margin:0 auto;
+  padding:28px 20px 60px; max-width:1140px; margin:0 auto;
 }
 h1,h2{font-family:"Space Grotesk",Inter,sans-serif}
 .mono{font-family:"JetBrains Mono",monospace}
 
-/* ====== encabezado + fila única de filtros ====== */
-header{margin-bottom:22px}
-header h1{font-size:26px;letter-spacing:.5px}
-header h1 .punto{color:var(--cian)}
-.sub{color:var(--tinta-2);font-size:13px;margin-top:4px}
-.sub .mono{color:var(--tinta-2)}
-.filtros{display:flex;gap:8px;align-items:center;margin-top:16px;flex-wrap:wrap}
-.filtros .etq{color:var(--tinta-3);font-size:12px;text-transform:uppercase;letter-spacing:1px}
+/* ====== encabezado y fila única de filtros ====== */
+header h1{font-size:24px;letter-spacing:.3px}
+.sub{color:var(--tinta-2);font-size:13px;margin-top:2px}
+.filtros{
+  display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:16px;
+  background:var(--card);border:1px solid var(--borde);border-radius:var(--radio);
+  padding:10px 14px;box-shadow:var(--sombra);
+}
+.filtros .etq{color:var(--tinta-3);font-size:11px;text-transform:uppercase;letter-spacing:.8px}
 .vent{
-  background:var(--panel); border:1px solid var(--panel-borde); color:var(--tinta-2);
-  font-family:"JetBrains Mono",monospace; font-size:13px; padding:6px 14px;
-  border-radius:8px; cursor:pointer;
+  background:var(--fondo);border:1px solid var(--borde);color:var(--tinta-2);
+  font-family:"JetBrains Mono",monospace;font-size:12.5px;padding:5px 12px;
+  border-radius:8px;cursor:pointer;
 }
-.vent[aria-pressed="true"]{color:var(--fondo);background:var(--cian);border-color:var(--cian);font-weight:600}
-.vent:focus-visible{outline:2px solid var(--cian);outline-offset:2px}
-
-/* ====== paneles y secciones ====== */
-section{margin-top:26px}
-.panel{background:var(--panel);border:1px solid var(--panel-borde);border-radius:var(--radio);padding:18px 20px}
-h2{font-size:15px;letter-spacing:.4px;margin-bottom:4px}
-.desc{color:var(--tinta-3);font-size:12px;margin-bottom:14px}
-.eje-cian{color:var(--cian)} .eje-ambar{color:var(--ambar)}
-
-.vacio{
-  border:1px dashed var(--panel-borde); border-radius:var(--radio);
-  padding:26px; text-align:center; color:var(--tinta-3);
-  font-family:"JetBrains Mono",monospace; font-size:12.5px;
+.vent[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:#fff;font-weight:600}
+select,#buscador{
+  background:var(--fondo);border:1px solid var(--borde);color:var(--tinta);
+  font-family:Inter,sans-serif;font-size:13px;padding:5px 8px;border-radius:8px;
 }
+#buscador{min-width:180px}
+.filtros .limpiar{margin-left:auto;font-size:12px;color:var(--tinta-2);cursor:pointer;
+  background:none;border:none;text-decoration:underline}
 
-/* ====== tiles de titulares ====== */
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.tile{background:var(--panel);border:1px solid var(--panel-borde);border-radius:var(--radio);padding:14px 16px}
-.tile .etq{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--tinta-3)}
-.tile .valor{font-size:26px;font-weight:600;margin-top:6px}
-.tile .quien{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--tinta-2);margin-top:2px}
-.tile .borde{width:26px;height:3px;border-radius:2px;margin-bottom:10px}
+section{margin-top:22px}
+.card{background:var(--card);border:1px solid var(--borde);border-radius:var(--radio);
+  padding:18px 20px;box-shadow:var(--sombra)}
+h2{font-size:15px;margin-bottom:2px}
+.desc{color:var(--tinta-3);font-size:12px;margin-bottom:12px}
+.vacio{border:1px dashed var(--borde);border-radius:var(--radio);padding:22px;
+  text-align:center;color:var(--tinta-3);font-size:12.5px;background:var(--card)}
 
-/* ====== insights y alertas ====== */
-ul.lista{list-style:none}
-ul.lista li{
-  padding:9px 0 9px 18px; position:relative; color:var(--tinta-2);
-  border-bottom:1px solid var(--panel-borde); font-size:13.5px;
-}
-ul.lista li:last-child{border-bottom:none}
-ul.lista li::before{content:"▸";position:absolute;left:0;color:var(--cian)}
-#alertas li{padding-left:0}
-#alertas li::before{content:none}
-.chip{
-  display:inline-block;font-family:"JetBrains Mono",monospace;font-size:11px;
-  padding:2px 8px;border-radius:20px;margin-right:8px;vertical-align:1px;
-}
-.chip.aceleracion{background:rgba(66,214,160,.14);color:var(--verde)}
-.chip.enfriamiento{background:rgba(255,96,132,.14);color:var(--rosa)}
-.chip.breakout{background:rgba(255,122,61,.14);color:var(--ambar)}
-.chip.cadencia{background:rgba(37,211,232,.14);color:var(--cian)}
+/* ====== 1. tiles ejecutivos ====== */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.tile{background:var(--card);border:1px solid var(--borde);border-radius:var(--radio);
+  padding:14px 16px;box-shadow:var(--sombra)}
+.tile .etq{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--tinta-3)}
+.tile .valor{font-size:24px;font-weight:600;margin-top:6px}
+.tile .quien{font-size:12.5px;color:var(--tinta-2);margin-top:2px}
+.sube{color:var(--sube)} .baja{color:var(--baja)} .neutrotxt{color:var(--tinta-3)}
 
-/* ====== tabla comparativa ====== */
-.tabla-envoltura{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th{
-  text-align:right;color:var(--tinta-3);font-weight:500;font-size:11.5px;
-  text-transform:uppercase;letter-spacing:.6px;padding:8px 10px;cursor:pointer;
-  border-bottom:1px solid var(--panel-borde);white-space:nowrap;user-select:none;
-}
-th:first-child{text-align:left}
-th .flecha{font-size:9px;color:var(--cian)}
-td{
-  padding:9px 10px;text-align:right;border-bottom:1px solid var(--panel-borde);
-  font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;color:var(--tinta);
-}
-td:first-child{text-align:left;font-family:Inter,sans-serif;font-weight:500}
-tr:last-child td{border-bottom:none}
-.sube{color:var(--verde)} .baja{color:var(--rosa)} .neutro{color:var(--tinta-3)}
-.verificada{color:var(--cian);font-size:11px;margin-left:4px}
+/* ====== 2. bloques ====== */
+.sov-barra{display:flex;height:26px;border-radius:8px;overflow:hidden;margin:10px 0 4px;
+  border:1px solid var(--borde)}
+.sov-barra div{display:flex;align-items:center;padding:0 10px;color:#fff;
+  font-family:"JetBrains Mono",monospace;font-size:11.5px;white-space:nowrap}
+.sov-leyenda{display:flex;gap:16px;font-size:12px;color:var(--tinta-2);margin-bottom:14px}
+.sov-leyenda i{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-1px}
+.bloques{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:820px){.bloques{grid-template-columns:1fr 1fr}}
+.bloque{border:1px solid var(--borde);border-radius:var(--radio);padding:14px 16px;background:var(--card)}
+.bloque h3{font-family:"Space Grotesk",sans-serif;font-size:14px;display:flex;align-items:center;gap:8px}
+.bloque h3 i{width:12px;height:12px;border-radius:4px;display:inline-block}
+.bloque .n{color:var(--tinta-3);font-weight:400;font-size:12px}
+.bloque .metricas{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;margin-top:12px}
+.bloque .m .e{font-size:11px;color:var(--tinta-3);text-transform:uppercase;letter-spacing:.6px}
+.bloque .m .v{font-size:17px;font-weight:600;margin-top:2px}
+.coas{margin-top:12px;border-top:1px solid var(--grid);padding-top:8px}
+.coas .fila{display:flex;justify-content:space-between;font-size:12.5px;padding:4px 0;color:var(--tinta-2)}
+.coas .fila .mono{color:var(--tinta)}
 
-/* ====== gráficos ====== */
-.graficos{display:grid;grid-template-columns:1fr;gap:14px}
-@media(min-width:860px){.graficos{grid-template-columns:3fr 2fr}}
+/* ====== 3. momentum ====== */
 svg{display:block;width:100%;height:auto}
 svg text{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums}
-.leyenda{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px}
-.leyenda span{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--tinta-2)}
-.leyenda i{width:10px;height:10px;border-radius:50%;display:inline-block}
 
-/* ====== breakouts ====== */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
-.card{background:var(--panel);border:1px solid var(--panel-borde);border-left:3px solid var(--ambar);border-radius:var(--radio);padding:14px 16px}
-.card .quien{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ambar)}
-.card .views{font-size:22px;font-weight:600;margin:4px 0}
-.card .cap{color:var(--tinta-2);font-size:12.5px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+/* ====== 4. ranking ====== */
+.tabla-envoltura{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:right;color:var(--tinta-3);font-weight:500;font-size:11px;
+  text-transform:uppercase;letter-spacing:.6px;padding:8px 10px;cursor:pointer;
+  border-bottom:1px solid var(--borde);white-space:nowrap;user-select:none}
+th:first-child{text-align:left}
+th .flecha{font-size:9px;color:var(--tinta)}
+td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--grid);
+  font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums}
+td:first-child{text-align:left;font-family:Inter,sans-serif}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--fondo)}
+tr:last-child td{border-bottom:none}
+.chip{display:inline-block;font-size:10.5px;font-family:"JetBrains Mono",monospace;
+  padding:1px 7px;border-radius:20px;margin-left:6px;vertical-align:1px;color:#fff}
+.terr{color:var(--tinta-3);font-size:11px;margin-left:6px}
 
-/* ====== tooltip (mejora, nunca condición: todo valor está en la tabla) ====== */
-#tooltip{
-  position:fixed;pointer-events:none;background:#0E1522;border:1px solid var(--panel-borde);
+/* ====== 5. ficha individual ====== */
+#ficha .cabeza{display:flex;justify-content:space-between;align-items:start}
+#ficha .cerrar{background:none;border:1px solid var(--borde);border-radius:8px;
+  padding:4px 10px;cursor:pointer;color:var(--tinta-2);font-size:12px}
+.ficha-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:10px;margin:14px 0}
+.ficha-stats .m{background:var(--fondo);border-radius:10px;padding:10px 12px}
+.ficha-stats .e{font-size:10.5px;color:var(--tinta-3);text-transform:uppercase;letter-spacing:.6px}
+.ficha-stats .v{font-size:16px;font-weight:600;margin-top:2px}
+.ficha-cuerpo{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:820px){.ficha-cuerpo{grid-template-columns:5fr 4fr}}
+.vscomp{font-size:13px;color:var(--tinta-2);margin-top:10px;line-height:1.7}
+.video-item{display:flex;justify-content:space-between;gap:12px;padding:8px 0;
+  border-bottom:1px solid var(--grid);font-size:12.5px}
+.video-item:last-child{border-bottom:none}
+.video-item .cap{color:var(--tinta-2);overflow:hidden;display:-webkit-box;
+  -webkit-line-clamp:2;-webkit-box-orient:vertical}
+.video-item .num{white-space:nowrap;font-weight:600}
+.badge{background:#FEF3C7;color:#92400E;font-size:10px;padding:1px 6px;border-radius:8px;margin-left:6px}
+
+/* ====== 6. terreno cedido ====== */
+.cedido{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.cedido .item{border:1px solid var(--borde);border-radius:10px;padding:10px 14px;
+  background:var(--card);font-size:12.5px}
+.cedido .estado{font-size:11px;color:var(--tinta-3);margin-top:2px}
+
+/* ====== 7. lecturas ====== */
+ul.lecturas{list-style:none}
+ul.lecturas li{padding:8px 0 8px 18px;position:relative;color:var(--tinta-2);
+  border-bottom:1px solid var(--grid);font-size:13.5px}
+ul.lecturas li:last-child{border-bottom:none}
+ul.lecturas li::before{content:"▸";position:absolute;left:0;color:var(--tinta)}
+
+#tooltip{position:fixed;pointer-events:none;background:#fff;border:1px solid var(--borde);
   border-radius:8px;padding:8px 12px;font-size:12px;color:var(--tinta-2);
   font-family:"JetBrains Mono",monospace;opacity:0;transition:opacity .1s;z-index:10;
-  max-width:260px;
-}
+  max-width:280px;box-shadow:0 4px 12px rgba(26,34,51,.12)}
 #tooltip strong{color:var(--tinta);display:block}
-footer{margin-top:40px;color:var(--tinta-3);font-size:12px;text-align:center}
+footer{margin-top:36px;color:var(--tinta-3);font-size:12px;text-align:center}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>RADAR DE TRACCIÓN<span class="punto">_</span></h1>
-  <div class="sub">
-    Cuentas TikTok monitoreadas · datos públicos ·
-    <span class="mono" id="meta-fechas">cargando…</span>
-  </div>
-  <!-- una sola fila de filtros: gobierna TODAS las secciones de abajo -->
-  <div class="filtros" role="group" aria-label="Ventana de análisis">
+  <h1>Radar de Tracción · Legisladores RM en TikTok</h1>
+  <div class="sub">D10 · D11 · D13 · Senado RM — período 2026-2030 ·
+    <span class="mono" id="meta-fechas">cargando…</span></div>
+  <!-- una sola fila de filtros: gobierna TODAS las secciones -->
+  <div class="filtros" role="group" aria-label="Filtros">
     <span class="etq">Ventana</span>
-    <button class="vent" data-dias="7">7 días</button>
-    <button class="vent" data-dias="14">14 días</button>
-    <button class="vent" data-dias="30">30 días</button>
+    <button class="vent" data-dias="7">7d</button>
+    <button class="vent" data-dias="14">14d</button>
+    <button class="vent" data-dias="30">30d</button>
+    <span class="etq" style="margin-left:8px">Filtrar</span>
+    <select id="f-sector"><option value="">Sector: todos</option></select>
+    <select id="f-coalicion"><option value="">Coalición: todas</option></select>
+    <select id="f-partido"><option value="">Partido: todos</option></select>
+    <select id="f-territorio"><option value="">Territorio: todos</option></select>
+    <input id="buscador" list="lista-legisladores" placeholder="🔍 Buscar legislador…">
+    <datalist id="lista-legisladores"></datalist>
+    <button class="limpiar" id="limpiar">limpiar</button>
   </div>
 </header>
 
+<section id="sec-tiles"><div class="tiles" id="tiles"></div></section>
+
+<section id="sec-bloques">
+  <div class="card">
+    <h2>Bloques en comparación</h2>
+    <p class="desc">Gobierno vs oposición sobre el conjunto filtrado — la atención capturada
+      (share of voice) son las views nuevas del período</p>
+    <div id="bloques-contenido"></div>
+  </div>
+</section>
+
 <section id="sec-momentum">
-  <div class="panel">
+  <div class="card">
     <h2>Mapa de momentum</h2>
-    <p class="desc">
-      Cada cuenta es un punto: <span class="eje-cian">X = crecimiento de seguidores</span> ·
-      <span class="eje-ambar">Y = tracción (velocidad de views por 1.000 seguidores)</span>
-    </p>
+    <p class="desc">X = crecimiento de seguidores (%) · Y = tracción (views/día por 1.000 seguidores) ·
+      color = bloque</p>
     <div id="momentum"></div>
   </div>
 </section>
 
-<section id="sec-tiles"><div class="tiles" id="tiles"></div></section>
-
-<section id="sec-insights">
-  <div class="panel">
-    <h2>Lo que dice la data</h2>
-    <p class="desc">Insights calculados con reglas determinísticas — sin IA, sin costo</p>
-    <ul class="lista" id="insights"></ul>
-  </div>
-</section>
-
-<section id="sec-ia" hidden>
-  <div class="panel">
-    <h2>Análisis con IA</h2>
-    <p class="desc">Resumen narrativo generado por Claude</p>
-    <p id="ia-texto" style="color:var(--tinta-2)"></p>
-  </div>
-</section>
-
-<section id="sec-tabla">
-  <div class="panel">
-    <h2>Tabla comparativa</h2>
-    <p class="desc">Clic en una columna para ordenar — la tabla es la vista completa de todos los valores</p>
+<section id="sec-ranking">
+  <div class="card">
+    <h2>Ranking de legisladores</h2>
+    <p class="desc">Clic en una columna para ordenar · clic en una fila para abrir la ficha</p>
     <div class="tabla-envoltura"><table id="tabla"></table></div>
   </div>
 </section>
 
-<section id="sec-graficos">
-  <div class="graficos">
-    <div class="panel">
-      <h2 class="eje-cian">Seguidores en el tiempo</h2>
-      <p class="desc">Índice base 100 al inicio de la ventana (un solo eje para cuentas de distinto tamaño)</p>
-      <div id="linea"></div>
-    </div>
-    <div class="panel">
-      <h2 class="eje-ambar">Velocidad de views</h2>
-      <p class="desc">Δviews/día mediano por cada 1.000 seguidores</p>
-      <div id="barras"></div>
-    </div>
+<section id="sec-ficha" hidden>
+  <div class="card" id="ficha"></div>
+</section>
+
+<section id="sec-cedido">
+  <div class="card">
+    <h2>Terreno cedido</h2>
+    <p class="desc">Legisladores sin cuenta de TikTok o sin publicar hace más de 30 días</p>
+    <div class="cedido" id="cedido"></div>
   </div>
 </section>
 
-<section id="sec-breakouts">
-  <div class="panel" style="background:transparent;border:none;padding:0">
-    <h2 style="margin-bottom:10px">Breakouts del período</h2>
-    <div class="cards" id="breakouts"></div>
+<section id="sec-lecturas">
+  <div class="card">
+    <h2>Lecturas del período</h2>
+    <p class="desc">Generadas con reglas determinísticas sobre el conjunto filtrado</p>
+    <ul class="lecturas" id="lecturas"></ul>
   </div>
 </section>
 
-<section id="sec-alertas">
-  <div class="panel">
-    <h2>Alertas</h2>
-    <p class="desc">Aceleración, enfriamiento, caída de cadencia y breakouts</p>
-    <ul class="lista" id="alertas" style="--marca:none"></ul>
-  </div>
-</section>
-
-<footer>Radar de Tracción · el histórico se construye foto a foto · <span class="mono" id="meta-pie"></span></footer>
+<footer>Radar de Tracción · datos públicos de TikTok vía Apify · el histórico se construye foto a foto ·
+  <span class="mono" id="meta-pie"></span></footer>
 <div id="tooltip" role="tooltip"></div>
 
 <script>
 "use strict";
-/* El dashboard NO calcula métricas: solo pinta docs/data.json (CLAUDE.md §3). */
+/* Panel ejecutivo. El dashboard NO calcula métricas por cuenta (eso es Python);
+   aquí solo se agrupa, filtra y pinta lo que trae docs/data.json. */
 
-const $ = sel => document.querySelector(sel);
-const NF = new Intl.NumberFormat("es");
-const fmt = n => n == null ? "—" : NF.format(Math.round(n));
-const fmtCompacto = n => n == null ? "—"
+const $ = s => document.querySelector(s);
+const COLOR = {gobierno:"#17679E", oposicion:"#C2410C", neutro:"#6B7280"};
+const NOMBRE_BLOQUE = {gobierno:"Gobierno", oposicion:"Oposición"};
+const fmtC = n => n == null ? "—"
   : new Intl.NumberFormat("es", {notation:"compact", maximumFractionDigits:1}).format(n);
-const fmtDec = (n, d=2) => n == null ? "—" : n.toLocaleString("es", {maximumFractionDigits:d});
-const signo = n => n > 0 ? "▲ +" : (n < 0 ? "▼ " : "");
-const claseDelta = n => n > 0 ? "sube" : (n < 0 ? "baja" : "neutro");
-
-/* ramp de cian para identidad de cuentas en la línea (la identidad la llevan
-   la leyenda y las etiquetas directas; el color solo acompaña) */
-const RAMPA_CIAN = ["#25D3E8", "#7EE7F2", "#0F8FAF", "#BFF2F8", "#0A5D74"];
-const CUADRANTES = [
-  {x:1, y:1, nombre:"En ascenso"},
-  {x:-1, y:1, nombre:"Viral sin capturar"},
-  {x:1, y:-1, nombre:"Crecen en frío"},
-  {x:-1, y:-1, nombre:"En pausa"},
-];
+const fmtD = (n, d=2) => n == null ? "—" : n.toLocaleString("es", {maximumFractionDigits:d});
+const signo = n => n > 0 ? "▲ +" : (n < 0 ? "▼ " : "= ");
+const claseDelta = n => n > 0 ? "sube" : (n < 0 ? "baja" : "neutrotxt");
+const apellido = nombre => nombre.split(" ").pop();
+const colorDe = leg => COLOR[leg?.sector] || COLOR.neutro;
 
 let DATA = null;
-let ventana = "7";
+let estado = {ventana:"7", sector:"", coalicion:"", partido:"", territorio:"", sel:null};
 
 /* ---------- tooltip ---------- */
 const tip = $("#tooltip");
 function mostrarTip(evt, html){
-  tip.innerHTML = html;
-  tip.style.opacity = 1;
-  const margen = 14;
-  let x = evt.clientX + margen, y = evt.clientY + margen;
+  tip.innerHTML = html; tip.style.opacity = 1;
+  let x = evt.clientX + 14, y = evt.clientY + 14;
   const r = tip.getBoundingClientRect();
-  if (x + r.width > innerWidth - 8) x = evt.clientX - r.width - margen;
-  if (y + r.height > innerHeight - 8) y = evt.clientY - r.height - margen;
+  if (x + r.width > innerWidth - 8) x = evt.clientX - r.width - 14;
+  if (y + r.height > innerHeight - 8) y = evt.clientY - r.height - 14;
   tip.style.left = x + "px"; tip.style.top = y + "px";
 }
 const ocultarTip = () => tip.style.opacity = 0;
 
-/* ---------- helpers svg ---------- */
 function svgEl(tag, attrs){
   const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
   for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
   return el;
 }
-function vacio(contenedor, mensaje){
-  contenedor.innerHTML = `<div class="vacio">${mensaje}</div>`;
+
+/* ---------- selección filtrada ---------- */
+function cuentasFiltradas(){
+  const w = DATA.windows[estado.ventana];
+  return w.accounts.filter(c => {
+    const l = c.legislador;
+    if (!l) return false;                       // cuentas históricas fuera de la base
+    if (estado.sector && l.sector !== estado.sector) return false;
+    if (estado.coalicion && l.coalicion !== estado.coalicion) return false;
+    if (estado.partido && l.partido !== estado.partido) return false;
+    if (estado.territorio && l.territorio !== estado.territorio) return false;
+    return true;
+  });
 }
-const MSG_SEGUNDA_FOTO = "Se necesita una segunda foto para calcular esto.<br>" +
-  "El próximo snapshot activa esta vista automáticamente — la periodicidad produce los datos.";
+function rosterFiltrado(){
+  return DATA.roster.filter(l =>
+    (!estado.sector || l.sector === estado.sector) &&
+    (!estado.coalicion || l.coalicion === estado.coalicion) &&
+    (!estado.partido || l.partido === estado.partido) &&
+    (!estado.territorio || l.territorio === estado.territorio));
+}
 
-/* ---------- 1. mapa de momentum ---------- */
-function pintarMomentum(w){
+/* ---------- agregados por grupo (group-by en JS; métricas base en Python) ---------- */
+const mediana = vs => {
+  const l = vs.filter(v => v != null).sort((a,b) => a-b);
+  if (!l.length) return null;
+  const m = Math.floor(l.length/2);
+  return l.length % 2 ? l[m] : (l[m-1]+l[m])/2;
+};
+function agregar(cuentas, roster){
+  const conCrec = cuentas.filter(c => c.crecimiento && c.crecimiento.absoluto != null);
+  const abs = conCrec.length ? conCrec.reduce((s,c) => s+c.crecimiento.absoluto, 0) : null;
+  const base = conCrec.reduce((s,c) => s + c.followers - c.crecimiento.absoluto, 0);
+  const sov = cuentas.some(c => c.deltaViews != null)
+    ? cuentas.reduce((s,c) => s + (c.deltaViews ?? 0), 0) : null;
+  const ult = DATA.windows[estado.ventana];
+  const activas = cuentas.filter(c => c.ultimaPublicacion &&
+    (new Date(DATA.snapshots.last) - new Date(c.ultimaPublicacion)) / 864e5 <= 30);
+  return {
+    n: cuentas.length,
+    seguidores: cuentas.reduce((s,c) => s + (c.followers ?? 0), 0),
+    crecAbs: abs,
+    crecPct: (abs != null && base > 0) ? abs / base * 100 : null,
+    sov,
+    engagement: mediana(cuentas.map(c => c.engagement)),
+    conCuenta: roster.filter(l => l.handle).length,
+    total: roster.length,
+    activas: activas.length,
+  };
+}
+
+/* ---------- 1. tiles ---------- */
+function pintarTiles(cuentas, roster){
+  const a = agregar(cuentas, roster);
+  const topMomentum = cuentas.filter(c => c.crecimiento?.porcentual != null)
+    .sort((x,y) => y.crecimiento.porcentual - x.crecimiento.porcentual)[0];
+  let topVideo = null, topDueno = null;
+  for (const c of cuentas)
+    for (const b of c.breakouts)
+      if (!topVideo || b.views > topVideo.views){ topVideo = b; topDueno = c; }
+
+  const tiles = [
+    {etq:"Crecimiento del conjunto",
+     valor: a.crecAbs != null ? `${signo(a.crecAbs)}${fmtC(Math.abs(a.crecAbs))}` : "—",
+     clase: a.crecAbs != null ? claseDelta(a.crecAbs) : "neutrotxt",
+     quien: a.crecAbs != null
+       ? `${fmtD(a.crecPct)}% · ${cuentas.filter(c => c.crecimiento?.absoluto != null).length} de ${a.n} cuentas con dato`
+       : "se activa con la foto del lunes"},
+    {etq:"Atención capturada (Δviews)",
+     valor: a.sov != null ? fmtC(a.sov) : "—", clase:"",
+     quien: a.sov != null ? "views nuevas del período" : "se activa con la foto del lunes"},
+    {etq:"Legislador con más momentum",
+     valor: topMomentum ? `${signo(topMomentum.crecimiento.porcentual)}${fmtD(Math.abs(topMomentum.crecimiento.porcentual))}%`
+                        : "—",
+     clase: topMomentum ? claseDelta(topMomentum.crecimiento.porcentual) : "neutrotxt",
+     quien: topMomentum ? topMomentum.legislador.nombre : "espera la próxima foto"},
+    {etq:"Video de la semana",
+     valor: topVideo ? fmtC(topVideo.views) + " views" : "—", clase:"",
+     quien: topVideo ? `${topDueno.legislador.nombre} · ${fmtD(topVideo.ratio,1)}× su mediana`
+                     : "sin breakouts en la ventana"},
+  ];
+  $("#tiles").innerHTML = tiles.map(t => `
+    <div class="tile"><div class="etq">${t.etq}</div>
+    <div class="valor mono ${t.clase}">${t.valor}</div>
+    <div class="quien">${t.quien}</div></div>`).join("");
+}
+
+/* ---------- 2. bloques ---------- */
+function pintarBloques(cuentas, roster){
+  const cont = $("#bloques-contenido");
+  const sectores = estado.sector ? [estado.sector] : ["gobierno", "oposicion"];
+  const ags = sectores.map(s => ({
+    sector: s,
+    a: agregar(cuentas.filter(c => c.legislador.sector === s),
+               roster.filter(l => l.sector === s)),
+  }));
+
+  /* barra de share of voice (solo si hay 2 bloques y datos) */
+  let html = "";
+  if (ags.length === 2 && ags.every(x => x.a.sov != null)){
+    const total = ags[0].a.sov + ags[1].a.sov;
+    if (total > 0){
+      html += `<div class="sov-barra">` + ags.map(x =>
+        `<div style="background:${COLOR[x.sector]};width:${Math.max(x.a.sov/total*100, 4)}%">
+          ${Math.round(x.a.sov/total*100)}%</div>`).join("") + `</div>
+        <div class="sov-leyenda">` + ags.map(x =>
+        `<span><i style="background:${COLOR[x.sector]}"></i>${NOMBRE_BLOQUE[x.sector]}:
+          ${fmtC(x.a.sov)} views nuevas</span>`).join("") + `</div>`;
+    }
+  } else if (ags.length === 2){
+    html += `<div class="vacio" style="margin-bottom:12px">La comparación de atención capturada
+      se activa con la próxima foto (lunes).</div>`;
+  }
+
+  html += `<div class="bloques">` + ags.map(x => {
+    const a = x.a;
+    /* desglose por coalición dentro del bloque */
+    const coas = [...new Set(cuentas.filter(c => c.legislador.sector === x.sector)
+      .map(c => c.legislador.coalicion))];
+    const filasCoa = coas.map(coa => {
+      const sub = agregar(cuentas.filter(c => c.legislador.coalicion === coa),
+                          roster.filter(l => l.coalicion === coa));
+      return `<div class="fila"><span>${coa} <span class="terr">(${sub.n})</span></span>
+        <span class="mono">${sub.crecPct != null ? signo(sub.crecPct)+fmtD(Math.abs(sub.crecPct))+"%" : "—"}
+        · ${sub.sov != null ? fmtC(sub.sov)+" Δv" : "—"}</span></div>`;
+    }).join("");
+    return `<div class="bloque">
+      <h3><i style="background:${COLOR[x.sector]}"></i>${NOMBRE_BLOQUE[x.sector]}
+        <span class="n">${a.n} cuentas · ${fmtC(a.seguidores)} seguidores sumados</span></h3>
+      <div class="metricas">
+        <div class="m"><div class="e">Crecimiento</div>
+          <div class="v mono ${a.crecPct != null ? claseDelta(a.crecPct) : "neutrotxt"}">
+          ${a.crecPct != null ? signo(a.crecPct)+fmtD(Math.abs(a.crecPct))+"%" : "—"}</div></div>
+        <div class="m"><div class="e">Atención (Δviews)</div>
+          <div class="v mono">${a.sov != null ? fmtC(a.sov) : "—"}</div></div>
+        <div class="m"><div class="e">Engagement mediano</div>
+          <div class="v mono">${a.engagement != null ? fmtD(a.engagement)+"%" : "—"}</div></div>
+        <div class="m"><div class="e">Cobertura</div>
+          <div class="v mono">${a.conCuenta}/${a.total} <span style="font-size:12px;color:var(--tinta-3)">
+          · ${a.activas} activas 30d</span></div></div>
+      </div>
+      <div class="coas">${filasCoa}</div>
+    </div>`;
+  }).join("") + `</div>`;
+  cont.innerHTML = html;
+}
+
+/* ---------- 3. momentum ---------- */
+function pintarMomentum(cuentas){
   const cont = $("#momentum");
-  const puntos = w.accounts.filter(c =>
-    c.crecimiento && c.crecimiento.porcentual != null && c.velocidad != null);
-  if (!w.hasGrowth || !puntos.length) return vacio(cont, MSG_SEGUNDA_FOTO);
-
-  const W = 820, H = 400, m = {t:24, r:24, b:40, l:52};
+  const puntos = cuentas.filter(c =>
+    c.crecimiento?.porcentual != null && c.velocidad != null);
+  if (puntos.length < 2){
+    cont.innerHTML = `<div class="vacio">Se necesitan al menos dos fotos por cuenta —
+      el mapa se puebla con la corrida del lunes.</div>`;
+    return;
+  }
+  const W = 860, H = 400, m = {t:24, r:24, b:40, l:52};
   const xs = puntos.map(p => p.crecimiento.porcentual);
   const ys = puntos.map(p => p.velocidad);
-  /* medianas como umbrales de cuadrante: separan "alto" de "bajo" del grupo */
-  const medX = xs.slice().sort((a,b)=>a-b)[Math.floor(xs.length/2)];
-  const medY = ys.slice().sort((a,b)=>a-b)[Math.floor(ys.length/2)];
-  const pad = v => v === 0 ? 1 : Math.abs(v) * .25;
-  const x0 = Math.min(...xs) - pad(Math.min(...xs)), x1 = Math.max(...xs) + pad(Math.max(...xs));
-  const y0 = Math.min(...ys) - pad(Math.min(...ys)), y1 = Math.max(...ys) + pad(Math.max(...ys));
+  const medX = mediana(xs), medY = mediana(ys);
+  const pad = (mn, mx) => (mx - mn || 1) * .18;
+  const x0 = Math.min(...xs) - pad(Math.min(...xs), Math.max(...xs));
+  const x1 = Math.max(...xs) + pad(Math.min(...xs), Math.max(...xs));
+  const y0 = Math.min(...ys) - pad(Math.min(...ys), Math.max(...ys));
+  const y1 = Math.max(...ys) + pad(Math.min(...ys), Math.max(...ys));
   const X = v => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r);
   const Y = v => H - m.b - (v - y0) / (y1 - y0) * (H - m.t - m.b);
 
   const svg = svgEl("svg", {viewBox:`0 0 ${W} ${H}`, role:"img",
-    "aria-label":"Scatter de momentum: crecimiento vs tracción por cuenta"});
-
-  /* umbrales de cuadrante — hairlines sólidas, un paso sobre el panel */
+    "aria-label":"Momentum: crecimiento vs tracción por legislador, color por bloque"});
   svg.append(svgEl("line", {x1:X(medX), x2:X(medX), y1:m.t, y2:H-m.b, stroke:"var(--grid)", "stroke-width":1}));
   svg.append(svgEl("line", {x1:m.l, x2:W-m.r, y1:Y(medY), y2:Y(medY), stroke:"var(--grid)", "stroke-width":1}));
-
-  /* nombres de cuadrantes, recesivos */
-  for (const q of CUADRANTES){
-    const tx = q.x > 0 ? W - m.r - 6 : m.l + 6;
-    const ty = q.y > 0 ? m.t + 12 : H - m.b - 8;
-    const t = svgEl("text", {x:tx, y:ty, "text-anchor": q.x > 0 ? "end" : "start",
-      fill:"var(--tinta-3)", "font-size":11});
-    t.textContent = q.nombre;
-    svg.append(t);
+  for (const q of [[1,1,"En ascenso"],[-1,1,"Viral sin capturar"],[1,-1,"Crecen en frío"],[-1,-1,"En pausa"]]){
+    const t = svgEl("text", {x: q[0] > 0 ? W-m.r-6 : m.l+6, y: q[1] > 0 ? m.t+12 : H-m.b-8,
+      "text-anchor": q[0] > 0 ? "end" : "start", fill:"var(--tinta-3)", "font-size":11});
+    t.textContent = q[2]; svg.append(t);
   }
-
   for (const p of puntos){
     const cx = X(p.crecimiento.porcentual), cy = Y(p.velocidad);
-    /* halo invisible = hit target generoso (~28px) */
     const halo = svgEl("circle", {cx, cy, r:14, fill:"transparent"});
-    /* anillo de superficie 2px + punto ≥8px en cian */
-    const punto = svgEl("circle", {cx, cy, r:6, fill:"var(--cian)",
-      stroke:"var(--panel)", "stroke-width":2});
-    /* etiqueta directa: la identidad nunca depende del color */
-    const etq = svgEl("text", {x:cx, y:cy - 12, "text-anchor":"middle",
-      fill:"var(--tinta-2)", "font-size":11.5});
-    etq.textContent = "@" + p.handle;
-    const html = `<strong>@${p.handle}</strong>` +
-      `crecimiento: ${signo(p.crecimiento.porcentual)}${fmtDec(Math.abs(p.crecimiento.porcentual))}%<br>` +
-      `tracción: ${fmtDec(p.velocidad)} views/día por 1k seg.`;
-    for (const n of [halo, punto]){
+    const dot = svgEl("circle", {cx, cy, r:6, fill:colorDe(p.legislador),
+      stroke:"#fff", "stroke-width":2});
+    const etq = svgEl("text", {x:cx, y:cy-12, "text-anchor":"middle",
+      fill:"var(--tinta-2)", "font-size":11});
+    etq.textContent = apellido(p.legislador.nombre);
+    const html = `<strong>${p.legislador.nombre}</strong>` +
+      `crecimiento: ${signo(p.crecimiento.porcentual)}${fmtD(Math.abs(p.crecimiento.porcentual))}%<br>` +
+      `tracción: ${fmtD(p.velocidad)} v/día por 1k seg.`;
+    for (const n of [halo, dot]){
       n.addEventListener("mousemove", e => mostrarTip(e, html));
       n.addEventListener("mouseleave", ocultarTip);
+      n.addEventListener("click", () => seleccionar(p.handle));
     }
-    svg.append(halo, punto, etq);
+    svg.append(halo, dot, etq);
   }
-
-  /* títulos de eje */
-  const ex = svgEl("text", {x:W/2, y:H-8, "text-anchor":"middle", fill:"var(--cian)", "font-size":11});
-  ex.textContent = "crecimiento de seguidores (%) →";
-  const ey = svgEl("text", {x:14, y:H/2, "text-anchor":"middle", fill:"var(--ambar)",
+  const ex = svgEl("text", {x:W/2, y:H-8, "text-anchor":"middle", fill:"var(--tinta-3)", "font-size":11});
+  ex.textContent = "crecimiento de seguidores (%) →"; svg.append(ex);
+  const ey = svgEl("text", {x:14, y:H/2, "text-anchor":"middle", fill:"var(--tinta-3)",
     "font-size":11, transform:`rotate(-90 14 ${H/2})`});
-  ey.textContent = "tracción →";
-  svg.append(ex, ey);
-
+  ey.textContent = "tracción →"; svg.append(ey);
   cont.innerHTML = ""; cont.append(svg);
 }
 
-/* ---------- 2. tiles de titulares ---------- */
-function pintarTiles(w){
-  const t = w.titulares;
-  const tiles = [
-    {etq:"Mayor crecimiento", color:"var(--cian)",
-     valor: t.mayorCrecimiento ? signo(t.mayorCrecimiento.pct) + fmtDec(Math.abs(t.mayorCrecimiento.pct)) + "%" : "—",
-     clase: t.mayorCrecimiento ? claseDelta(t.mayorCrecimiento.pct) : "neutro",
-     quien: t.mayorCrecimiento ? "@" + t.mayorCrecimiento.handle : "espera la 2ª foto"},
-    {etq:"Breakout más caliente", color:"var(--ambar)",
-     valor: t.breakoutMasCaliente ? fmtCompacto(t.breakoutMasCaliente.views) + " views" : "—",
-     clase:"",
-     quien: t.breakoutMasCaliente
-       ? `@${t.breakoutMasCaliente.handle} · ${fmtDec(t.breakoutMasCaliente.ratio,1)}× su mediana`
-       : "sin breakouts en la ventana"},
-    {etq:"Mayor aceleración", color:"var(--verde)",
-     valor: t.mayorAceleracion ? fmtDec(t.mayorAceleracion.ratio,2) + "×" : "—",
-     clase: t.mayorAceleracion ? "sube" : "neutro",
-     quien: t.mayorAceleracion ? "@" + t.mayorAceleracion.handle : "espera más fotos"},
-    {etq:"Rinde sobre su tamaño", color:"var(--ambar)",
-     valor: t.rindeSobreTamano ? fmtDec(t.rindeSobreTamano.viewsPorSeguidor,2) + "×" : "—",
-     clase:"",
-     quien: t.rindeSobreTamano
-       ? `@${t.rindeSobreTamano.handle} · views por seguidor` : "—"},
-  ];
-  $("#tiles").innerHTML = tiles.map(x => `
-    <div class="tile">
-      <div class="borde" style="background:${x.color}"></div>
-      <div class="etq">${x.etq}</div>
-      <div class="valor mono ${x.clase}">${x.valor}</div>
-      <div class="quien">${x.quien}</div>
-    </div>`).join("");
-}
-
-/* ---------- 3. insights ---------- */
-function pintarInsights(w){
-  $("#insights").innerHTML = w.insights.map(i => `<li>${i}</li>`).join("")
-    || `<li>Sin insights para esta ventana.</li>`;
-}
-
-/* ---------- 4. IA (opcional) ---------- */
-function pintarIA(){
-  if (DATA.ia){ $("#sec-ia").hidden = false; $("#ia-texto").textContent = DATA.ia; }
-}
-
-/* ---------- 5. tabla comparativa ---------- */
+/* ---------- 4. ranking ---------- */
 let orden = {col:"followers", asc:false};
 const COLS = [
-  {id:"handle", etq:"Cuenta", val:c => c.handle},
+  {id:"nombre", etq:"Legislador", val:c => c.legislador.nombre},
   {id:"followers", etq:"Seguidores", val:c => c.followers},
   {id:"crecimiento", etq:"Crecimiento", val:c => c.crecimiento?.porcentual},
-  {id:"aceleracion", etq:"Aceleración", val:c => c.aceleracion?.ratio},
+  {id:"deltaViews", etq:"Atención Δv", val:c => c.deltaViews},
   {id:"engagement", etq:"Engagement", val:c => c.engagement},
   {id:"velocidad", etq:"Velocidad", val:c => c.velocidad},
-  {id:"cadencia", etq:"Cadencia/sem", val:c => c.cadencia},
-  {id:"viewsPorSeguidor", etq:"Views/seg.", val:c => c.viewsPorSeguidor},
   {id:"breakouts", etq:"Breakouts", val:c => c.breakouts.length},
 ];
-
-function celdaCrecimiento(c){
-  if (!c.crecimiento || c.crecimiento.porcentual == null) return `<span class="neutro">—</span>`;
-  const p = c.crecimiento.porcentual;
-  return `<span class="${claseDelta(p)}">${signo(p)}${fmtDec(Math.abs(p))}%</span>` +
-         ` <span class="neutro">(${p >= 0 ? "+" : ""}${fmtCompacto(c.crecimiento.absoluto)})</span>`;
-}
-function celdaAceleracion(c){
-  const e = c.aceleracion.estado;
-  if (e === "acelera") return `<span class="sube">▲ acelera</span>`;
-  if (e === "enfria")  return `<span class="baja">▼ enfría</span>`;
-  if (e === "estable") return `<span class="neutro">→ estable</span>`;
-  return `<span class="neutro">—</span>`;
-}
-
-function pintarTabla(w){
-  const cuentas = [...w.accounts].sort((a, b) => {
+function pintarTabla(cuentas){
+  const lista = [...cuentas].sort((a, b) => {
     const col = COLS.find(c => c.id === orden.col);
     const va = col.val(a), vb = col.val(b);
     if (va == null) return 1; if (vb == null) return -1;
     const cmp = typeof va === "string" ? va.localeCompare(vb) : va - vb;
     return orden.asc ? cmp : -cmp;
   });
-  const th = COLS.map(c =>
-    `<th data-col="${c.id}">${c.etq}${orden.col === c.id
-      ? ` <span class="flecha">${orden.asc ? "▲" : "▼"}</span>` : ""}</th>`).join("");
-  const filas = cuentas.map(c => `
-    <tr>
-      <td>@${c.handle}${c.verified ? `<span class="verificada">✔</span>` : ""}</td>
-      <td>${fmtCompacto(c.followers)}</td>
-      <td>${celdaCrecimiento(c)}</td>
-      <td>${celdaAceleracion(c)}</td>
-      <td>${c.engagement != null ? fmtDec(c.engagement) + "%" : "—"}</td>
-      <td>${c.velocidad != null ? fmtDec(c.velocidad) : "—"}</td>
-      <td>${c.cadencia != null ? fmtDec(c.cadencia, 1) : "—"}</td>
-      <td>${c.viewsPorSeguidor != null ? fmtDec(c.viewsPorSeguidor) : "—"}</td>
+  const th = COLS.map(c => `<th data-col="${c.id}">${c.etq}${orden.col === c.id
+    ? ` <span class="flecha">${orden.asc ? "▲" : "▼"}</span>` : ""}</th>`).join("");
+  const filas = lista.map(c => {
+    const l = c.legislador;
+    const cr = c.crecimiento?.porcentual;
+    return `<tr data-handle="${c.handle}">
+      <td>${l.nombre}<span class="chip" style="background:${colorDe(l)}">${l.partido}</span>
+        <span class="terr">${l.territorio}</span></td>
+      <td>${fmtC(c.followers)}</td>
+      <td>${cr != null ? `<span class="${claseDelta(cr)}">${signo(cr)}${fmtD(Math.abs(cr))}%</span>` : "—"}</td>
+      <td>${c.deltaViews != null ? fmtC(c.deltaViews) : "—"}</td>
+      <td>${c.engagement != null ? fmtD(c.engagement) + "%" : "—"}</td>
+      <td>${c.velocidad != null ? fmtD(c.velocidad) : "—"}</td>
       <td>${c.breakouts.length || "—"}</td>
-    </tr>`).join("");
+    </tr>`;
+  }).join("");
   $("#tabla").innerHTML = `<thead><tr>${th}</tr></thead><tbody>${filas}</tbody>`;
-  $("#tabla").querySelectorAll("th").forEach(el =>
-    el.addEventListener("click", () => {
-      const col = el.dataset.col;
-      orden = {col, asc: orden.col === col ? !orden.asc : false};
-      pintarTabla(w);
-    }));
+  $("#tabla").querySelectorAll("th").forEach(el => el.addEventListener("click", () => {
+    orden = {col: el.dataset.col, asc: orden.col === el.dataset.col ? !orden.asc : false};
+    pintarTabla(cuentasFiltradas());
+  }));
+  $("#tabla").querySelectorAll("tbody tr").forEach(el =>
+    el.addEventListener("click", () => seleccionar(el.dataset.handle)));
 }
 
-/* ---------- 6a. línea de seguidores (cian, índice base 100) ---------- */
-function pintarLinea(w){
-  const cont = $("#linea");
-  const series = w.accounts
-    .map((c, i) => ({handle:c.handle, color:RAMPA_CIAN[i % RAMPA_CIAN.length],
-      puntos:c.serieSeguidores}))
-    .filter(s => s.puntos.length >= 2);
-  if (!w.hasGrowth || !series.length) return vacio(cont, MSG_SEGUNDA_FOTO);
+/* ---------- 5. ficha individual ---------- */
+function seleccionar(handle){
+  estado.sel = handle;
+  pintarFicha();
+  $("#sec-ficha").scrollIntoView({behavior:"smooth", block:"start"});
+}
+function pintarFicha(){
+  const sec = $("#sec-ficha");
+  if (!estado.sel){ sec.hidden = true; return; }
+  const w = DATA.windows[estado.ventana];
+  const c = w.accounts.find(x => x.handle === estado.sel);
+  if (!c || !c.legislador){ sec.hidden = true; estado.sel = null; return; }
+  const l = c.legislador;
+  sec.hidden = false;
 
-  const W = 640, H = 300, m = {t:16, r:92, b:30, l:46};
-  const fechas = [...new Set(series.flatMap(s => s.puntos.map(p => p[0])))].sort();
-  const t0 = +new Date(fechas[0]), t1 = +new Date(fechas[fechas.length-1]);
-  /* índice base 100: un solo eje aunque las cuentas difieran en tamaño ×40 */
-  const idx = series.map(s => s.puntos.map(p =>
-    [ +new Date(p[0]), p[1] / s.puntos[0][1] * 100 ]));
-  const ys = idx.flat().map(p => p[1]);
-  const y0 = Math.min(...ys, 99.9), y1 = Math.max(...ys, 100.1);
-  const X = t => m.l + (t - t0) / (t1 - t0 || 1) * (W - m.l - m.r);
-  const Y = v => H - m.b - (v - y0) / (y1 - y0) * (H - m.t - m.b);
+  /* comparación contra la mediana de su bloque */
+  const bloque = w.accounts.filter(x => x.legislador?.sector === l.sector);
+  const medCrec = mediana(bloque.map(x => x.crecimiento?.porcentual));
+  const medEng = mediana(bloque.map(x => x.engagement));
+  const frases = [];
+  if (c.crecimiento?.porcentual != null && medCrec != null && medCrec !== 0)
+    frases.push(`Crece <b>${fmtD(c.crecimiento.porcentual / medCrec, 1)}×</b> la mediana de su bloque (${NOMBRE_BLOQUE[l.sector].toLowerCase()}).`);
+  if (c.engagement != null && medEng != null)
+    frases.push(`Engagement ${c.engagement >= medEng ? "sobre" : "bajo"} la mediana de su bloque
+      (<b>${fmtD(c.engagement)}%</b> vs ${fmtD(medEng)}%).`);
+  if (c.aceleracion?.estado === "acelera") frases.push("Su crecimiento está <b>acelerando</b> dentro del período.");
+  if (c.aceleracion?.estado === "enfria") frases.push("Su crecimiento se está <b>enfriando</b> dentro del período.");
 
-  const svg = svgEl("svg", {viewBox:`0 0 ${W} ${H}`, role:"img",
-    "aria-label":"Evolución de seguidores, índice base 100"});
-
-  /* grid horizontal: 3 hairlines con ticks limpios */
-  for (const v of [y0, (y0+y1)/2, y1]){
-    svg.append(svgEl("line", {x1:m.l, x2:W-m.r, y1:Y(v), y2:Y(v), stroke:"var(--grid)", "stroke-width":1}));
-    const t = svgEl("text", {x:m.l-6, y:Y(v)+4, "text-anchor":"end", fill:"var(--tinta-3)", "font-size":10.5});
-    t.textContent = v.toFixed(1);
-    svg.append(t);
+  /* serie de seguidores */
+  let svgSerie = `<div class="vacio">La curva aparece con la segunda foto de esta cuenta (lunes).</div>`;
+  if (c.serieSeguidores.length >= 2){
+    const W = 520, H = 200, m = {t:14, r:82, b:26, l:74};
+    const pts = c.serieSeguidores.map(p => [+new Date(p[0]), p[1]]);
+    const t0 = pts[0][0], t1 = pts[pts.length-1][0];
+    const vs = pts.map(p => p[1]);
+    let v0 = Math.min(...vs), v1 = Math.max(...vs);
+    if (v0 === v1){ v0 *= 0.99; v1 *= 1.01; }  // serie plana: centrar la línea
+    const X = t => m.l + (t - t0) / (t1 - t0 || 1) * (W - m.l - m.r);
+    const Y = v => H - m.b - (v - v0) / (v1 - v0 || 1) * (H - m.t - m.b);
+    const d = pts.map((p, i) => (i ? "L" : "M") + X(p[0]) + " " + Y(p[1])).join(" ");
+    const ult = pts[pts.length-1];
+    svgSerie = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Seguidores en el tiempo">
+      <line x1="${m.l}" x2="${W-m.r}" y1="${Y(v0)}" y2="${Y(v0)}" stroke="var(--grid)" stroke-width="1"/>
+      <line x1="${m.l}" x2="${W-m.r}" y1="${Y(v1)}" y2="${Y(v1)}" stroke="var(--grid)" stroke-width="1"/>
+      <text x="${m.l-6}" y="${Y(v0)+4}" text-anchor="end" fill="var(--tinta-3)" font-size="10.5">${fmtC(v0)}</text>
+      <text x="${m.l-6}" y="${Y(v1)+4}" text-anchor="end" fill="var(--tinta-3)" font-size="10.5">${fmtC(v1)}</text>
+      <path d="${d}" fill="none" stroke="${colorDe(l)}" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="${X(ult[0])}" cy="${Y(ult[1])}" r="4.5" fill="${colorDe(l)}" stroke="#fff" stroke-width="2"/>
+      <text x="${X(ult[0])+8}" y="${Y(ult[1])+4}" fill="var(--tinta-2)" font-size="11">${fmtC(ult[1])}</text>
+    </svg>`;
   }
 
-  /* etiquetas de punta: si dos chocan (<14px), la segunda se omite —
-     la leyenda y el tooltip llevan la identidad, nunca etiquetas apiladas */
-  const etiquetasPuestas = [];
-  series.forEach((s, i) => {
-    const pts = idx[i];
-    const d = pts.map((p, j) => (j ? "L" : "M") + X(p[0]) + " " + Y(p[1])).join(" ");
-    svg.append(svgEl("path", {d, fill:"none", stroke:s.color, "stroke-width":2,
-      "stroke-linejoin":"round", "stroke-linecap":"round"}));
-    /* marcador final ≥8px con anillo de superficie */
-    const ult = pts[pts.length-1];
-    const dot = svgEl("circle", {cx:X(ult[0]), cy:Y(ult[1]), r:4.5, fill:s.color,
-      stroke:"var(--panel)", "stroke-width":2});
-    const yEtq = Y(ult[1]) + 4;
-    if (etiquetasPuestas.every(y => Math.abs(y - yEtq) > 14)){
-      const etq = svgEl("text", {x:X(ult[0])+8, y:yEtq, fill:"var(--tinta-2)", "font-size":11});
-      etq.textContent = "@" + s.handle;
-      svg.append(etq);
-      etiquetasPuestas.push(yEtq);
+  const medViews = mediana(c.videosTop.map(v => v.views));
+  sec.querySelector("#ficha").innerHTML = `
+    <div class="cabeza">
+      <div>
+        <h2>${l.nombre}
+          <span class="chip" style="background:${colorDe(l)}">${l.partido}</span></h2>
+        <p class="desc" style="margin:0">${l.cargo} · ${l.territorio} · ${l.coalicion} ·
+          @${c.handle}${c.verified ? " ✔" : ""}</p>
+      </div>
+      <button class="cerrar" id="cerrar-ficha">✕ cerrar</button>
+    </div>
+    <div class="ficha-stats">
+      <div class="m"><div class="e">Seguidores</div><div class="v mono">${fmtC(c.followers)}</div></div>
+      <div class="m"><div class="e">Crecimiento</div><div class="v mono ${c.crecimiento?.porcentual != null ? claseDelta(c.crecimiento.porcentual) : "neutrotxt"}">
+        ${c.crecimiento?.porcentual != null ? signo(c.crecimiento.porcentual)+fmtD(Math.abs(c.crecimiento.porcentual))+"%" : "—"}</div></div>
+      <div class="m"><div class="e">Atención (Δviews)</div><div class="v mono">${c.deltaViews != null ? fmtC(c.deltaViews) : "—"}</div></div>
+      <div class="m"><div class="e">Engagement</div><div class="v mono">${c.engagement != null ? fmtD(c.engagement)+"%" : "—"}</div></div>
+      <div class="m"><div class="e">Cadencia</div><div class="v mono">${c.cadencia != null ? fmtD(c.cadencia,1)+"/sem" : "—"}</div></div>
+      <div class="m"><div class="e">Views/seguidor</div><div class="v mono">${c.viewsPorSeguidor != null ? fmtD(c.viewsPorSeguidor) : "—"}</div></div>
+    </div>
+    <div class="ficha-cuerpo">
+      <div><h2 style="font-size:13px">Seguidores en el tiempo</h2>${svgSerie}
+        ${frases.length ? `<div class="vscomp">${frases.join("<br>")}</div>` : ""}</div>
+      <div><h2 style="font-size:13px">Videos con más views (últimos 10 publicados)</h2>
+        ${c.videosTop.map(v => `<div class="video-item">
+          <span class="cap">${(v.caption || "(sin caption)").replace(/</g,"&lt;")}
+            ${medViews && v.views >= 3*medViews ? `<span class="badge">breakout</span>` : ""}</span>
+          <span class="num mono">${fmtC(v.views)}</span></div>`).join("")}</div>
+    </div>`;
+  $("#cerrar-ficha").addEventListener("click", () => {
+    estado.sel = null; $("#buscador").value = ""; pintarFicha();
+  });
+}
+
+/* ---------- 6. terreno cedido ---------- */
+function pintarCedido(cuentas, roster){
+  const sinCuenta = roster.filter(l => !l.handle);
+  const dormidas = cuentas.filter(c => c.ultimaPublicacion &&
+    (new Date(DATA.snapshots.last) - new Date(c.ultimaPublicacion)) / 864e5 > 30);
+  const items = [
+    ...sinCuenta.map(l => `<div class="item"><b>${l.nombre}</b>
+      <span class="chip" style="background:${colorDe(l)}">${l.partido}</span>
+      <div class="estado">sin cuenta de TikTok · ${l.cargo} ${l.territorio}</div></div>`),
+    ...dormidas.map(c => {
+      const dias = Math.round((new Date(DATA.snapshots.last) - new Date(c.ultimaPublicacion)) / 864e5);
+      return `<div class="item"><b>${c.legislador.nombre}</b>
+        <span class="chip" style="background:${colorDe(c.legislador)}">${c.legislador.partido}</span>
+        <div class="estado">sin publicar hace ${dias} días · @${c.handle}</div></div>`;
+    }),
+  ];
+  $("#cedido").innerHTML = items.length ? items.join("")
+    : `<div class="vacio" style="grid-column:1/-1">Todo el conjunto filtrado tiene cuenta y publicó en los últimos 30 días.</div>`;
+}
+
+/* ---------- 7. lecturas ---------- */
+function pintarLecturas(cuentas, roster){
+  const frases = [];
+  const conCrec = cuentas.filter(c => c.crecimiento?.porcentual != null);
+  if (!conCrec.length){
+    frases.push("Primera foto de esta base: las tendencias (crecimiento, momentum, atención) se activan con la corrida del lunes. La periodicidad produce los datos.");
+  } else {
+    const top = [...conCrec].sort((a,b) => b.crecimiento.porcentual - a.crecimiento.porcentual)[0];
+    frases.push(`${top.legislador.nombre} lidera el crecimiento del conjunto filtrado:
+      ${signo(top.crecimiento.porcentual)}${fmtD(Math.abs(top.crecimiento.porcentual))}%
+      (${top.crecimiento.absoluto >= 0 ? "+" : ""}${fmtC(top.crecimiento.absoluto)} seguidores).`);
+    if (!estado.sector){
+      const g = agregar(cuentas.filter(c => c.legislador.sector === "gobierno"), roster.filter(l => l.sector === "gobierno"));
+      const o = agregar(cuentas.filter(c => c.legislador.sector === "oposicion"), roster.filter(l => l.sector === "oposicion"));
+      if (g.sov != null && o.sov != null && g.sov + o.sov > 0){
+        const gana = g.sov > o.sov ? "El gobierno" : "La oposición";
+        const pct = Math.round(Math.max(g.sov, o.sov) / (g.sov + o.sov) * 100);
+        frases.push(`${gana} capturó el ${pct}% de la atención del período (${fmtC(Math.max(g.sov,o.sov))} de ${fmtC(g.sov+o.sov)} views nuevas).`);
+      }
     }
-    dot.addEventListener("mousemove", e => mostrarTip(e,
-      `<strong>@${s.handle}</strong>índice ${ult[1].toFixed(2)} (base 100)`));
-    dot.addEventListener("mouseleave", ocultarTip);
-    svg.append(dot);
-  });
-
-  /* leyenda (≥2 series ⇒ siempre presente) */
-  const leyenda = `<div class="leyenda">` + series.map(s =>
-    `<span><i style="background:${s.color}"></i>@${s.handle}</span>`).join("") + `</div>`;
-  cont.innerHTML = leyenda; cont.append(svg);
+  }
+  for (const c of cuentas){
+    if (c.aceleracion?.estado === "acelera")
+      frases.push(`${c.legislador.nombre} está acelerando: la segunda mitad del período creció más que la primera.`);
+    if (c.breakouts.length)
+      frases.push(`Breakout de ${c.legislador.nombre}: un video con ${fmtC(c.breakouts[0].views)} views,
+        ${fmtD(c.breakouts[0].ratio,1)}× su mediana.`);
+  }
+  const sinCuenta = roster.filter(l => !l.handle);
+  if (sinCuenta.length)
+    frases.push(`Terreno cedido: ${sinCuenta.map(l => l.nombre).join(", ")}
+      no ${sinCuenta.length > 1 ? "tienen" : "tiene"} cuenta de TikTok.`);
+  const engs = cuentas.filter(c => c.engagement != null);
+  if (engs.length >= 2){
+    const t = [...engs].sort((a,b) => b.engagement - a.engagement)[0];
+    frases.push(`El engagement más alto del conjunto es de ${t.legislador.nombre}: ${fmtD(t.engagement)}% mediano por video.`);
+  }
+  $("#lecturas").innerHTML = frases.map(f => `<li>${f}</li>`).join("");
 }
 
-/* ---------- 6b. barras de velocidad (ámbar) ---------- */
-function pintarBarras(w){
-  const cont = $("#barras");
-  const datos = w.accounts.filter(c => c.velocidad != null)
-    .sort((a, b) => b.velocidad - a.velocidad);
-  if (!datos.length) return vacio(cont, MSG_SEGUNDA_FOTO);
-
-  const W = 420, alto = 34, m = {t:6, r:70, b:6, l:110};
-  const H = m.t + m.b + datos.length * alto;
-  const max = Math.max(...datos.map(d => d.velocidad));
-  const svg = svgEl("svg", {viewBox:`0 0 ${W} ${H}`, role:"img",
-    "aria-label":"Velocidad de views por cuenta"});
-
-  datos.forEach((d, i) => {
-    const y = m.t + i * alto + (alto - 22) / 2;   /* barra ≤24px con aire */
-    const ancho = Math.max((d.velocidad / max) * (W - m.l - m.r), 2);
-    /* punta redondeada 4px, base cuadrada: rect con clip a la izquierda */
-    const barra = svgEl("path", {d:
-      `M${m.l} ${y} H${m.l + ancho - 4} q4 0 4 4 v14 q0 4 -4 4 H${m.l} Z`,
-      fill:"var(--ambar)"});
-    const nombre = svgEl("text", {x:m.l - 8, y:y + 15, "text-anchor":"end",
-      fill:"var(--tinta-2)", "font-size":11.5});
-    nombre.textContent = "@" + d.handle;
-    /* valor en la punta, en tinta (el texto nunca viste el color del dato) */
-    const val = svgEl("text", {x:m.l + ancho + 8, y:y + 15, fill:"var(--tinta)", "font-size":11.5});
-    val.textContent = fmtDec(d.velocidad);
-    barra.addEventListener("mousemove", e => mostrarTip(e,
-      `<strong>@${d.handle}</strong>${fmtDec(d.velocidad)} views/día por 1.000 seguidores`));
-    barra.addEventListener("mouseleave", ocultarTip);
-    svg.append(barra, nombre, val);
-  });
-  cont.innerHTML = ""; cont.append(svg);
+/* ---------- filtros ---------- */
+function poblarFiltros(){
+  const r = DATA.roster;
+  const opciones = (sel, valores, prefijo) => {
+    const s = $(sel);
+    for (const v of valores) s.append(new Option(`${prefijo}: ${v}`, v));
+  };
+  opciones("#f-sector", [...new Set(r.map(l => l.sector))], "Sector");
+  opciones("#f-coalicion", [...new Set(r.map(l => l.coalicion))], "Coalición");
+  opciones("#f-partido", [...new Set(r.map(l => l.partido))].sort(), "Partido");
+  opciones("#f-territorio", [...new Set(r.map(l => l.territorio))], "Territorio");
+  const dl = $("#lista-legisladores");
+  for (const l of r.filter(x => x.handle)) dl.append(new Option(l.nombre));
 }
 
-/* ---------- 7. breakouts ---------- */
-function pintarBreakouts(w){
-  const cards = w.accounts.flatMap(c => c.breakouts.map(b => ({...b, handle:c.handle})));
-  $("#breakouts").innerHTML = cards.length
-    ? cards.map(b => `
-        <div class="card">
-          <div class="quien">@${b.handle} · ${fmtDec(b.ratio,1)}× su mediana</div>
-          <div class="views mono">${fmtCompacto(b.views)} <span style="font-size:13px;color:var(--tinta-3)">views</span></div>
-          <div class="cap">${(b.caption || "(sin caption)").replace(/</g,"&lt;")}</div>
-        </div>`).join("")
-    : `<div class="vacio" style="grid-column:1/-1">Ningún video superó 3× la mediana de su cuenta en esta ventana.</div>`;
-}
-
-/* ---------- 8. alertas ---------- */
-function pintarAlertas(w){
-  $("#alertas").innerHTML = w.alertas.length
-    ? w.alertas.map(a => `<li style="padding-left:0"><span class="chip ${a.tipo}">${a.tipo}</span>@${a.handle} — ${a.texto}</li>`).join("")
-    : `<li style="padding-left:0;color:var(--tinta-3)">Sin alertas en esta ventana. Las alertas se activan al comparar fotos sucesivas.</li>`;
-}
-
-/* ---------- orquestación ---------- */
 function pintarTodo(){
-  const w = DATA.windows[ventana];
   document.querySelectorAll(".vent").forEach(b =>
-    b.setAttribute("aria-pressed", b.dataset.dias === ventana));
-  pintarMomentum(w); pintarTiles(w); pintarInsights(w); pintarIA();
-  pintarTabla(w); pintarLinea(w); pintarBarras(w);
-  pintarBreakouts(w); pintarAlertas(w);
+    b.setAttribute("aria-pressed", b.dataset.dias === estado.ventana));
+  const cuentas = cuentasFiltradas();
+  const roster = rosterFiltrado();
+  pintarTiles(cuentas, roster);
+  pintarBloques(cuentas, roster);
+  pintarMomentum(cuentas);
+  pintarTabla(cuentas);
+  pintarFicha();
+  pintarCedido(cuentas, roster);
+  pintarLecturas(cuentas, roster);
 }
 
 document.querySelectorAll(".vent").forEach(b =>
-  b.addEventListener("click", () => { ventana = b.dataset.dias; pintarTodo(); }));
+  b.addEventListener("click", () => { estado.ventana = b.dataset.dias; pintarTodo(); }));
+for (const [id, clave] of [["#f-sector","sector"],["#f-coalicion","coalicion"],
+                           ["#f-partido","partido"],["#f-territorio","territorio"]])
+  $(id).addEventListener("change", e => { estado[clave] = e.target.value; pintarTodo(); });
+$("#buscador").addEventListener("change", e => {
+  const l = DATA.roster.find(x => x.nombre === e.target.value && x.handle);
+  if (l) seleccionar(l.handle);
+});
+$("#limpiar").addEventListener("click", () => {
+  estado = {...estado, sector:"", coalicion:"", partido:"", territorio:"", sel:null};
+  for (const id of ["#f-sector","#f-coalicion","#f-partido","#f-territorio"]) $(id).value = "";
+  $("#buscador").value = "";
+  pintarTodo();
+});
 
 fetch("data.json")
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -577,14 +710,14 @@ fetch("data.json")
     $("#meta-fechas").textContent =
       `${s.count} foto${s.count === 1 ? "" : "s"} · última: ${s.last.slice(0, 10)}`;
     $("#meta-pie").textContent = `generado ${data.generatedAt.slice(0, 16).replace("T", " ")} UTC`;
+    poblarFiltros();
     pintarTodo();
   })
   .catch(() => {
     document.body.insertAdjacentHTML("beforeend",
       `<div class="vacio" style="margin-top:30px">No se pudo cargar data.json.<br>
        Genera el reporte con <b>python src/build_report.py</b> y sirve la carpeta con
-       <b>python -m http.server</b> (abrir el archivo directo con doble clic no funciona:
-       el navegador bloquea fetch en file://).</div>`);
+       <b>python -m http.server -d docs</b>.</div>`);
   });
 </script>
 </body>

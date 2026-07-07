@@ -152,21 +152,23 @@ Guardar **crudo lo suficiente** para poder recalcular métricas después si camb
 **Existe un prototipo funcional** (`radar-traccion.html`, que la persona puede aportar al repo como referencia de diseño).
 El dashboard de producción debe **igualar su lenguaje visual** y adaptarlo para leer `docs/data.json` real.
 
-### Lenguaje visual (respetarlo)
-- Estética de **sala de telemetría oscura**. Fondo tinta azulado (#0B1019), paneles (#121A29).
-- **El color codifica los dos ejes del producto:** **cian (#25D3E8) = crecimiento de audiencia**, **ámbar (#FF7A3D) = tracción / velocidad de views**. No romper esta semántica.
-- Tipografía: Space Grotesk (títulos), JetBrains Mono (todos los números/datos), Inter (texto).
-- Verde (#42D6A0) = subidas, rosa (#FF6084) = bajadas.
+### Lenguaje visual (v2 ejecutiva, decidida 2026-07-07 — reemplaza al prototipo oscuro)
+- **Tema claro ejecutivo**: fondo #F7F8FA, cards blancas con borde #E4E8EF y sombra suave, tinta #1A2233.
+- **El color codifica BLOQUE POLÍTICO** (así piensa el lector): **gobierno = azul petróleo #17679E**, **oposición = terracota #C2410C**, independientes = gris #6B7280. Paleta validada para daltonismo; deliberadamente ninguno es color de campaña de un partido (neutralidad visual).
+- Verde #15803D = subidas, rojo #DC2626 = bajadas — siempre con signo y flecha ▲▼, nunca color solo.
+- Tipografía: Space Grotesk (títulos), JetBrains Mono (números), Inter (texto).
+- **Una sola fila de filtros** gobierna todas las secciones: ventana 7/14/30d, sector, coalición, partido, territorio, buscador de legislador.
 
 ### Secciones (en orden)
-1. **Mapa de momentum** (elemento distintivo): scatter donde cada cuenta es un punto en X=crecimiento de seguidores, Y=tracción, con 4 cuadrantes: *En ascenso*, *Viral sin capturar*, *Crecen en frío*, *En pausa*.
-2. **Tiles de titulares**: mayor crecimiento, breakout más caliente, mayor aceleración, rinde sobre su tamaño.
-3. **Insights calculados** ("Lo que dice la data"): reglas determinísticas (ver §8).
-4. **Análisis con IA** (opcional, ver §9).
-5. **Tabla comparativa** ordenable de todas las cuentas.
-6. **Gráficos**: seguidores en el tiempo (líneas, cian) + velocidad de views (barras, ámbar).
-7. **Breakouts** del período (cards).
-8. **Alertas**: aceleración, enfriamiento, caída de cadencia, breakout.
+1. **El período en 4 números** (tiles): crecimiento del conjunto, atención capturada (Δviews), legislador con más momentum, video de la semana.
+2. **Bloques en comparación**: gobierno vs oposición — crecimiento agregado, share of voice (barra dividida), engagement mediano, cobertura (con cuenta / total / activas 30d), desglose por coalición.
+3. **Mapa de momentum**: scatter X=crecimiento, Y=tracción, color=bloque, etiqueta=apellido; 4 cuadrantes (*En ascenso*, *Viral sin capturar*, *Crecen en frío*, *En pausa*).
+4. **Ranking de legisladores**: tabla ordenable con chip de partido; clic en fila abre la ficha.
+5. **Ficha individual** (misma página): stats, curva de seguidores, comparación vs la mediana de su bloque, videos top con badge de breakout.
+6. **Terreno cedido**: sin cuenta de TikTok o sin publicar >30 días.
+7. **Lecturas del período**: insights determinísticos generados sobre el conjunto filtrado.
+
+División del trabajo: métricas por cuenta en Python (`build_report.py` → `data.json`, incluye `roster` con la base completa); agrupaciones/filtros en JS (livianos).
 
 ---
 
@@ -262,7 +264,7 @@ Un `git`-repo local que, corriendo `python src/fetch.py`, produce un snapshot v�
 - [~] Fase 3 — segundo snapshot, tasas funcionando *(2026-07-07: primera foto de las 4 cuentas nuevas tomada; hubo 2 corridas el mismo día por pruebas de Actions, así que ya hay señal de velocidad de views entre horas — pero crecimiento/aceleración de verdad recién se ven con la foto de mañana, tomada sola por el cron)*
 - [x] Fase 4 — desplegado en GitHub (Actions + Pages) *(2026-07-07: workflow `snapshot.yml` corre diario a las 12:00 UTC (~08:00 Chile) + lanzamiento manual; `APIFY_TOKEN` en Secrets; repo pasado a público para poder usar Pages gratis; Pages sirviendo `main` → `/docs`; dashboard en vivo en https://acabreirav.github.io/tiktok_dashboard/)*
 - [ ] Fase 5 — escalado a 20-50 cuentas y calibrado
-- [ ] Fase 7 — mantenedor de cuentas (alcance por definir; ver §12)
+- [~] Fase 7 — mantenedor de cuentas *(2026-07-07: panel ejecutivo v2 con filtros por sector/coalición/partido/territorio, comparación de bloques (share of voice, cobertura), ficha individual y "terreno cedido" — tema claro, color=bloque político. Pendiente del mantenedor: alta/baja de cuentas sin editar el CSV a mano y validación automática de handles)*
 
 *(2026-07-07: lista de cuentas cambiada a conyschons, diego_ibanezc, gaelyeomans, gonzalowinter — el snapshot del 2026-07-07 con las 3 cuentas de prueba queda en el histórico pero sale del reporte en cuanto exista un snapshot de las nuevas.)*
 

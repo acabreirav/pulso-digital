@@ -13,9 +13,11 @@ from metrics import (
     aceleracion,
     cadencia_semanal,
     crecimiento_seguidores,
+    delta_views_total,
     detectar_breakouts,
     engagement_rate,
     mediana,
+    ultima_publicacion,
     velocidad_views,
     views_por_seguidor,
 )
@@ -133,6 +135,31 @@ def test_cadencia_cuenta_solo_videos_de_la_ventana():
 def test_views_por_seguidor_es_mediana():
     videos = [video(views=500), video(views=1500), video(views=100_000)]
     assert views_por_seguidor(videos, 1000) == 1.5
+
+
+# ---------- share of voice (delta de views del período) ----------
+
+def test_delta_views_suma_matched_y_videos_nuevos():
+    inicio = [video("a", views=1000)]
+    fin = [
+        video("a", views=1500),                                    # +500
+        video("nuevo", views=300, postedAt="2026-07-06T00:00:00Z"), # +300 (publicado en el período)
+        video("viejo_no_visto", views=900, postedAt="2026-01-01T00:00:00Z"),  # fuera: ni matched ni del período
+    ]
+    assert delta_views_total(inicio, fin, "2026-07-01T00:00:00Z") == 800
+
+
+def test_delta_views_sin_foto_inicial_es_none():
+    assert delta_views_total([], [video("a")], "2026-07-01T00:00:00Z") is None
+
+
+# ---------- última publicación ----------
+
+def test_ultima_publicacion_toma_la_mas_reciente():
+    videos = [video("a", postedAt="2026-07-01T00:00:00Z"),
+              video("b", postedAt="2026-07-05T12:00:00Z")]
+    assert ultima_publicacion(videos) == "2026-07-05T12:00:00Z"
+    assert ultima_publicacion([]) is None
 
 
 # ---------- breakouts ----------
