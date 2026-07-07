@@ -1,123 +1,16 @@
 {
-  "generatedAt": "2026-07-07T20:24:05Z",
+  "generatedAt": "2026-07-07T20:27:26Z",
   "snapshots": {
-    "count": 3,
+    "count": 4,
     "first": "2026-07-07T03:39:00Z",
-    "last": "2026-07-07T15:53:26Z"
+    "last": "2026-07-07T20:27:26Z"
   },
   "windows": {
     "7": {
       "days": 7,
-      "snapshotsEnVentana": 3,
+      "snapshotsEnVentana": 4,
       "hasGrowth": true,
       "accounts": [
-        {
-          "handle": "gaelyeomans",
-          "legislador": {
-            "nombre": "Gael Yeomans",
-            "cargo": "diputada",
-            "territorio": "D13",
-            "partido": "FA",
-            "coalicion": "Unidad por Chile",
-            "sector": "oposicion"
-          },
-          "verified": false,
-          "followers": 31500,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 9.80681930702496,
-          "velocidad": null,
-          "cadencia": 3.0,
-          "viewsPorSeguidor": 0.06528571428571428,
-          "breakouts": [
-            {
-              "id": "7657676919520972052",
-              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos solo en sueldo de funcionarios y dietas parlamentarias. \nEspero que algún día se pongan serios y trabajen realmente por las necesidades de Chile. ",
-              "views": 9461,
-              "ratio": 4.600534889375152,
-              "postedAt": "2026-07-01T21:37:37.000Z"
-            },
-            {
-              "id": "7658306356058918164",
-              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
-              "views": 6310,
-              "ratio": 3.0683199610989544,
-              "postedAt": "2026-07-03T14:20:03.000Z"
-            }
-          ],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              31500
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              31500
-            ]
-          ]
-        },
-        {
-          "handle": "conyschons",
-          "legislador": {
-            "nombre": "Constanza Schonhaut",
-            "cargo": "diputada",
-            "territorio": "D11",
-            "partido": "FA",
-            "coalicion": "Unidad por Chile",
-            "sector": "oposicion"
-          },
-          "verified": false,
-          "followers": 12500,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 12.040179954309611,
-          "velocidad": null,
-          "cadencia": 4.0,
-          "viewsPorSeguidor": 0.46864,
-          "breakouts": [],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              12500
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              12500
-            ]
-          ]
-        },
-        {
-          "handle": "diego_ibanezc",
-          "legislador": null,
-          "verified": false,
-          "followers": 86800,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 12.50882197459551,
-          "velocidad": null,
-          "cadencia": 2.0,
-          "viewsPorSeguidor": 0.0909447004608295,
-          "breakouts": [],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              86800
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              86800
-            ]
-          ]
-        },
         {
           "handle": "gonzalowinter",
           "legislador": {
@@ -133,12 +26,12 @@
           "crecimiento": null,
           "aceleracion": {
             "ratio": null,
-            "estado": "sin datos"
+            "estado": "estable"
           },
-          "engagement": 13.538235365439643,
+          "engagement": 13.542541336078978,
           "velocidad": null,
           "cadencia": 2.0,
-          "viewsPorSeguidor": 0.436241610738255,
+          "viewsPorSeguidor": 0.4367578729994837,
           "breakouts": [],
           "serieSeguidores": [
             [
@@ -148,168 +41,746 @@
             [
               "2026-07-07T15:53:26Z",
               193700
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              193700
+            ]
+          ]
+        },
+        {
+          "handle": "jakastadriasola",
+          "legislador": {
+            "nombre": "Jose Antonio Kast Adriasola",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 38700,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 11.473437466474993,
+          "velocidad": null,
+          "cadencia": 3.0,
+          "viewsPorSeguidor": 0.5649483204134367,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              38700
+            ]
+          ]
+        },
+        {
+          "handle": "lorenafriesm",
+          "legislador": {
+            "nombre": "Lorena Fries",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 4924,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 6.679120382642427,
+          "velocidad": null,
+          "cadencia": 1.0,
+          "viewsPorSeguidor": 0.2252233956133225,
+          "breakouts": [
+            {
+              "id": "7658335477635894549",
+              "caption": "Estamos enfrentando una crisis económica, y el gobierno de Kast ha decidido desde el comienzo que sean las familias quienes paguen el costo. Partiendo por no utilizar el MEPCO y con una megarreforma tributaria que beneficia solo a los más ricos.#kast #chile #economia #politica #fyp",
+              "views": 4673,
+              "ratio": 4.21370604147881,
+              "postedAt": "2026-07-03T16:13:03.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              4924
+            ]
+          ]
+        },
+        {
+          "handle": "jorgealessandridiputado",
+          "legislador": {
+            "nombre": "Jorge Alessandri",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "UDI",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 111500,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.937158926383784,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.18071748878923766,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              111500
+            ]
+          ]
+        },
+        {
+          "handle": "diegoschalper",
+          "legislador": {
+            "nombre": "Diego Schalper",
+            "cargo": "diputado",
+            "territorio": "D11",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 18800,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.566098917854765,
+          "velocidad": null,
+          "cadencia": 3.0,
+          "viewsPorSeguidor": 0.10452127659574469,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              18800
+            ]
+          ]
+        },
+        {
+          "handle": "claudiamoradistrito11",
+          "legislador": {
+            "nombre": "Claudia Mora",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 1505,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 5.93975859412261,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.8538205980066444,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              1505
+            ]
+          ]
+        },
+        {
+          "handle": "conyschons",
+          "legislador": {
+            "nombre": "Constanza Schonhaut",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 12600,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "acelera"
+          },
+          "engagement": 13.05408825795092,
+          "velocidad": null,
+          "cadencia": 5.0,
+          "viewsPorSeguidor": 0.37396825396825395,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T15:37:13Z",
+              12500
+            ],
+            [
+              "2026-07-07T15:53:26Z",
+              12500
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              12600
+            ]
+          ]
+        },
+        {
+          "handle": "pancho.orregog",
+          "legislador": {
+            "nombre": "Francisco Orrego",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 200000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 9.459415979193667,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.2675,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              200000
+            ]
+          ]
+        },
+        {
+          "handle": "cristianarayal",
+          "legislador": {
+            "nombre": "Cristian Araya",
+            "cargo": "diputado",
+            "territorio": "D11",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 80300,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 9.044265593561368,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.018511830635118305,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              80300
+            ]
+          ]
+        },
+        {
+          "handle": "gaelyeomans",
+          "legislador": {
+            "nombre": "Gael Yeomans",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 31500,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "estable"
+          },
+          "engagement": 9.844065591729144,
+          "velocidad": null,
+          "cadencia": 3.0,
+          "viewsPorSeguidor": 0.06534920634920635,
+          "breakouts": [
+            {
+              "id": "7657676919520972052",
+              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos solo en sueldo de funcionarios y dietas parlamentarias. \nEspero que algún día se pongan serios y trabajen realmente por las necesidades de Chile. ",
+              "views": 9472,
+              "ratio": 4.6014087928102985,
+              "postedAt": "2026-07-01T21:37:37.000Z"
+            },
+            {
+              "id": "7658306356058918164",
+              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
+              "views": 6314,
+              "ratio": 3.067282001457372,
+              "postedAt": "2026-07-03T14:20:03.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T15:37:13Z",
+              31500
+            ],
+            [
+              "2026-07-07T15:53:26Z",
+              31500
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              31500
+            ]
+          ]
+        },
+        {
+          "handle": "catadelrealcl",
+          "legislador": {
+            "nombre": "Catalina Del Real",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 1602,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.850601080842615,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.18352059925093633,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              1602
+            ]
+          ]
+        },
+        {
+          "handle": "lorenapizarrosierra",
+          "legislador": {
+            "nombre": "Lorena Pizarro",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "PC",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 2664,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.1244229417008946,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 1.7239114114114114,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2664
+            ]
+          ]
+        },
+        {
+          "handle": "diputadoeduardoduran",
+          "legislador": {
+            "nombre": "Eduardo Duran",
+            "cargo": "diputado",
+            "territorio": "D13",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 97,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.9494875940812433,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 5.108247422680412,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              97
+            ]
+          ]
+        },
+        {
+          "handle": "valebecerra.cl",
+          "legislador": {
+            "nombre": "Valentina Becerra",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 133600,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.565298433480974,
+          "velocidad": null,
+          "cadencia": 5.0,
+          "viewsPorSeguidor": 0.04496631736526946,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              133600
+            ]
+          ]
+        },
+        {
+          "handle": "feliperossco",
+          "legislador": {
+            "nombre": "Felipe Ross",
+            "cargo": "diputado",
+            "territorio": "D13",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 2380,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 8.62457341625074,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.3464285714285714,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2380
+            ]
+          ]
+        },
+        {
+          "handle": "dignidadfabiola",
+          "legislador": {
+            "nombre": "Fabiola Campillai",
+            "cargo": "senadora",
+            "territorio": "RM",
+            "partido": "IND",
+            "coalicion": "independiente",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 3622,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.1021162365177197,
+          "velocidad": null,
+          "cadencia": 1.0,
+          "viewsPorSeguidor": 2.128934290447267,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              3622
+            ]
+          ]
+        },
+        {
+          "handle": "manueljoseossandon",
+          "legislador": {
+            "nombre": "Manuel Jose Ossandon",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 2492,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.5237609689778764,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 10.272873194221509,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2492
+            ]
+          ]
+        },
+        {
+          "handle": "iracihassler",
+          "legislador": {
+            "nombre": "Iraci Hassler",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "PC",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 2411,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.6706648859187183,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 3.1256739941932805,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2411
+            ]
+          ]
+        },
+        {
+          "handle": "lcruzcoke",
+          "legislador": {
+            "nombre": "Luciano Cruz-Coke",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "Evopoli",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 894,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.4434359658901992,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 8.016219239373601,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              894
+            ]
+          ]
+        },
+        {
+          "handle": "rojo.edwards",
+          "legislador": {
+            "nombre": "Rojo Edwards",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "PSC",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 73000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 4.166706825549811,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.5246575342465754,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              73000
+            ]
+          ]
+        },
+        {
+          "handle": "emiliaschneiderv",
+          "legislador": {
+            "nombre": "Emilia Schneider",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 36000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.4275832897979885,
+          "velocidad": null,
+          "cadencia": 1.0,
+          "viewsPorSeguidor": 1.1694444444444443,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              36000
+            ]
+          ]
+        },
+        {
+          "handle": "hans_marowski",
+          "legislador": {
+            "nombre": "Hans Marowski",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "PNL",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 42,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 10.1010101010101,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.23809523809523808,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              42
+            ]
+          ]
+        },
+        {
+          "handle": "conihube",
+          "legislador": {
+            "nombre": "Constanza Hube",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "UDI",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 16400,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 6.765637743898614,
+          "velocidad": null,
+          "cadencia": 2.0,
+          "viewsPorSeguidor": 0.4894512195121951,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              16400
             ]
           ]
         }
       ],
       "insights": [
         "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
-        "Breakout en @gaelyeomans: un video con 9,461 views, 4.6× la mediana de la cuenta.",
+        "@conyschons está acelerando: la segunda mitad del período creció más que la primera.",
+        "@lorenapizarrosierra rinde sobre su tamaño: su video típico hace 1.7× views que seguidores tiene.",
+        "@diputadoeduardoduran rinde sobre su tamaño: su video típico hace 5.1× views que seguidores tiene.",
+        "@dignidadfabiola rinde sobre su tamaño: su video típico hace 2.1× views que seguidores tiene.",
+        "@manueljoseossandon rinde sobre su tamaño: su video típico hace 10.3× views que seguidores tiene.",
+        "@iracihassler rinde sobre su tamaño: su video típico hace 3.1× views que seguidores tiene.",
+        "@lcruzcoke rinde sobre su tamaño: su video típico hace 8× views que seguidores tiene.",
+        "@emiliaschneiderv rinde sobre su tamaño: su video típico hace 1.2× views que seguidores tiene.",
+        "Breakout en @lorenafriesm: un video con 4,673 views, 4.2× la mediana de la cuenta.",
+        "Breakout en @gaelyeomans: un video con 9,472 views, 4.6× la mediana de la cuenta.",
         "El engagement más alto es de @gonzalowinter: 13.54% mediano por video."
       ],
       "alertas": [
         {
           "tipo": "breakout",
-          "handle": "gaelyeomans",
-          "texto": "Video breakout: 9,461 views (4.6× su mediana)"
+          "handle": "lorenafriesm",
+          "texto": "Video breakout: 4,673 views (4.2× su mediana)"
+        },
+        {
+          "tipo": "aceleracion",
+          "handle": "conyschons",
+          "texto": "Aceleración fuerte de seguidores"
         },
         {
           "tipo": "breakout",
           "handle": "gaelyeomans",
-          "texto": "Video breakout: 6,310 views (3.1× su mediana)"
+          "texto": "Video breakout: 9,472 views (4.6× su mediana)"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "gaelyeomans",
+          "texto": "Video breakout: 6,314 views (3.1× su mediana)"
         }
       ],
       "titulares": {
         "mayorCrecimiento": null,
         "breakoutMasCaliente": {
           "handle": "gaelyeomans",
-          "views": 9461,
-          "ratio": 4.600534889375152
+          "views": 9472,
+          "ratio": 4.6014087928102985
         },
         "mayorAceleracion": null,
         "rindeSobreTamano": {
-          "handle": "conyschons",
-          "viewsPorSeguidor": 0.46864
+          "handle": "manueljoseossandon",
+          "viewsPorSeguidor": 10.272873194221509
         }
       }
     },
     "14": {
       "days": 14,
-      "snapshotsEnVentana": 3,
+      "snapshotsEnVentana": 4,
       "hasGrowth": true,
       "accounts": [
-        {
-          "handle": "gaelyeomans",
-          "legislador": {
-            "nombre": "Gael Yeomans",
-            "cargo": "diputada",
-            "territorio": "D13",
-            "partido": "FA",
-            "coalicion": "Unidad por Chile",
-            "sector": "oposicion"
-          },
-          "verified": false,
-          "followers": 31500,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 9.80681930702496,
-          "velocidad": null,
-          "cadencia": 5.0,
-          "viewsPorSeguidor": 0.06528571428571428,
-          "breakouts": [
-            {
-              "id": "7654687636405226772",
-              "caption": "⚠️ La Acusación Constitucional contra Grau es solo una distracción sobre el debate de la Reforma Tributaria de Quiroz. \nEsa reforma será literalmente un pelotazo en la cara de todas las chilenas y chilenos, acá deben estar nuestros ojos. ",
-              "views": 10700,
-              "ratio": 5.203014831023584,
-              "postedAt": "2026-06-23T20:17:39.000Z"
-            },
-            {
-              "id": "7657676919520972052",
-              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos solo en sueldo de funcionarios y dietas parlamentarias. \nEspero que algún día se pongan serios y trabajen realmente por las necesidades de Chile. ",
-              "views": 9461,
-              "ratio": 4.600534889375152,
-              "postedAt": "2026-07-01T21:37:37.000Z"
-            },
-            {
-              "id": "7658306356058918164",
-              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
-              "views": 6310,
-              "ratio": 3.0683199610989544,
-              "postedAt": "2026-07-03T14:20:03.000Z"
-            }
-          ],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              31500
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              31500
-            ]
-          ]
-        },
-        {
-          "handle": "conyschons",
-          "legislador": {
-            "nombre": "Constanza Schonhaut",
-            "cargo": "diputada",
-            "territorio": "D11",
-            "partido": "FA",
-            "coalicion": "Unidad por Chile",
-            "sector": "oposicion"
-          },
-          "verified": false,
-          "followers": 12500,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 12.040179954309611,
-          "velocidad": null,
-          "cadencia": 3.5,
-          "viewsPorSeguidor": 0.46864,
-          "breakouts": [
-            {
-              "id": "7655554417365749013",
-              "caption": "Qué diferencia. ¿Qué opinan?",
-              "views": 1300000,
-              "ratio": 221.91874359849777,
-              "postedAt": "2026-06-26T04:21:14.000Z"
-            }
-          ],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              12500
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              12500
-            ]
-          ]
-        },
-        {
-          "handle": "diego_ibanezc",
-          "legislador": null,
-          "verified": false,
-          "followers": 86800,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 12.50882197459551,
-          "velocidad": null,
-          "cadencia": 1.5,
-          "viewsPorSeguidor": 0.0909447004608295,
-          "breakouts": [],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              86800
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              86800
-            ]
-          ]
-        },
         {
           "handle": "gonzalowinter",
           "legislador": {
@@ -325,25 +796,25 @@
           "crecimiento": null,
           "aceleracion": {
             "ratio": null,
-            "estado": "sin datos"
+            "estado": "estable"
           },
-          "engagement": 13.538235365439643,
+          "engagement": 13.542541336078978,
           "velocidad": null,
-          "cadencia": 3.0,
-          "viewsPorSeguidor": 0.436241610738255,
+          "cadencia": 2.5,
+          "viewsPorSeguidor": 0.4367578729994837,
           "breakouts": [
             {
               "id": "7655346656614927623",
               "caption": "Yo sé que en este hemiciclo existen diputados racionales y capaces de ponderar posiciones. La pregunta es por qué adoptan esta forma de legislar que, a simple vista, no tiene sentido.",
-              "views": 294700,
-              "ratio": 3.4875739644970416,
+              "views": 296600,
+              "ratio": 3.5059101654846336,
               "postedAt": "2026-06-25T14:54:58.000Z"
             },
             {
               "id": "7654792219739573524",
               "caption": "El Ministerio de Hacienda, que solía ser una institución seria, se ha prestado para una Acusación Constitucional cuyo efecto más grave es poner en duda las finanzas de nuestro país ante el mundo.",
-              "views": 287700,
-              "ratio": 3.404733727810651,
+              "views": 288300,
+              "ratio": 3.4078014184397163,
               "postedAt": "2026-06-24T03:03:23.000Z"
             }
           ],
@@ -355,47 +826,750 @@
             [
               "2026-07-07T15:53:26Z",
               193700
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              193700
+            ]
+          ]
+        },
+        {
+          "handle": "jakastadriasola",
+          "legislador": {
+            "nombre": "Jose Antonio Kast Adriasola",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 38700,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 11.473437466474993,
+          "velocidad": null,
+          "cadencia": 2.0,
+          "viewsPorSeguidor": 0.5649483204134367,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              38700
+            ]
+          ]
+        },
+        {
+          "handle": "lorenafriesm",
+          "legislador": {
+            "nombre": "Lorena Fries",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 4924,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 6.679120382642427,
+          "velocidad": null,
+          "cadencia": 1.0,
+          "viewsPorSeguidor": 0.2252233956133225,
+          "breakouts": [
+            {
+              "id": "7658335477635894549",
+              "caption": "Estamos enfrentando una crisis económica, y el gobierno de Kast ha decidido desde el comienzo que sean las familias quienes paguen el costo. Partiendo por no utilizar el MEPCO y con una megarreforma tributaria que beneficia solo a los más ricos.#kast #chile #economia #politica #fyp",
+              "views": 4673,
+              "ratio": 4.21370604147881,
+              "postedAt": "2026-07-03T16:13:03.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              4924
+            ]
+          ]
+        },
+        {
+          "handle": "jorgealessandridiputado",
+          "legislador": {
+            "nombre": "Jorge Alessandri",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "UDI",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 111500,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.937158926383784,
+          "velocidad": null,
+          "cadencia": 0.5,
+          "viewsPorSeguidor": 0.18071748878923766,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              111500
+            ]
+          ]
+        },
+        {
+          "handle": "diegoschalper",
+          "legislador": {
+            "nombre": "Diego Schalper",
+            "cargo": "diputado",
+            "territorio": "D11",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 18800,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.566098917854765,
+          "velocidad": null,
+          "cadencia": 2.0,
+          "viewsPorSeguidor": 0.10452127659574469,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              18800
+            ]
+          ]
+        },
+        {
+          "handle": "claudiamoradistrito11",
+          "legislador": {
+            "nombre": "Claudia Mora",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 1505,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 5.93975859412261,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.8538205980066444,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              1505
+            ]
+          ]
+        },
+        {
+          "handle": "conyschons",
+          "legislador": {
+            "nombre": "Constanza Schonhaut",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 12600,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "acelera"
+          },
+          "engagement": 13.05408825795092,
+          "velocidad": null,
+          "cadencia": 4.0,
+          "viewsPorSeguidor": 0.37396825396825395,
+          "breakouts": [
+            {
+              "id": "7655554417365749013",
+              "caption": "Qué diferencia. ¿Qué opinan?",
+              "views": 1300000,
+              "ratio": 275.89134125636673,
+              "postedAt": "2026-06-26T04:21:14.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T15:37:13Z",
+              12500
+            ],
+            [
+              "2026-07-07T15:53:26Z",
+              12500
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              12600
+            ]
+          ]
+        },
+        {
+          "handle": "pancho.orregog",
+          "legislador": {
+            "nombre": "Francisco Orrego",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 200000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 9.459415979193667,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.2675,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              200000
+            ]
+          ]
+        },
+        {
+          "handle": "cristianarayal",
+          "legislador": {
+            "nombre": "Cristian Araya",
+            "cargo": "diputado",
+            "territorio": "D11",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 80300,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 9.044265593561368,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.018511830635118305,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              80300
+            ]
+          ]
+        },
+        {
+          "handle": "gaelyeomans",
+          "legislador": {
+            "nombre": "Gael Yeomans",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 31500,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "estable"
+          },
+          "engagement": 9.844065591729144,
+          "velocidad": null,
+          "cadencia": 4.5,
+          "viewsPorSeguidor": 0.06534920634920635,
+          "breakouts": [
+            {
+              "id": "7657676919520972052",
+              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos solo en sueldo de funcionarios y dietas parlamentarias. \nEspero que algún día se pongan serios y trabajen realmente por las necesidades de Chile. ",
+              "views": 9472,
+              "ratio": 4.6014087928102985,
+              "postedAt": "2026-07-01T21:37:37.000Z"
+            },
+            {
+              "id": "7658306356058918164",
+              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
+              "views": 6314,
+              "ratio": 3.067282001457372,
+              "postedAt": "2026-07-03T14:20:03.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T15:37:13Z",
+              31500
+            ],
+            [
+              "2026-07-07T15:53:26Z",
+              31500
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              31500
+            ]
+          ]
+        },
+        {
+          "handle": "catadelrealcl",
+          "legislador": {
+            "nombre": "Catalina Del Real",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 1602,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.850601080842615,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.18352059925093633,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              1602
+            ]
+          ]
+        },
+        {
+          "handle": "lorenapizarrosierra",
+          "legislador": {
+            "nombre": "Lorena Pizarro",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "PC",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 2664,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.1244229417008946,
+          "velocidad": null,
+          "cadencia": 0.5,
+          "viewsPorSeguidor": 1.7239114114114114,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2664
+            ]
+          ]
+        },
+        {
+          "handle": "diputadoeduardoduran",
+          "legislador": {
+            "nombre": "Eduardo Duran",
+            "cargo": "diputado",
+            "territorio": "D13",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 97,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.9494875940812433,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 5.108247422680412,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              97
+            ]
+          ]
+        },
+        {
+          "handle": "valebecerra.cl",
+          "legislador": {
+            "nombre": "Valentina Becerra",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 133600,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.565298433480974,
+          "velocidad": null,
+          "cadencia": 3.5,
+          "viewsPorSeguidor": 0.04496631736526946,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              133600
+            ]
+          ]
+        },
+        {
+          "handle": "feliperossco",
+          "legislador": {
+            "nombre": "Felipe Ross",
+            "cargo": "diputado",
+            "territorio": "D13",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 2380,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 8.62457341625074,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.3464285714285714,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2380
+            ]
+          ]
+        },
+        {
+          "handle": "dignidadfabiola",
+          "legislador": {
+            "nombre": "Fabiola Campillai",
+            "cargo": "senadora",
+            "territorio": "RM",
+            "partido": "IND",
+            "coalicion": "independiente",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 3622,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.1021162365177197,
+          "velocidad": null,
+          "cadencia": 0.5,
+          "viewsPorSeguidor": 2.128934290447267,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              3622
+            ]
+          ]
+        },
+        {
+          "handle": "manueljoseossandon",
+          "legislador": {
+            "nombre": "Manuel Jose Ossandon",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 2492,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.5237609689778764,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 10.272873194221509,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2492
+            ]
+          ]
+        },
+        {
+          "handle": "iracihassler",
+          "legislador": {
+            "nombre": "Iraci Hassler",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "PC",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 2411,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.6706648859187183,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 3.1256739941932805,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2411
+            ]
+          ]
+        },
+        {
+          "handle": "lcruzcoke",
+          "legislador": {
+            "nombre": "Luciano Cruz-Coke",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "Evopoli",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 894,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.4434359658901992,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 8.016219239373601,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              894
+            ]
+          ]
+        },
+        {
+          "handle": "rojo.edwards",
+          "legislador": {
+            "nombre": "Rojo Edwards",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "PSC",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 73000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 4.166706825549811,
+          "velocidad": null,
+          "cadencia": 1.0,
+          "viewsPorSeguidor": 0.5246575342465754,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              73000
+            ]
+          ]
+        },
+        {
+          "handle": "emiliaschneiderv",
+          "legislador": {
+            "nombre": "Emilia Schneider",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 36000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.4275832897979885,
+          "velocidad": null,
+          "cadencia": 0.5,
+          "viewsPorSeguidor": 1.1694444444444443,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              36000
+            ]
+          ]
+        },
+        {
+          "handle": "hans_marowski",
+          "legislador": {
+            "nombre": "Hans Marowski",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "PNL",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 42,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 10.1010101010101,
+          "velocidad": null,
+          "cadencia": 0.5,
+          "viewsPorSeguidor": 0.23809523809523808,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              42
+            ]
+          ]
+        },
+        {
+          "handle": "conihube",
+          "legislador": {
+            "nombre": "Constanza Hube",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "UDI",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 16400,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 6.765637743898614,
+          "velocidad": null,
+          "cadencia": 1.0,
+          "viewsPorSeguidor": 0.4894512195121951,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              16400
             ]
           ]
         }
       ],
       "insights": [
         "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
-        "Breakout en @gaelyeomans: un video con 10,700 views, 5.2× la mediana de la cuenta.",
-        "Breakout en @conyschons: un video con 1,300,000 views, 221.9× la mediana de la cuenta.",
-        "Breakout en @gonzalowinter: un video con 294,700 views, 3.5× la mediana de la cuenta.",
+        "@conyschons está acelerando: la segunda mitad del período creció más que la primera.",
+        "@lorenapizarrosierra rinde sobre su tamaño: su video típico hace 1.7× views que seguidores tiene.",
+        "@diputadoeduardoduran rinde sobre su tamaño: su video típico hace 5.1× views que seguidores tiene.",
+        "@dignidadfabiola rinde sobre su tamaño: su video típico hace 2.1× views que seguidores tiene.",
+        "@manueljoseossandon rinde sobre su tamaño: su video típico hace 10.3× views que seguidores tiene.",
+        "@iracihassler rinde sobre su tamaño: su video típico hace 3.1× views que seguidores tiene.",
+        "@lcruzcoke rinde sobre su tamaño: su video típico hace 8× views que seguidores tiene.",
+        "@emiliaschneiderv rinde sobre su tamaño: su video típico hace 1.2× views que seguidores tiene.",
+        "Breakout en @gonzalowinter: un video con 296,600 views, 3.5× la mediana de la cuenta.",
+        "Breakout en @lorenafriesm: un video con 4,673 views, 4.2× la mediana de la cuenta.",
+        "Breakout en @conyschons: un video con 1,300,000 views, 275.9× la mediana de la cuenta.",
+        "Breakout en @gaelyeomans: un video con 9,472 views, 4.6× la mediana de la cuenta.",
         "El engagement más alto es de @gonzalowinter: 13.54% mediano por video."
       ],
       "alertas": [
         {
           "tipo": "breakout",
-          "handle": "gaelyeomans",
-          "texto": "Video breakout: 10,700 views (5.2× su mediana)"
+          "handle": "gonzalowinter",
+          "texto": "Video breakout: 296,600 views (3.5× su mediana)"
         },
         {
           "tipo": "breakout",
-          "handle": "gaelyeomans",
-          "texto": "Video breakout: 9,461 views (4.6× su mediana)"
+          "handle": "gonzalowinter",
+          "texto": "Video breakout: 288,300 views (3.4× su mediana)"
         },
         {
           "tipo": "breakout",
-          "handle": "gaelyeomans",
-          "texto": "Video breakout: 6,310 views (3.1× su mediana)"
+          "handle": "lorenafriesm",
+          "texto": "Video breakout: 4,673 views (4.2× su mediana)"
+        },
+        {
+          "tipo": "aceleracion",
+          "handle": "conyschons",
+          "texto": "Aceleración fuerte de seguidores"
         },
         {
           "tipo": "breakout",
           "handle": "conyschons",
-          "texto": "Video breakout: 1,300,000 views (221.9× su mediana)"
+          "texto": "Video breakout: 1,300,000 views (275.9× su mediana)"
         },
         {
           "tipo": "breakout",
-          "handle": "gonzalowinter",
-          "texto": "Video breakout: 294,700 views (3.5× su mediana)"
+          "handle": "gaelyeomans",
+          "texto": "Video breakout: 9,472 views (4.6× su mediana)"
         },
         {
           "tipo": "breakout",
-          "handle": "gonzalowinter",
-          "texto": "Video breakout: 287,700 views (3.4× su mediana)"
+          "handle": "gaelyeomans",
+          "texto": "Video breakout: 6,314 views (3.1× su mediana)"
         }
       ],
       "titulares": {
@@ -403,149 +1577,20 @@
         "breakoutMasCaliente": {
           "handle": "conyschons",
           "views": 1300000,
-          "ratio": 221.91874359849777
+          "ratio": 275.89134125636673
         },
         "mayorAceleracion": null,
         "rindeSobreTamano": {
-          "handle": "conyschons",
-          "viewsPorSeguidor": 0.46864
+          "handle": "manueljoseossandon",
+          "viewsPorSeguidor": 10.272873194221509
         }
       }
     },
     "30": {
       "days": 30,
-      "snapshotsEnVentana": 3,
+      "snapshotsEnVentana": 4,
       "hasGrowth": true,
       "accounts": [
-        {
-          "handle": "gaelyeomans",
-          "legislador": {
-            "nombre": "Gael Yeomans",
-            "cargo": "diputada",
-            "territorio": "D13",
-            "partido": "FA",
-            "coalicion": "Unidad por Chile",
-            "sector": "oposicion"
-          },
-          "verified": false,
-          "followers": 31500,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 9.80681930702496,
-          "velocidad": null,
-          "cadencia": 2.3333333333333335,
-          "viewsPorSeguidor": 0.06528571428571428,
-          "breakouts": [
-            {
-              "id": "7654687636405226772",
-              "caption": "⚠️ La Acusación Constitucional contra Grau es solo una distracción sobre el debate de la Reforma Tributaria de Quiroz. \nEsa reforma será literalmente un pelotazo en la cara de todas las chilenas y chilenos, acá deben estar nuestros ojos. ",
-              "views": 10700,
-              "ratio": 5.203014831023584,
-              "postedAt": "2026-06-23T20:17:39.000Z"
-            },
-            {
-              "id": "7657676919520972052",
-              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos solo en sueldo de funcionarios y dietas parlamentarias. \nEspero que algún día se pongan serios y trabajen realmente por las necesidades de Chile. ",
-              "views": 9461,
-              "ratio": 4.600534889375152,
-              "postedAt": "2026-07-01T21:37:37.000Z"
-            },
-            {
-              "id": "7658306356058918164",
-              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
-              "views": 6310,
-              "ratio": 3.0683199610989544,
-              "postedAt": "2026-07-03T14:20:03.000Z"
-            }
-          ],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              31500
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              31500
-            ]
-          ]
-        },
-        {
-          "handle": "conyschons",
-          "legislador": {
-            "nombre": "Constanza Schonhaut",
-            "cargo": "diputada",
-            "territorio": "D11",
-            "partido": "FA",
-            "coalicion": "Unidad por Chile",
-            "sector": "oposicion"
-          },
-          "verified": false,
-          "followers": 12500,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 12.040179954309611,
-          "velocidad": null,
-          "cadencia": 2.1,
-          "viewsPorSeguidor": 0.46864,
-          "breakouts": [
-            {
-              "id": "7655554417365749013",
-              "caption": "Qué diferencia. ¿Qué opinan?",
-              "views": 1300000,
-              "ratio": 221.91874359849777,
-              "postedAt": "2026-06-26T04:21:14.000Z"
-            },
-            {
-              "id": "7654088921025940756",
-              "caption": "Una vez más el ministro Quiroz improvisa. ",
-              "views": 118600,
-              "ratio": 20.245817685216796,
-              "postedAt": "2026-06-22T05:34:15.000Z"
-            }
-          ],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              12500
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              12500
-            ]
-          ]
-        },
-        {
-          "handle": "diego_ibanezc",
-          "legislador": null,
-          "verified": false,
-          "followers": 86800,
-          "crecimiento": null,
-          "aceleracion": {
-            "ratio": null,
-            "estado": "sin datos"
-          },
-          "engagement": 12.50882197459551,
-          "velocidad": null,
-          "cadencia": 1.1666666666666667,
-          "viewsPorSeguidor": 0.0909447004608295,
-          "breakouts": [],
-          "serieSeguidores": [
-            [
-              "2026-07-07T15:37:13Z",
-              86800
-            ],
-            [
-              "2026-07-07T15:53:26Z",
-              86800
-            ]
-          ]
-        },
         {
           "handle": "gonzalowinter",
           "legislador": {
@@ -561,32 +1606,32 @@
           "crecimiento": null,
           "aceleracion": {
             "ratio": null,
-            "estado": "sin datos"
+            "estado": "estable"
           },
-          "engagement": 13.538235365439643,
+          "engagement": 13.542541336078978,
           "velocidad": null,
           "cadencia": 2.3333333333333335,
-          "viewsPorSeguidor": 0.436241610738255,
+          "viewsPorSeguidor": 0.4367578729994837,
           "breakouts": [
             {
               "id": "7652758654940204289",
               "caption": "Nadie ha pedido cambiarle el nombre a la Cámara de Diputados y Diputadas, esa es una idea del señor Bobadilla. Fracasa, por lo demás.",
-              "views": 549000,
-              "ratio": 6.497041420118343,
+              "views": 550100,
+              "ratio": 6.502364066193853,
               "postedAt": "2026-06-18T15:32:15.000Z"
             },
             {
               "id": "7655346656614927623",
               "caption": "Yo sé que en este hemiciclo existen diputados racionales y capaces de ponderar posiciones. La pregunta es por qué adoptan esta forma de legislar que, a simple vista, no tiene sentido.",
-              "views": 294700,
-              "ratio": 3.4875739644970416,
+              "views": 296600,
+              "ratio": 3.5059101654846336,
               "postedAt": "2026-06-25T14:54:58.000Z"
             },
             {
               "id": "7654792219739573524",
               "caption": "El Ministerio de Hacienda, que solía ser una institución seria, se ha prestado para una Acusación Constitucional cuyo efecto más grave es poner en duda las finanzas de nuestro país ante el mundo.",
-              "views": 287700,
-              "ratio": 3.404733727810651,
+              "views": 288300,
+              "ratio": 3.4078014184397163,
               "postedAt": "2026-06-24T03:03:23.000Z"
             }
           ],
@@ -598,18 +1643,812 @@
             [
               "2026-07-07T15:53:26Z",
               193700
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              193700
+            ]
+          ]
+        },
+        {
+          "handle": "jakastadriasola",
+          "legislador": {
+            "nombre": "Jose Antonio Kast Adriasola",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 38700,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 11.473437466474993,
+          "velocidad": null,
+          "cadencia": 1.8666666666666667,
+          "viewsPorSeguidor": 0.5649483204134367,
+          "breakouts": [
+            {
+              "id": "7652068979283954951",
+              "caption": "AHORA‼️‼️‼️ se aprueba de manera unánime el proyecto de ley que  autoriza el uso de agentes encubiertos en internet para perseguir delitos sexuales contra niños, niñas y adolescentes.\n#congreso #congresonacional #foryoupage #parati #chile🇨🇱 @Bancada Republicana ",
+              "views": 199200,
+              "ratio": 9.11107553685366,
+              "postedAt": "2026-06-16T18:55:55.000Z"
+            },
+            {
+              "id": "7654424092757462279",
+              "caption": "Hoy, durante la discusión de la moción sobre el monumento a Baldomero Lillo, les confesé algo: me gusta Illapu, me gustan Los Jaivas y me gusta Pablo Neruda, pese a que no comparto su pensamiento político. Creo que es perfectamente posible valorar el aporte artístico y cultural de una persona sin coincidir con sus ideas. Lamentablemente, pareciera que algunos diputados del otro sector no son capaces de hacer lo mismo y se niegan a reconocer el valor de un gran artista cuando no pertenece a su propia vereda política. La cultura, el arte y el patrimonio deberían unirnos, no dividirnos según la posición política de cada uno. #foryoupage #parati #illapu #congresonacional #chile ",
+              "views": 72900,
+              "ratio": 3.3343243305051797,
+              "postedAt": "2026-06-23T03:14:55.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              38700
+            ]
+          ]
+        },
+        {
+          "handle": "lorenafriesm",
+          "legislador": {
+            "nombre": "Lorena Fries",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 4924,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 6.679120382642427,
+          "velocidad": null,
+          "cadencia": 2.1,
+          "viewsPorSeguidor": 0.2252233956133225,
+          "breakouts": [
+            {
+              "id": "7654377672495189269",
+              "caption": "Quedó grabado: el director del Servicio Nacional de Migraciones admite que la denuncia y la alarma nacional por presuntas desapariciones de niños haitianos se activaron solo cuando el tema explotó en la prensa  y en base a un preinforme, sin certezas ni evidencia clara.\n\nProteger a infancias y a personas migrantes exige rigor, no titulares. ¿Quién se hace cargo de la estigmatización y los ataques a la comunidad haitiana en Chile?",
+              "views": 8464,
+              "ratio": 7.632100991884581,
+              "postedAt": "2026-06-23T00:14:47.000Z"
+            },
+            {
+              "id": "7654283354476449045",
+              "caption": "La protección de la infancia exige verdad, responsabilidad y rigor. Ni la infancia ni la migración pueden utilizarse para generar pánico, estigmatizar comunidades o sacar ventajas políticas respecto de gobiernos anteriores.",
+              "views": 8163,
+              "ratio": 7.36068530207394,
+              "postedAt": "2026-06-22T18:08:48.000Z"
+            },
+            {
+              "id": "7658335477635894549",
+              "caption": "Estamos enfrentando una crisis económica, y el gobierno de Kast ha decidido desde el comienzo que sean las familias quienes paguen el costo. Partiendo por no utilizar el MEPCO y con una megarreforma tributaria que beneficia solo a los más ricos.#kast #chile #economia #politica #fyp",
+              "views": 4673,
+              "ratio": 4.21370604147881,
+              "postedAt": "2026-07-03T16:13:03.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              4924
+            ]
+          ]
+        },
+        {
+          "handle": "jorgealessandridiputado",
+          "legislador": {
+            "nombre": "Jorge Alessandri",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "UDI",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 111500,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.937158926383784,
+          "velocidad": null,
+          "cadencia": 0.23333333333333334,
+          "viewsPorSeguidor": 0.18071748878923766,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              111500
+            ]
+          ]
+        },
+        {
+          "handle": "diegoschalper",
+          "legislador": {
+            "nombre": "Diego Schalper",
+            "cargo": "diputado",
+            "territorio": "D11",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 18800,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.566098917854765,
+          "velocidad": null,
+          "cadencia": 1.6333333333333333,
+          "viewsPorSeguidor": 0.10452127659574469,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              18800
+            ]
+          ]
+        },
+        {
+          "handle": "claudiamoradistrito11",
+          "legislador": {
+            "nombre": "Claudia Mora",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 1505,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 5.93975859412261,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.8538205980066444,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              1505
+            ]
+          ]
+        },
+        {
+          "handle": "conyschons",
+          "legislador": {
+            "nombre": "Constanza Schonhaut",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 12600,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "acelera"
+          },
+          "engagement": 13.05408825795092,
+          "velocidad": null,
+          "cadencia": 2.1,
+          "viewsPorSeguidor": 0.37396825396825395,
+          "breakouts": [
+            {
+              "id": "7655554417365749013",
+              "caption": "Qué diferencia. ¿Qué opinan?",
+              "views": 1300000,
+              "ratio": 275.89134125636673,
+              "postedAt": "2026-06-26T04:21:14.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T15:37:13Z",
+              12500
+            ],
+            [
+              "2026-07-07T15:53:26Z",
+              12500
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              12600
+            ]
+          ]
+        },
+        {
+          "handle": "pancho.orregog",
+          "legislador": {
+            "nombre": "Francisco Orrego",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 200000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 9.459415979193667,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.2675,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              200000
+            ]
+          ]
+        },
+        {
+          "handle": "cristianarayal",
+          "legislador": {
+            "nombre": "Cristian Araya",
+            "cargo": "diputado",
+            "territorio": "D11",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 80300,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 9.044265593561368,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.018511830635118305,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              80300
+            ]
+          ]
+        },
+        {
+          "handle": "gaelyeomans",
+          "legislador": {
+            "nombre": "Gael Yeomans",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 31500,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "estable"
+          },
+          "engagement": 9.844065591729144,
+          "velocidad": null,
+          "cadencia": 2.3333333333333335,
+          "viewsPorSeguidor": 0.06534920634920635,
+          "breakouts": [
+            {
+              "id": "7654687636405226772",
+              "caption": "⚠️ La Acusación Constitucional contra Grau es solo una distracción sobre el debate de la Reforma Tributaria de Quiroz. \nEsa reforma será literalmente un pelotazo en la cara de todas las chilenas y chilenos, acá deben estar nuestros ojos. ",
+              "views": 10700,
+              "ratio": 5.197959679378188,
+              "postedAt": "2026-06-23T20:17:39.000Z"
+            },
+            {
+              "id": "7657676919520972052",
+              "caption": "Los gustitos de las 10 acusaciones constitucionales del Partido Republicano le ha costado al Estado de Chile más de 2.200 millones de pesos solo en sueldo de funcionarios y dietas parlamentarias. \nEspero que algún día se pongan serios y trabajen realmente por las necesidades de Chile. ",
+              "views": 9472,
+              "ratio": 4.6014087928102985,
+              "postedAt": "2026-07-01T21:37:37.000Z"
+            },
+            {
+              "id": "7658306356058918164",
+              "caption": "Ya parece costumbre que el Gobierno de Kast diga algo y después se arrepienta. Quitarle el Estadio Nacional a BTS ya es un absurdo.",
+              "views": 6314,
+              "ratio": 3.067282001457372,
+              "postedAt": "2026-07-03T14:20:03.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T15:37:13Z",
+              31500
+            ],
+            [
+              "2026-07-07T15:53:26Z",
+              31500
+            ],
+            [
+              "2026-07-07T20:27:26Z",
+              31500
+            ]
+          ]
+        },
+        {
+          "handle": "catadelrealcl",
+          "legislador": {
+            "nombre": "Catalina Del Real",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 1602,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.850601080842615,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.18352059925093633,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              1602
+            ]
+          ]
+        },
+        {
+          "handle": "lorenapizarrosierra",
+          "legislador": {
+            "nombre": "Lorena Pizarro",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "PC",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 2664,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.1244229417008946,
+          "velocidad": null,
+          "cadencia": 0.23333333333333334,
+          "viewsPorSeguidor": 1.7239114114114114,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2664
+            ]
+          ]
+        },
+        {
+          "handle": "diputadoeduardoduran",
+          "legislador": {
+            "nombre": "Eduardo Duran",
+            "cargo": "diputado",
+            "territorio": "D13",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 97,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.9494875940812433,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 5.108247422680412,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              97
+            ]
+          ]
+        },
+        {
+          "handle": "valebecerra.cl",
+          "legislador": {
+            "nombre": "Valentina Becerra",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 133600,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 7.565298433480974,
+          "velocidad": null,
+          "cadencia": 1.6333333333333333,
+          "viewsPorSeguidor": 0.04496631736526946,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              133600
+            ]
+          ]
+        },
+        {
+          "handle": "feliperossco",
+          "legislador": {
+            "nombre": "Felipe Ross",
+            "cargo": "diputado",
+            "territorio": "D13",
+            "partido": "REP",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 2380,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 8.62457341625074,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 0.3464285714285714,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2380
+            ]
+          ]
+        },
+        {
+          "handle": "dignidadfabiola",
+          "legislador": {
+            "nombre": "Fabiola Campillai",
+            "cargo": "senadora",
+            "territorio": "RM",
+            "partido": "IND",
+            "coalicion": "independiente",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 3622,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.1021162365177197,
+          "velocidad": null,
+          "cadencia": 0.4666666666666667,
+          "viewsPorSeguidor": 2.128934290447267,
+          "breakouts": [
+            {
+              "id": "7649534932032802069",
+              "caption": "¿Qué tanto esconde la derecha que rechaza cada vez que puede el levantamiento del secreto bancario?",
+              "views": 25600,
+              "ratio": 3.3199325638697963,
+              "postedAt": "2026-06-09T23:02:35.000Z"
+            }
+          ],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              3622
+            ]
+          ]
+        },
+        {
+          "handle": "manueljoseossandon",
+          "legislador": {
+            "nombre": "Manuel Jose Ossandon",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "RN",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 2492,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 3.5237609689778764,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 10.272873194221509,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2492
+            ]
+          ]
+        },
+        {
+          "handle": "iracihassler",
+          "legislador": {
+            "nombre": "Iraci Hassler",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "PC",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 2411,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.6706648859187183,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 3.1256739941932805,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              2411
+            ]
+          ]
+        },
+        {
+          "handle": "lcruzcoke",
+          "legislador": {
+            "nombre": "Luciano Cruz-Coke",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "Evopoli",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 894,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.4434359658901992,
+          "velocidad": null,
+          "cadencia": 0.0,
+          "viewsPorSeguidor": 8.016219239373601,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              894
+            ]
+          ]
+        },
+        {
+          "handle": "rojo.edwards",
+          "legislador": {
+            "nombre": "Rojo Edwards",
+            "cargo": "senador",
+            "territorio": "RM",
+            "partido": "PSC",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 73000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 4.166706825549811,
+          "velocidad": null,
+          "cadencia": 1.6333333333333333,
+          "viewsPorSeguidor": 0.5246575342465754,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              73000
+            ]
+          ]
+        },
+        {
+          "handle": "emiliaschneiderv",
+          "legislador": {
+            "nombre": "Emilia Schneider",
+            "cargo": "diputada",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
+          "verified": false,
+          "followers": 36000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 2.4275832897979885,
+          "velocidad": null,
+          "cadencia": 0.23333333333333334,
+          "viewsPorSeguidor": 1.1694444444444443,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              36000
+            ]
+          ]
+        },
+        {
+          "handle": "hans_marowski",
+          "legislador": {
+            "nombre": "Hans Marowski",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "PNL",
+            "coalicion": "Cambio por Chile",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 42,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 10.1010101010101,
+          "velocidad": null,
+          "cadencia": 0.4666666666666667,
+          "viewsPorSeguidor": 0.23809523809523808,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              42
+            ]
+          ]
+        },
+        {
+          "handle": "conihube",
+          "legislador": {
+            "nombre": "Constanza Hube",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "UDI",
+            "coalicion": "Chile Grande y Unido",
+            "sector": "gobierno"
+          },
+          "verified": false,
+          "followers": 16400,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 6.765637743898614,
+          "velocidad": null,
+          "cadencia": 0.7000000000000001,
+          "viewsPorSeguidor": 0.4894512195121951,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T20:27:26Z",
+              16400
             ]
           ]
         }
       ],
       "insights": [
         "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
+        "@conyschons está acelerando: la segunda mitad del período creció más que la primera.",
+        "@lorenapizarrosierra rinde sobre su tamaño: su video típico hace 1.7× views que seguidores tiene.",
+        "@diputadoeduardoduran rinde sobre su tamaño: su video típico hace 5.1× views que seguidores tiene.",
+        "@dignidadfabiola rinde sobre su tamaño: su video típico hace 2.1× views que seguidores tiene.",
+        "@manueljoseossandon rinde sobre su tamaño: su video típico hace 10.3× views que seguidores tiene.",
+        "@iracihassler rinde sobre su tamaño: su video típico hace 3.1× views que seguidores tiene.",
+        "@lcruzcoke rinde sobre su tamaño: su video típico hace 8× views que seguidores tiene.",
+        "@emiliaschneiderv rinde sobre su tamaño: su video típico hace 1.2× views que seguidores tiene.",
+        "Breakout en @gonzalowinter: un video con 550,100 views, 6.5× la mediana de la cuenta.",
+        "Breakout en @jakastadriasola: un video con 199,200 views, 9.1× la mediana de la cuenta.",
+        "Breakout en @lorenafriesm: un video con 8,464 views, 7.6× la mediana de la cuenta.",
+        "Breakout en @conyschons: un video con 1,300,000 views, 275.9× la mediana de la cuenta.",
         "Breakout en @gaelyeomans: un video con 10,700 views, 5.2× la mediana de la cuenta.",
-        "Breakout en @conyschons: un video con 1,300,000 views, 221.9× la mediana de la cuenta.",
-        "Breakout en @gonzalowinter: un video con 549,000 views, 6.5× la mediana de la cuenta.",
+        "Breakout en @dignidadfabiola: un video con 25,600 views, 3.3× la mediana de la cuenta.",
         "El engagement más alto es de @gonzalowinter: 13.54% mediano por video."
       ],
       "alertas": [
+        {
+          "tipo": "breakout",
+          "handle": "gonzalowinter",
+          "texto": "Video breakout: 550,100 views (6.5× su mediana)"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "gonzalowinter",
+          "texto": "Video breakout: 296,600 views (3.5× su mediana)"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "gonzalowinter",
+          "texto": "Video breakout: 288,300 views (3.4× su mediana)"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "jakastadriasola",
+          "texto": "Video breakout: 199,200 views (9.1× su mediana)"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "jakastadriasola",
+          "texto": "Video breakout: 72,900 views (3.3× su mediana)"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "lorenafriesm",
+          "texto": "Video breakout: 8,464 views (7.6× su mediana)"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "lorenafriesm",
+          "texto": "Video breakout: 8,163 views (7.4× su mediana)"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "lorenafriesm",
+          "texto": "Video breakout: 4,673 views (4.2× su mediana)"
+        },
+        {
+          "tipo": "aceleracion",
+          "handle": "conyschons",
+          "texto": "Aceleración fuerte de seguidores"
+        },
+        {
+          "tipo": "breakout",
+          "handle": "conyschons",
+          "texto": "Video breakout: 1,300,000 views (275.9× su mediana)"
+        },
         {
           "tipo": "breakout",
           "handle": "gaelyeomans",
@@ -618,37 +2457,17 @@
         {
           "tipo": "breakout",
           "handle": "gaelyeomans",
-          "texto": "Video breakout: 9,461 views (4.6× su mediana)"
+          "texto": "Video breakout: 9,472 views (4.6× su mediana)"
         },
         {
           "tipo": "breakout",
           "handle": "gaelyeomans",
-          "texto": "Video breakout: 6,310 views (3.1× su mediana)"
+          "texto": "Video breakout: 6,314 views (3.1× su mediana)"
         },
         {
           "tipo": "breakout",
-          "handle": "conyschons",
-          "texto": "Video breakout: 1,300,000 views (221.9× su mediana)"
-        },
-        {
-          "tipo": "breakout",
-          "handle": "conyschons",
-          "texto": "Video breakout: 118,600 views (20.2× su mediana)"
-        },
-        {
-          "tipo": "breakout",
-          "handle": "gonzalowinter",
-          "texto": "Video breakout: 549,000 views (6.5× su mediana)"
-        },
-        {
-          "tipo": "breakout",
-          "handle": "gonzalowinter",
-          "texto": "Video breakout: 294,700 views (3.5× su mediana)"
-        },
-        {
-          "tipo": "breakout",
-          "handle": "gonzalowinter",
-          "texto": "Video breakout: 287,700 views (3.4× su mediana)"
+          "handle": "dignidadfabiola",
+          "texto": "Video breakout: 25,600 views (3.3× su mediana)"
         }
       ],
       "titulares": {
@@ -656,12 +2475,12 @@
         "breakoutMasCaliente": {
           "handle": "conyschons",
           "views": 1300000,
-          "ratio": 221.91874359849777
+          "ratio": 275.89134125636673
         },
         "mayorAceleracion": null,
         "rindeSobreTamano": {
-          "handle": "conyschons",
-          "viewsPorSeguidor": 0.46864
+          "handle": "manueljoseossandon",
+          "viewsPorSeguidor": 10.272873194221509
         }
       }
     }
