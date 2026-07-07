@@ -31,7 +31,7 @@ cp .env.example .env             # luego edita .env y pega tu APIFY_TOKEN
 ## Estructura
 
 ```
-config/accounts.json    # lista de handles a monitorear (edítala tú)
+config/legisladores.csv # base de legisladores: ficha política + handle + scrape si/no
 src/                    # pipeline en Python (fetch, métricas, reporte)
 data/snapshots/         # histórico: un JSON por corrida — la "base de datos"
 docs/                   # dashboard estático que servirá GitHub Pages

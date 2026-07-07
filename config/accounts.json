@@ -1,9 +1,0 @@
-{
-  "accounts": [
-    "conyschons",
-    "diego_ibanezc",
-    "gaelyeomans",
-    "gonzalowinter"
-  ],
-  "_nota": "Handles a monitorear, sin @. Máximo 5 mientras estemos en fase de validación de costo (el límite vive en src/fetch.py)."
-}

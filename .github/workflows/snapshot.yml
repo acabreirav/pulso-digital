@@ -1,16 +1,19 @@
-# Snapshot diario del Radar de Tracción (CLAUDE.md §3).
+# Snapshot semanal del Radar de Tracción (CLAUDE.md §3).
 #
-# Qué hace: todos los días a las 12:00 UTC (≈08:00 en Chile) corre el
+# Qué hace: todos los lunes a las 12:00 UTC (≈08:00 en Chile) corre el
 # pipeline completo — fetch desde Apify → snapshot → reporte — y commitea
 # el resultado al repo. GitHub Pages sirve docs/ y el dashboard se
 # actualiza solo. También se puede lanzar a mano desde la pestaña
-# Actions → "Snapshot diario" → Run workflow (workflow_dispatch).
+# Actions → "Snapshot semanal" → Run workflow (workflow_dispatch).
+#
+# Cadencia semanal decidida el 2026-07-07: con ~23 cuentas a ~$0.70 por
+# corrida, semanal ≈ $3/mes cabe en el free tier de Apify; diario no.
 
-name: Snapshot diario
+name: Snapshot semanal
 
 on:
   schedule:
-    - cron: "0 12 * * *"   # min hora día-mes mes día-semana, en UTC
+    - cron: "0 12 * * 1"   # min hora día-mes mes día-semana (1 = lunes), UTC
   workflow_dispatch: {}     # botón de lanzamiento manual
 
 permissions:

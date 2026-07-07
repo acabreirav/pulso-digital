@@ -1,25 +1,25 @@
 nombre,cargo,territorio,partido,coalicion,sector,handle_tiktok,confianza_handle,scrape,notas
-Gonzalo Winter,diputado,D10,FA,Unidad por Chile,oposicion,gonzalowinter,alta,si,Ya monitoreado; handle verificado con fetch real
-Emilia Schneider,diputada,D10,FA,Unidad por Chile,oposicion,emiliaschneiderv,alta,no,Bio de TikTok confirma que es su cuenta de diputada
-Lorena Fries,diputada,D10,FA,Unidad por Chile,oposicion,lorenafriesm,alta,no,Cuenta se llama "Lorena Fries Diputada"
-Iraci Hassler,diputada,D10,PC,Unidad por Chile,oposicion,iracixstgo,alta,no,Cuenta activa desde su período de alcaldesa de Santiago
-Jorge Alessandri,diputado,D10,UDI,Chile Grande y Unido,gobierno,jorgealessandridiputado,alta,no,Cuenta "Diputado Jorge Alessandri"
-Francisco Orrego,diputado,D10,RN,Chile Grande y Unido,gobierno,pancho.orregog,alta,no,Cuenta "Francisco J. Orrego Gutierrez"; ex candidato a gobernador RM
-Jose Antonio Kast Adriasola,diputado,D10,REP,Cambio por Chile,gobierno,ja_kast,alta,no,Hijo del presidente; no confundir con cuentas del padre
-Hans Marowski,diputado,D10,PNL,Cambio por Chile,gobierno,hansmarowskic,media,no,Cuenta "Hans Marowski C."; confirmar que es el diputado
-Constanza Schonhaut,diputada,D11,FA,Unidad por Chile,oposicion,conyschons,alta,si,Ya monitoreada; handle verificado con fetch real
-Diego Schalper,diputado,D11,RN,Chile Grande y Unido,gobierno,sin cuenta,-,no,No se encontro cuenta propia; solo videos de terceros sobre el
-Claudia Mora,diputada,D11,RN,Chile Grande y Unido,gobierno,claudiamorapenalolen,baja,no,Parece cuenta de su campana a alcaldesa de Penalolen 2024; confirmar vigencia
-Constanza Hube,diputada,D11,UDI,Chile Grande y Unido,gobierno,sin cuenta,-,no,No se encontro cuenta
-Cristian Araya,diputado,D11,REP,Cambio por Chile,gobierno,cristianarayal,alta,no,Cuenta "Cristian Araya Diputado"
-Catalina Del Real,diputada,D11,REP,Cambio por Chile,gobierno,catadelrealcl,alta,no,Cuenta "Diputada Catalina Del Real M."; electa 2025 por REP (antes RN)
-Gael Yeomans,diputada,D13,FA,Unidad por Chile,oposicion,gaelyeomans,alta,si,Ya monitoreada; handle verificado con fetch real
-Lorena Pizarro,diputada,D13,PC,Unidad por Chile,oposicion,sin cuenta,-,no,No se encontro cuenta propia
-Eduardo Duran,diputado,D13,RN,Chile Grande y Unido,gobierno,ed_duran_,baja,no,Handle candidato dudoso; confirmar que es el diputado
-Felipe Ross,diputado,D13,REP,Cambio por Chile,gobierno,feliperossco,media,no,Ex concejal de Vitacura; confirmar que la cuenta sigue activa como diputado
-Valentina Becerra,diputada,D13,REP,Cambio por Chile,gobierno,valentinabecerra092,baja,no,Handle candidato muy dudoso; si no corresponde dejar sin cuenta
-Fabiola Campillai,senadora,RM,IND,independiente,oposicion,sin cuenta,-,no,Senadora 2022-2030; no se encontro cuenta propia
+Gonzalo Winter,diputado,D10,FA,Unidad por Chile,oposicion,gonzalowinter,validada,si,Ya monitoreado; handle verificado con fetch real
+Emilia Schneider,diputada,D10,FA,Unidad por Chile,oposicion,emiliaschneiderv,validada,si,Handle validado manualmente (2026-07-07)
+Lorena Fries,diputada,D10,FA,Unidad por Chile,oposicion,lorenafriesm,validada,si,Handle validado manualmente (2026-07-07)
+Iraci Hassler,diputada,D10,PC,Unidad por Chile,oposicion,iracihassler,validada,si,Handle validado manualmente (2026-07-07)
+Jorge Alessandri,diputado,D10,UDI,Chile Grande y Unido,gobierno,jorgealessandridiputado,validada,si,Handle validado manualmente (2026-07-07)
+Francisco Orrego,diputado,D10,RN,Chile Grande y Unido,gobierno,pancho.orregog,validada,si,Handle validado manualmente (2026-07-07)
+Jose Antonio Kast Adriasola,diputado,D10,REP,Cambio por Chile,gobierno,jakastadriasola,validada,si,Handle validado manualmente (2026-07-07)
+Hans Marowski,diputado,D10,PNL,Cambio por Chile,gobierno,hans_marowski,validada,si,Handle validado manualmente (2026-07-07)
+Constanza Schonhaut,diputada,D11,FA,Unidad por Chile,oposicion,conyschons,validada,si,Ya monitoreada; handle verificado con fetch real
+Diego Schalper,diputado,D11,RN,Chile Grande y Unido,gobierno,diegoschalper,validada,si,Handle validado manualmente (2026-07-07)
+Claudia Mora,diputada,D11,RN,Chile Grande y Unido,gobierno,claudiamoradistrito11,validada,si,Handle validado manualmente (2026-07-07)
+Constanza Hube,diputada,D11,UDI,Chile Grande y Unido,gobierno,conihube,validada,si,Handle validado manualmente (2026-07-07)
+Cristian Araya,diputado,D11,REP,Cambio por Chile,gobierno,cristianarayal,validada,si,Handle validado manualmente (2026-07-07)
+Catalina Del Real,diputada,D11,REP,Cambio por Chile,gobierno,catadelrealcl,validada,si,Handle validado manualmente (2026-07-07)
+Gael Yeomans,diputada,D13,FA,Unidad por Chile,oposicion,gaelyeomans,validada,si,Ya monitoreada; handle verificado con fetch real
+Lorena Pizarro,diputada,D13,PC,Unidad por Chile,oposicion,lorenapizarrosierra,validada,si,Handle validado manualmente (2026-07-07)
+Eduardo Duran,diputado,D13,RN,Chile Grande y Unido,gobierno,diputadoeduardoduran,validada,si,Handle validado manualmente (2026-07-07)
+Felipe Ross,diputado,D13,REP,Cambio por Chile,gobierno,feliperossco,validada,si,Handle validado manualmente (2026-07-07)
+Valentina Becerra,diputada,D13,REP,Cambio por Chile,gobierno,valebecerra.cl,validada,si,Handle validado manualmente (2026-07-07)
+Fabiola Campillai,senadora,RM,IND,independiente,oposicion,dignidadfabiola,validada,si,Handle validado manualmente (2026-07-07)
 Claudia Pascual,senadora,RM,PC,Unidad por Chile,oposicion,sin cuenta,-,no,Senadora 2022-2030; no se encontro cuenta propia
-Manuel Jose Ossandon,senador,RM,RN,Chile Grande y Unido,gobierno,sin cuenta,-,no,Senador 2022-2030; presidente del Senado; no se encontro cuenta propia
-Luciano Cruz-Coke,senador,RM,Evopoli,Chile Grande y Unido,gobierno,sin cuenta,-,no,Senador 2022-2030; no se encontro cuenta propia
-Rojo Edwards,senador,RM,PSC,Cambio por Chile,gobierno,rojo.edwards,media,no,Existen @rojo.edwards y @rojo.edwards.senador; confirmar cual es la vigente
+Manuel Jose Ossandon,senador,RM,RN,Chile Grande y Unido,gobierno,manueljoseossandon,validada,si,Handle validado manualmente (2026-07-07)
+Luciano Cruz-Coke,senador,RM,Evopoli,Chile Grande y Unido,gobierno,lcruzcoke,validada,si,Handle validado manualmente (2026-07-07)
+Rojo Edwards,senador,RM,PSC,Cambio por Chile,gobierno,rojo.edwards,validada,si,Handle validado manualmente (2026-07-07)

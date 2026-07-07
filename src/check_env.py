@@ -46,16 +46,20 @@ def main() -> int:
     for carpeta in ("config", "src", "data/snapshots", "docs", "tests"):
         resultados.append(check(f"carpeta {carpeta}/", (ROOT / carpeta).is_dir()))
 
-    # 4. Lista de cuentas legible y con contenido
-    ruta_cuentas = ROOT / "config" / "accounts.json"
+    # 4. Base de legisladores legible y con cuentas activas
+    ruta_base = ROOT / "config" / "legisladores.csv"
     try:
-        cuentas = json.loads(ruta_cuentas.read_text(encoding="utf-8"))["accounts"]
+        import csv as _csv
+        with open(ruta_base, encoding="utf-8") as f:
+            filas = list(_csv.DictReader(f))
+        activas = [x for x in filas if x["scrape"].strip().lower() == "si"]
         resultados.append(check(
-            f"config/accounts.json legible ({len(cuentas)} cuentas: {', '.join(cuentas)})",
-            1 <= len(cuentas),
+            f"config/legisladores.csv legible ({len(filas)} legisladores, "
+            f"{len(activas)} cuentas con scrape activo)",
+            1 <= len(activas),
         ))
-    except (OSError, KeyError, json.JSONDecodeError) as e:
-        resultados.append(check(f"config/accounts.json legible — error: {e}", False))
+    except (OSError, KeyError) as e:
+        resultados.append(check(f"config/legisladores.csv legible — error: {e}", False))
 
     # 5. El token NO es requisito en Fase 0, solo avisamos su estado
     from dotenv import load_dotenv

@@ -7,6 +7,7 @@ ventana (7/14/30 días) con las funciones puras de metrics.py, y escribe un
 Correr con:  python src/build_report.py
 """
 
+import csv
 import json
 import sys
 from datetime import datetime, timezone
@@ -25,9 +26,35 @@ from metrics import (
 
 ROOT = Path(__file__).resolve().parent.parent
 CARPETA_SNAPSHOTS = ROOT / "data" / "snapshots"
+RUTA_LEGISLADORES = ROOT / "config" / "legisladores.csv"
 RUTA_SALIDA = ROOT / "docs" / "data.json"
 
 VENTANAS = (7, 14, 30)
+
+
+def cargar_metadata() -> dict[str, dict]:
+    """Ficha política por handle desde config/legisladores.csv.
+
+    Se pega a cada cuenta del reporte para permitir filtros por partido,
+    coalición, sector y territorio en el dashboard. Handles que no estén
+    en la base (ej. cuentas de prueba históricas) quedan sin ficha.
+    """
+    if not RUTA_LEGISLADORES.exists():
+        return {}
+    with open(RUTA_LEGISLADORES, encoding="utf-8") as f:
+        filas = csv.DictReader(f)
+        return {
+            f_["handle_tiktok"].strip(): {
+                "nombre": f_["nombre"],
+                "cargo": f_["cargo"],
+                "territorio": f_["territorio"],
+                "partido": f_["partido"],
+                "coalicion": f_["coalicion"],
+                "sector": f_["sector"],
+            }
+            for f_ in filas
+            if f_["handle_tiktok"].strip() not in ("", "sin cuenta")
+        }
 
 
 def cargar_snapshots() -> list[dict]:
@@ -46,7 +73,7 @@ def _cuenta_en(snapshot: dict, handle: str) -> dict | None:
     return next((c for c in snapshot["accounts"] if c["handle"] == handle), None)
 
 
-def calcular_ventana(snapshots: list[dict], dias: int) -> dict:
+def calcular_ventana(snapshots: list[dict], dias: int, metadata: dict) -> dict:
     """Métricas de todas las cuentas para una ventana que termina en el
     último snapshot y arranca `dias` antes."""
     ultimo = snapshots[-1]
@@ -70,6 +97,7 @@ def calcular_ventana(snapshots: list[dict], dias: int) -> dict:
         ]
         cuentas.append({
             "handle": handle,
+            "legislador": metadata.get(handle),  # ficha política o null
             "verified": cuenta.get("verified", False),
             "followers": cuenta["followers"],
             "crecimiento": crecimiento_seguidores(
@@ -214,7 +242,8 @@ def main() -> int:
             "first": snapshots[0]["date"],
             "last": snapshots[-1]["date"],
         },
-        "windows": {str(d): calcular_ventana(snapshots, d) for d in VENTANAS},
+        "windows": {str(d): calcular_ventana(snapshots, d, cargar_metadata())
+                    for d in VENTANAS},
     }
 
     RUTA_SALIDA.parent.mkdir(parents=True, exist_ok=True)

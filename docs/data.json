@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T15:53:26Z",
+  "generatedAt": "2026-07-07T20:24:05Z",
   "snapshots": {
     "count": 3,
     "first": "2026-07-07T03:39:00Z",
@@ -13,6 +13,14 @@
       "accounts": [
         {
           "handle": "gaelyeomans",
+          "legislador": {
+            "nombre": "Gael Yeomans",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 31500,
           "crecimiento": null,
@@ -53,6 +61,14 @@
         },
         {
           "handle": "conyschons",
+          "legislador": {
+            "nombre": "Constanza Schonhaut",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 12500,
           "crecimiento": null,
@@ -78,6 +94,7 @@
         },
         {
           "handle": "diego_ibanezc",
+          "legislador": null,
           "verified": false,
           "followers": 86800,
           "crecimiento": null,
@@ -103,6 +120,14 @@
         },
         {
           "handle": "gonzalowinter",
+          "legislador": {
+            "nombre": "Gonzalo Winter",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 193700,
           "crecimiento": null,
@@ -165,6 +190,14 @@
       "accounts": [
         {
           "handle": "gaelyeomans",
+          "legislador": {
+            "nombre": "Gael Yeomans",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 31500,
           "crecimiento": null,
@@ -212,6 +245,14 @@
         },
         {
           "handle": "conyschons",
+          "legislador": {
+            "nombre": "Constanza Schonhaut",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 12500,
           "crecimiento": null,
@@ -245,6 +286,7 @@
         },
         {
           "handle": "diego_ibanezc",
+          "legislador": null,
           "verified": false,
           "followers": 86800,
           "crecimiento": null,
@@ -270,6 +312,14 @@
         },
         {
           "handle": "gonzalowinter",
+          "legislador": {
+            "nombre": "Gonzalo Winter",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 193700,
           "crecimiento": null,
@@ -369,6 +419,14 @@
       "accounts": [
         {
           "handle": "gaelyeomans",
+          "legislador": {
+            "nombre": "Gael Yeomans",
+            "cargo": "diputada",
+            "territorio": "D13",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 31500,
           "crecimiento": null,
@@ -416,6 +474,14 @@
         },
         {
           "handle": "conyschons",
+          "legislador": {
+            "nombre": "Constanza Schonhaut",
+            "cargo": "diputada",
+            "territorio": "D11",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 12500,
           "crecimiento": null,
@@ -456,6 +522,7 @@
         },
         {
           "handle": "diego_ibanezc",
+          "legislador": null,
           "verified": false,
           "followers": 86800,
           "crecimiento": null,
@@ -481,6 +548,14 @@
         },
         {
           "handle": "gonzalowinter",
+          "legislador": {
+            "nombre": "Gonzalo Winter",
+            "cargo": "diputado",
+            "territorio": "D10",
+            "partido": "FA",
+            "coalicion": "Unidad por Chile",
+            "sector": "oposicion"
+          },
           "verified": false,
           "followers": 193700,
           "crecimiento": null,

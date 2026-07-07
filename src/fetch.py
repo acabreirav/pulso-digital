@@ -14,6 +14,7 @@ Guardas de costo:
 """
 
 import argparse
+import csv
 import json
 import sys
 from datetime import datetime, timezone
@@ -25,7 +26,7 @@ from apify_client import ApifyError, correr_actor
 from normalize import guardar_snapshot, normalizar_items
 
 ROOT = Path(__file__).resolve().parent.parent
-RUTA_CUENTAS = ROOT / "config" / "accounts.json"
+RUTA_LEGISLADORES = ROOT / "config" / "legisladores.csv"
 CARPETA_RAW = ROOT / "data" / "snapshots" / "raw"
 
 # Actor elegido como primer candidato (ver CLAUDE.md §6): devuelve perfil
@@ -33,12 +34,25 @@ CARPETA_RAW = ROOT / "data" / "snapshots" / "raw"
 # o costo alto, probamos apidojo/tiktok-scraper.
 ACTOR = "clockworks/tiktok-profile-scraper"
 
-MAX_CUENTAS_FASE_1 = 5
+# Tope duro para proteger la cuota de Apify (ver CLAUDE.md §12, Fase 7):
+# el fetch se niega a correr si hay más cuentas activas que esto.
+MAX_CUENTAS = 30
 
 
 def cargar_cuentas() -> list[str]:
-    data = json.loads(RUTA_CUENTAS.read_text(encoding="utf-8"))
-    return data["accounts"]
+    """Handles con scrape=si en config/legisladores.csv (la fuente de verdad).
+
+    "sin cuenta" es un dato válido de la base: significa que el legislador
+    no tiene TikTok verificado, y por definición no se scrapea.
+    """
+    with open(RUTA_LEGISLADORES, encoding="utf-8") as f:
+        filas = list(csv.DictReader(f))
+    return [
+        f["handle_tiktok"].strip()
+        for f in filas
+        if f["scrape"].strip().lower() == "si"
+        and f["handle_tiktok"].strip() not in ("", "sin cuenta")
+    ]
 
 
 def main() -> int:
@@ -58,9 +72,10 @@ def main() -> int:
         return 1
 
     cuentas = cargar_cuentas()
-    if len(cuentas) > MAX_CUENTAS_FASE_1:
-        print(f"[error] Hay {len(cuentas)} cuentas configuradas; en Fase 1 el "
-              f"límite es {MAX_CUENTAS_FASE_1}. Reduce config/accounts.json.")
+    if len(cuentas) > MAX_CUENTAS:
+        print(f"[error] Hay {len(cuentas)} cuentas con scrape=si; el tope de "
+              f"protección de cuota es {MAX_CUENTAS}. Revisa config/legisladores.csv "
+              f"o sube MAX_CUENTAS en src/fetch.py de forma consciente.")
         return 1
 
     # --- Guarda de costo: mostrar el plan y confirmar antes de gastar ---
