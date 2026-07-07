@@ -1,8 +1,9 @@
 {
   "accounts": [
-    "khaby.lame",
-    "chefclub",
-    "natgeo"
+    "conyschons",
+    "diego_ibanezc",
+    "gaelyeomans",
+    "gonzalowinter"
   ],
-  "_nota": "Cuentas públicas de prueba para la Fase 1 (2-3 máximo hasta validar costo). Edita esta lista con los handles que quieras monitorear, sin @."
+  "_nota": "Handles a monitorear, sin @. Máximo 5 mientras estemos en fase de validación de costo (el límite vive en src/fetch.py)."
 }

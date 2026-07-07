@@ -238,6 +238,13 @@ Cuando lleguemos a esta fase, guiar en este orden, explicando cada paso:
 
 **Fase 6 (opcional).** Capa narrativa con IA; velocidad temprana (24-48h); notificación por email del reporte.
 
+**Fase 7 — Mantenedor de cuentas.** Herramienta para administrar la lista de cuentas monitoreadas sin editar JSON a mano. *Alcance por definir cuando lleguemos — ideas anotadas:*
+- Agregar y quitar cuentas (¿CLI simple? ¿página aparte en el dashboard que edite via PR/commit?).
+- Filtrar/etiquetar cuentas (ej. por categoría o campaña) y poder ver el dashboard filtrado.
+- **Tope duro de cuentas a scrapear** para no reventar la cuota de Apify: el fetch debe negarse a correr si la lista supera el máximo configurado (hoy el límite vive en `src/fetch.py`, `MAX_CUENTAS_FASE_1 = 5`; este tope pasaría a configuración).
+- Decidir qué pasa con el histórico de una cuenta que se quita (¿se archiva? los snapshots viejos no se tocan).
+- Validar handles al agregarlos (que existan y sean públicos) antes de gastar crédito en una corrida completa.
+
 ---
 
 ## 13. "Listo" de la Fase 1 (primer hito real)
@@ -255,3 +262,6 @@ Un `git`-repo local que, corriendo `python src/fetch.py`, produce un snapshot v�
 - [ ] Fase 3 — segundo snapshot, tasas funcionando
 - [ ] Fase 4 — desplegado en GitHub (Actions + Pages)
 - [ ] Fase 5 — escalado a 20-50 cuentas y calibrado
+- [ ] Fase 7 — mantenedor de cuentas (alcance por definir; ver §12)
+
+*(2026-07-07: lista de cuentas cambiada a conyschons, diego_ibanezc, gaelyeomans, gonzalowinter — el snapshot del 2026-07-07 con las 3 cuentas de prueba queda en el histórico pero sale del reporte en cuanto exista un snapshot de las nuevas.)*
