@@ -1,0 +1,262 @@
+{
+  "generatedAt": "2026-07-07T04:03:28Z",
+  "snapshots": {
+    "count": 1,
+    "first": "2026-07-07T03:39:00Z",
+    "last": "2026-07-07T03:39:00Z"
+  },
+  "windows": {
+    "7": {
+      "days": 7,
+      "snapshotsEnVentana": 1,
+      "hasGrowth": false,
+      "accounts": [
+        {
+          "handle": "khaby.lame",
+          "verified": true,
+          "followers": 162300000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 8.912983766233765,
+          "velocidad": null,
+          "cadencia": 3.0,
+          "viewsPorSeguidor": 0.09211337030191005,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              162300000
+            ]
+          ]
+        },
+        {
+          "handle": "chefclub",
+          "verified": true,
+          "followers": 4000000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.733445269235301,
+          "velocidad": null,
+          "cadencia": 7.0,
+          "viewsPorSeguidor": 0.0015512500000000001,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              4000000
+            ]
+          ]
+        },
+        {
+          "handle": "natgeo",
+          "verified": true,
+          "followers": 9600000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 4.139727053997555,
+          "velocidad": null,
+          "cadencia": 8.0,
+          "viewsPorSeguidor": 0.003447916666666667,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              9600000
+            ]
+          ]
+        }
+      ],
+      "insights": [
+        "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
+        "El engagement más alto es de @khaby.lame: 8.91% mediano por video."
+      ],
+      "alertas": [],
+      "titulares": {
+        "mayorCrecimiento": null,
+        "breakoutMasCaliente": null,
+        "mayorAceleracion": null,
+        "rindeSobreTamano": {
+          "handle": "khaby.lame",
+          "viewsPorSeguidor": 0.09211337030191005
+        }
+      }
+    },
+    "14": {
+      "days": 14,
+      "snapshotsEnVentana": 1,
+      "hasGrowth": false,
+      "accounts": [
+        {
+          "handle": "khaby.lame",
+          "verified": true,
+          "followers": 162300000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 8.912983766233765,
+          "velocidad": null,
+          "cadencia": 2.0,
+          "viewsPorSeguidor": 0.09211337030191005,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              162300000
+            ]
+          ]
+        },
+        {
+          "handle": "chefclub",
+          "verified": true,
+          "followers": 4000000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.733445269235301,
+          "velocidad": null,
+          "cadencia": 5.0,
+          "viewsPorSeguidor": 0.0015512500000000001,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              4000000
+            ]
+          ]
+        },
+        {
+          "handle": "natgeo",
+          "verified": true,
+          "followers": 9600000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 4.139727053997555,
+          "velocidad": null,
+          "cadencia": 5.0,
+          "viewsPorSeguidor": 0.003447916666666667,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              9600000
+            ]
+          ]
+        }
+      ],
+      "insights": [
+        "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
+        "El engagement más alto es de @khaby.lame: 8.91% mediano por video."
+      ],
+      "alertas": [],
+      "titulares": {
+        "mayorCrecimiento": null,
+        "breakoutMasCaliente": null,
+        "mayorAceleracion": null,
+        "rindeSobreTamano": {
+          "handle": "khaby.lame",
+          "viewsPorSeguidor": 0.09211337030191005
+        }
+      }
+    },
+    "30": {
+      "days": 30,
+      "snapshotsEnVentana": 1,
+      "hasGrowth": false,
+      "accounts": [
+        {
+          "handle": "khaby.lame",
+          "verified": true,
+          "followers": 162300000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 8.912983766233765,
+          "velocidad": null,
+          "cadencia": 1.8666666666666667,
+          "viewsPorSeguidor": 0.09211337030191005,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              162300000
+            ]
+          ]
+        },
+        {
+          "handle": "chefclub",
+          "verified": true,
+          "followers": 4000000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 1.733445269235301,
+          "velocidad": null,
+          "cadencia": 2.3333333333333335,
+          "viewsPorSeguidor": 0.0015512500000000001,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              4000000
+            ]
+          ]
+        },
+        {
+          "handle": "natgeo",
+          "verified": true,
+          "followers": 9600000,
+          "crecimiento": null,
+          "aceleracion": {
+            "ratio": null,
+            "estado": "sin datos"
+          },
+          "engagement": 4.139727053997555,
+          "velocidad": null,
+          "cadencia": 2.3333333333333335,
+          "viewsPorSeguidor": 0.003447916666666667,
+          "breakouts": [],
+          "serieSeguidores": [
+            [
+              "2026-07-07T03:39:00Z",
+              9600000
+            ]
+          ]
+        }
+      ],
+      "insights": [
+        "Todavía hay una sola foto: las tasas de crecimiento aparecerán cuando exista un segundo snapshot (el pipeline las calcula solo).",
+        "El engagement más alto es de @khaby.lame: 8.91% mediano por video."
+      ],
+      "alertas": [],
+      "titulares": {
+        "mayorCrecimiento": null,
+        "breakoutMasCaliente": null,
+        "mayorAceleracion": null,
+        "rindeSobreTamano": {
+          "handle": "khaby.lame",
+          "viewsPorSeguidor": 0.09211337030191005
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar de Tracción</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>📡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ====== tokens del proyecto (CLAUDE.md §7 — no cambiar la semántica) ====== */
+:root{
+  --fondo:#0B1019; --panel:#121A29; --panel-borde:#1C2739; --grid:#1C2739;
+  --cian:#25D3E8;         /* crecimiento de audiencia */
+  --ambar:#FF7A3D;        /* tracción / velocidad de views */
+  --verde:#42D6A0;        /* subidas */
+  --rosa:#FF6084;         /* bajadas */
+  --tinta:#E8EEF7; --tinta-2:#93A1B8; --tinta-3:#5B6879;
+  --radio:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--fondo); color:var(--tinta);
+  font-family:Inter,system-ui,sans-serif; font-size:14px; line-height:1.5;
+  padding:28px 20px 60px; max-width:1100px; margin:0 auto;
+}
+h1,h2{font-family:"Space Grotesk",Inter,sans-serif}
+.mono{font-family:"JetBrains Mono",monospace}
+
+/* ====== encabezado + fila única de filtros ====== */
+header{margin-bottom:22px}
+header h1{font-size:26px;letter-spacing:.5px}
+header h1 .punto{color:var(--cian)}
+.sub{color:var(--tinta-2);font-size:13px;margin-top:4px}
+.sub .mono{color:var(--tinta-2)}
+.filtros{display:flex;gap:8px;align-items:center;margin-top:16px;flex-wrap:wrap}
+.filtros .etq{color:var(--tinta-3);font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.vent{
+  background:var(--panel); border:1px solid var(--panel-borde); color:var(--tinta-2);
+  font-family:"JetBrains Mono",monospace; font-size:13px; padding:6px 14px;
+  border-radius:8px; cursor:pointer;
+}
+.vent[aria-pressed="true"]{color:var(--fondo);background:var(--cian);border-color:var(--cian);font-weight:600}
+.vent:focus-visible{outline:2px solid var(--cian);outline-offset:2px}
+
+/* ====== paneles y secciones ====== */
+section{margin-top:26px}
+.panel{background:var(--panel);border:1px solid var(--panel-borde);border-radius:var(--radio);padding:18px 20px}
+h2{font-size:15px;letter-spacing:.4px;margin-bottom:4px}
+.desc{color:var(--tinta-3);font-size:12px;margin-bottom:14px}
+.eje-cian{color:var(--cian)} .eje-ambar{color:var(--ambar)}
+
+.vacio{
+  border:1px dashed var(--panel-borde); border-radius:var(--radio);
+  padding:26px; text-align:center; color:var(--tinta-3);
+  font-family:"JetBrains Mono",monospace; font-size:12.5px;
+}
+
+/* ====== tiles de titulares ====== */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.tile{background:var(--panel);border:1px solid var(--panel-borde);border-radius:var(--radio);padding:14px 16px}
+.tile .etq{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--tinta-3)}
+.tile .valor{font-size:26px;font-weight:600;margin-top:6px}
+.tile .quien{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--tinta-2);margin-top:2px}
+.tile .borde{width:26px;height:3px;border-radius:2px;margin-bottom:10px}
+
+/* ====== insights y alertas ====== */
+ul.lista{list-style:none}
+ul.lista li{
+  padding:9px 0 9px 18px; position:relative; color:var(--tinta-2);
+  border-bottom:1px solid var(--panel-borde); font-size:13.5px;
+}
+ul.lista li:last-child{border-bottom:none}
+ul.lista li::before{content:"▸";position:absolute;left:0;color:var(--cian)}
+#alertas li{padding-left:0}
+#alertas li::before{content:none}
+.chip{
+  display:inline-block;font-family:"JetBrains Mono",monospace;font-size:11px;
+  padding:2px 8px;border-radius:20px;margin-right:8px;vertical-align:1px;
+}
+.chip.aceleracion{background:rgba(66,214,160,.14);color:var(--verde)}
+.chip.enfriamiento{background:rgba(255,96,132,.14);color:var(--rosa)}
+.chip.breakout{background:rgba(255,122,61,.14);color:var(--ambar)}
+.chip.cadencia{background:rgba(37,211,232,.14);color:var(--cian)}
+
+/* ====== tabla comparativa ====== */
+.tabla-envoltura{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{
+  text-align:right;color:var(--tinta-3);font-weight:500;font-size:11.5px;
+  text-transform:uppercase;letter-spacing:.6px;padding:8px 10px;cursor:pointer;
+  border-bottom:1px solid var(--panel-borde);white-space:nowrap;user-select:none;
+}
+th:first-child{text-align:left}
+th .flecha{font-size:9px;color:var(--cian)}
+td{
+  padding:9px 10px;text-align:right;border-bottom:1px solid var(--panel-borde);
+  font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;color:var(--tinta);
+}
+td:first-child{text-align:left;font-family:Inter,sans-serif;font-weight:500}
+tr:last-child td{border-bottom:none}
+.sube{color:var(--verde)} .baja{color:var(--rosa)} .neutro{color:var(--tinta-3)}
+.verificada{color:var(--cian);font-size:11px;margin-left:4px}
+
+/* ====== gráficos ====== */
+.graficos{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:860px){.graficos{grid-template-columns:3fr 2fr}}
+svg{display:block;width:100%;height:auto}
+svg text{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums}
+.leyenda{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px}
+.leyenda span{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--tinta-2)}
+.leyenda i{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+/* ====== breakouts ====== */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--panel-borde);border-left:3px solid var(--ambar);border-radius:var(--radio);padding:14px 16px}
+.card .quien{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ambar)}
+.card .views{font-size:22px;font-weight:600;margin:4px 0}
+.card .cap{color:var(--tinta-2);font-size:12.5px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+/* ====== tooltip (mejora, nunca condición: todo valor está en la tabla) ====== */
+#tooltip{
+  position:fixed;pointer-events:none;background:#0E1522;border:1px solid var(--panel-borde);
+  border-radius:8px;padding:8px 12px;font-size:12px;color:var(--tinta-2);
+  font-family:"JetBrains Mono",monospace;opacity:0;transition:opacity .1s;z-index:10;
+  max-width:260px;
+}
+#tooltip strong{color:var(--tinta);display:block}
+footer{margin-top:40px;color:var(--tinta-3);font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>RADAR DE TRACCIÓN<span class="punto">_</span></h1>
+  <div class="sub">
+    Cuentas TikTok monitoreadas · datos públicos ·
+    <span class="mono" id="meta-fechas">cargando…</span>
+  </div>
+  <!-- una sola fila de filtros: gobierna TODAS las secciones de abajo -->
+  <div class="filtros" role="group" aria-label="Ventana de análisis">
+    <span class="etq">Ventana</span>
+    <button class="vent" data-dias="7">7 días</button>
+    <button class="vent" data-dias="14">14 días</button>
+    <button class="vent" data-dias="30">30 días</button>
+  </div>
+</header>
+
+<section id="sec-momentum">
+  <div class="panel">
+    <h2>Mapa de momentum</h2>
+    <p class="desc">
+      Cada cuenta es un punto: <span class="eje-cian">X = crecimiento de seguidores</span> ·
+      <span class="eje-ambar">Y = tracción (velocidad de views por 1.000 seguidores)</span>
+    </p>
+    <div id="momentum"></div>
+  </div>
+</section>
+
+<section id="sec-tiles"><div class="tiles" id="tiles"></div></section>
+
+<section id="sec-insights">
+  <div class="panel">
+    <h2>Lo que dice la data</h2>
+    <p class="desc">Insights calculados con reglas determinísticas — sin IA, sin costo</p>
+    <ul class="lista" id="insights"></ul>
+  </div>
+</section>
+
+<section id="sec-ia" hidden>
+  <div class="panel">
+    <h2>Análisis con IA</h2>
+    <p class="desc">Resumen narrativo generado por Claude</p>
+    <p id="ia-texto" style="color:var(--tinta-2)"></p>
+  </div>
+</section>
+
+<section id="sec-tabla">
+  <div class="panel">
+    <h2>Tabla comparativa</h2>
+    <p class="desc">Clic en una columna para ordenar — la tabla es la vista completa de todos los valores</p>
+    <div class="tabla-envoltura"><table id="tabla"></table></div>
+  </div>
+</section>
+
+<section id="sec-graficos">
+  <div class="graficos">
+    <div class="panel">
+      <h2 class="eje-cian">Seguidores en el tiempo</h2>
+      <p class="desc">Índice base 100 al inicio de la ventana (un solo eje para cuentas de distinto tamaño)</p>
+      <div id="linea"></div>
+    </div>
+    <div class="panel">
+      <h2 class="eje-ambar">Velocidad de views</h2>
+      <p class="desc">Δviews/día mediano por cada 1.000 seguidores</p>
+      <div id="barras"></div>
+    </div>
+  </div>
+</section>
+
+<section id="sec-breakouts">
+  <div class="panel" style="background:transparent;border:none;padding:0">
+    <h2 style="margin-bottom:10px">Breakouts del período</h2>
+    <div class="cards" id="breakouts"></div>
+  </div>
+</section>
+
+<section id="sec-alertas">
+  <div class="panel">
+    <h2>Alertas</h2>
+    <p class="desc">Aceleración, enfriamiento, caída de cadencia y breakouts</p>
+    <ul class="lista" id="alertas" style="--marca:none"></ul>
+  </div>
+</section>
+
+<footer>Radar de Tracción · el histórico se construye foto a foto · <span class="mono" id="meta-pie"></span></footer>
+<div id="tooltip" role="tooltip"></div>
+
+<script>
+"use strict";
+/* El dashboard NO calcula métricas: solo pinta docs/data.json (CLAUDE.md §3). */
+
+const $ = sel => document.querySelector(sel);
+const NF = new Intl.NumberFormat("es");
+const fmt = n => n == null ? "—" : NF.format(Math.round(n));
+const fmtCompacto = n => n == null ? "—"
+  : new Intl.NumberFormat("es", {notation:"compact", maximumFractionDigits:1}).format(n);
+const fmtDec = (n, d=2) => n == null ? "—" : n.toLocaleString("es", {maximumFractionDigits:d});
+const signo = n => n > 0 ? "▲ +" : (n < 0 ? "▼ " : "");
+const claseDelta = n => n > 0 ? "sube" : (n < 0 ? "baja" : "neutro");
+
+/* ramp de cian para identidad de cuentas en la línea (la identidad la llevan
+   la leyenda y las etiquetas directas; el color solo acompaña) */
+const RAMPA_CIAN = ["#25D3E8", "#7EE7F2", "#0F8FAF", "#BFF2F8", "#0A5D74"];
+const CUADRANTES = [
+  {x:1, y:1, nombre:"En ascenso"},
+  {x:-1, y:1, nombre:"Viral sin capturar"},
+  {x:1, y:-1, nombre:"Crecen en frío"},
+  {x:-1, y:-1, nombre:"En pausa"},
+];
+
+let DATA = null;
+let ventana = "7";
+
+/* ---------- tooltip ---------- */
+const tip = $("#tooltip");
+function mostrarTip(evt, html){
+  tip.innerHTML = html;
+  tip.style.opacity = 1;
+  const margen = 14;
+  let x = evt.clientX + margen, y = evt.clientY + margen;
+  const r = tip.getBoundingClientRect();
+  if (x + r.width > innerWidth - 8) x = evt.clientX - r.width - margen;
+  if (y + r.height > innerHeight - 8) y = evt.clientY - r.height - margen;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+const ocultarTip = () => tip.style.opacity = 0;
+
+/* ---------- helpers svg ---------- */
+function svgEl(tag, attrs){
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+function vacio(contenedor, mensaje){
+  contenedor.innerHTML = `<div class="vacio">${mensaje}</div>`;
+}
+const MSG_SEGUNDA_FOTO = "Se necesita una segunda foto para calcular esto.<br>" +
+  "El próximo snapshot activa esta vista automáticamente — la periodicidad produce los datos.";
+
+/* ---------- 1. mapa de momentum ---------- */
+function pintarMomentum(w){
+  const cont = $("#momentum");
+  const puntos = w.accounts.filter(c =>
+    c.crecimiento && c.crecimiento.porcentual != null && c.velocidad != null);
+  if (!w.hasGrowth || !puntos.length) return vacio(cont, MSG_SEGUNDA_FOTO);
+
+  const W = 820, H = 400, m = {t:24, r:24, b:40, l:52};
+  const xs = puntos.map(p => p.crecimiento.porcentual);
+  const ys = puntos.map(p => p.velocidad);
+  /* medianas como umbrales de cuadrante: separan "alto" de "bajo" del grupo */
+  const medX = xs.slice().sort((a,b)=>a-b)[Math.floor(xs.length/2)];
+  const medY = ys.slice().sort((a,b)=>a-b)[Math.floor(ys.length/2)];
+  const pad = v => v === 0 ? 1 : Math.abs(v) * .25;
+  const x0 = Math.min(...xs) - pad(Math.min(...xs)), x1 = Math.max(...xs) + pad(Math.max(...xs));
+  const y0 = Math.min(...ys) - pad(Math.min(...ys)), y1 = Math.max(...ys) + pad(Math.max(...ys));
+  const X = v => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r);
+  const Y = v => H - m.b - (v - y0) / (y1 - y0) * (H - m.t - m.b);
+
+  const svg = svgEl("svg", {viewBox:`0 0 ${W} ${H}`, role:"img",
+    "aria-label":"Scatter de momentum: crecimiento vs tracción por cuenta"});
+
+  /* umbrales de cuadrante — hairlines sólidas, un paso sobre el panel */
+  svg.append(svgEl("line", {x1:X(medX), x2:X(medX), y1:m.t, y2:H-m.b, stroke:"var(--grid)", "stroke-width":1}));
+  svg.append(svgEl("line", {x1:m.l, x2:W-m.r, y1:Y(medY), y2:Y(medY), stroke:"var(--grid)", "stroke-width":1}));
+
+  /* nombres de cuadrantes, recesivos */
+  for (const q of CUADRANTES){
+    const tx = q.x > 0 ? W - m.r - 6 : m.l + 6;
+    const ty = q.y > 0 ? m.t + 12 : H - m.b - 8;
+    const t = svgEl("text", {x:tx, y:ty, "text-anchor": q.x > 0 ? "end" : "start",
+      fill:"var(--tinta-3)", "font-size":11});
+    t.textContent = q.nombre;
+    svg.append(t);
+  }
+
+  for (const p of puntos){
+    const cx = X(p.crecimiento.porcentual), cy = Y(p.velocidad);
+    /* halo invisible = hit target generoso (~28px) */
+    const halo = svgEl("circle", {cx, cy, r:14, fill:"transparent"});
+    /* anillo de superficie 2px + punto ≥8px en cian */
+    const punto = svgEl("circle", {cx, cy, r:6, fill:"var(--cian)",
+      stroke:"var(--panel)", "stroke-width":2});
+    /* etiqueta directa: la identidad nunca depende del color */
+    const etq = svgEl("text", {x:cx, y:cy - 12, "text-anchor":"middle",
+      fill:"var(--tinta-2)", "font-size":11.5});
+    etq.textContent = "@" + p.handle;
+    const html = `<strong>@${p.handle}</strong>` +
+      `crecimiento: ${signo(p.crecimiento.porcentual)}${fmtDec(Math.abs(p.crecimiento.porcentual))}%<br>` +
+      `tracción: ${fmtDec(p.velocidad)} views/día por 1k seg.`;
+    for (const n of [halo, punto]){
+      n.addEventListener("mousemove", e => mostrarTip(e, html));
+      n.addEventListener("mouseleave", ocultarTip);
+    }
+    svg.append(halo, punto, etq);
+  }
+
+  /* títulos de eje */
+  const ex = svgEl("text", {x:W/2, y:H-8, "text-anchor":"middle", fill:"var(--cian)", "font-size":11});
+  ex.textContent = "crecimiento de seguidores (%) →";
+  const ey = svgEl("text", {x:14, y:H/2, "text-anchor":"middle", fill:"var(--ambar)",
+    "font-size":11, transform:`rotate(-90 14 ${H/2})`});
+  ey.textContent = "tracción →";
+  svg.append(ex, ey);
+
+  cont.innerHTML = ""; cont.append(svg);
+}
+
+/* ---------- 2. tiles de titulares ---------- */
+function pintarTiles(w){
+  const t = w.titulares;
+  const tiles = [
+    {etq:"Mayor crecimiento", color:"var(--cian)",
+     valor: t.mayorCrecimiento ? signo(t.mayorCrecimiento.pct) + fmtDec(Math.abs(t.mayorCrecimiento.pct)) + "%" : "—",
+     clase: t.mayorCrecimiento ? claseDelta(t.mayorCrecimiento.pct) : "neutro",
+     quien: t.mayorCrecimiento ? "@" + t.mayorCrecimiento.handle : "espera la 2ª foto"},
+    {etq:"Breakout más caliente", color:"var(--ambar)",
+     valor: t.breakoutMasCaliente ? fmtCompacto(t.breakoutMasCaliente.views) + " views" : "—",
+     clase:"",
+     quien: t.breakoutMasCaliente
+       ? `@${t.breakoutMasCaliente.handle} · ${fmtDec(t.breakoutMasCaliente.ratio,1)}× su mediana`
+       : "sin breakouts en la ventana"},
+    {etq:"Mayor aceleración", color:"var(--verde)",
+     valor: t.mayorAceleracion ? fmtDec(t.mayorAceleracion.ratio,2) + "×" : "—",
+     clase: t.mayorAceleracion ? "sube" : "neutro",
+     quien: t.mayorAceleracion ? "@" + t.mayorAceleracion.handle : "espera más fotos"},
+    {etq:"Rinde sobre su tamaño", color:"var(--ambar)",
+     valor: t.rindeSobreTamano ? fmtDec(t.rindeSobreTamano.viewsPorSeguidor,2) + "×" : "—",
+     clase:"",
+     quien: t.rindeSobreTamano
+       ? `@${t.rindeSobreTamano.handle} · views por seguidor` : "—"},
+  ];
+  $("#tiles").innerHTML = tiles.map(x => `
+    <div class="tile">
+      <div class="borde" style="background:${x.color}"></div>
+      <div class="etq">${x.etq}</div>
+      <div class="valor mono ${x.clase}">${x.valor}</div>
+      <div class="quien">${x.quien}</div>
+    </div>`).join("");
+}
+
+/* ---------- 3. insights ---------- */
+function pintarInsights(w){
+  $("#insights").innerHTML = w.insights.map(i => `<li>${i}</li>`).join("")
+    || `<li>Sin insights para esta ventana.</li>`;
+}
+
+/* ---------- 4. IA (opcional) ---------- */
+function pintarIA(){
+  if (DATA.ia){ $("#sec-ia").hidden = false; $("#ia-texto").textContent = DATA.ia; }
+}
+
+/* ---------- 5. tabla comparativa ---------- */
+let orden = {col:"followers", asc:false};
+const COLS = [
+  {id:"handle", etq:"Cuenta", val:c => c.handle},
+  {id:"followers", etq:"Seguidores", val:c => c.followers},
+  {id:"crecimiento", etq:"Crecimiento", val:c => c.crecimiento?.porcentual},
+  {id:"aceleracion", etq:"Aceleración", val:c => c.aceleracion?.ratio},
+  {id:"engagement", etq:"Engagement", val:c => c.engagement},
+  {id:"velocidad", etq:"Velocidad", val:c => c.velocidad},
+  {id:"cadencia", etq:"Cadencia/sem", val:c => c.cadencia},
+  {id:"viewsPorSeguidor", etq:"Views/seg.", val:c => c.viewsPorSeguidor},
+  {id:"breakouts", etq:"Breakouts", val:c => c.breakouts.length},
+];
+
+function celdaCrecimiento(c){
+  if (!c.crecimiento || c.crecimiento.porcentual == null) return `<span class="neutro">—</span>`;
+  const p = c.crecimiento.porcentual;
+  return `<span class="${claseDelta(p)}">${signo(p)}${fmtDec(Math.abs(p))}%</span>` +
+         ` <span class="neutro">(${p >= 0 ? "+" : ""}${fmtCompacto(c.crecimiento.absoluto)})</span>`;
+}
+function celdaAceleracion(c){
+  const e = c.aceleracion.estado;
+  if (e === "acelera") return `<span class="sube">▲ acelera</span>`;
+  if (e === "enfria")  return `<span class="baja">▼ enfría</span>`;
+  if (e === "estable") return `<span class="neutro">→ estable</span>`;
+  return `<span class="neutro">—</span>`;
+}
+
+function pintarTabla(w){
+  const cuentas = [...w.accounts].sort((a, b) => {
+    const col = COLS.find(c => c.id === orden.col);
+    const va = col.val(a), vb = col.val(b);
+    if (va == null) return 1; if (vb == null) return -1;
+    const cmp = typeof va === "string" ? va.localeCompare(vb) : va - vb;
+    return orden.asc ? cmp : -cmp;
+  });
+  const th = COLS.map(c =>
+    `<th data-col="${c.id}">${c.etq}${orden.col === c.id
+      ? ` <span class="flecha">${orden.asc ? "▲" : "▼"}</span>` : ""}</th>`).join("");
+  const filas = cuentas.map(c => `
+    <tr>
+      <td>@${c.handle}${c.verified ? `<span class="verificada">✔</span>` : ""}</td>
+      <td>${fmtCompacto(c.followers)}</td>
+      <td>${celdaCrecimiento(c)}</td>
+      <td>${celdaAceleracion(c)}</td>
+      <td>${c.engagement != null ? fmtDec(c.engagement) + "%" : "—"}</td>
+      <td>${c.velocidad != null ? fmtDec(c.velocidad) : "—"}</td>
+      <td>${c.cadencia != null ? fmtDec(c.cadencia, 1) : "—"}</td>
+      <td>${c.viewsPorSeguidor != null ? fmtDec(c.viewsPorSeguidor) : "—"}</td>
+      <td>${c.breakouts.length || "—"}</td>
+    </tr>`).join("");
+  $("#tabla").innerHTML = `<thead><tr>${th}</tr></thead><tbody>${filas}</tbody>`;
+  $("#tabla").querySelectorAll("th").forEach(el =>
+    el.addEventListener("click", () => {
+      const col = el.dataset.col;
+      orden = {col, asc: orden.col === col ? !orden.asc : false};
+      pintarTabla(w);
+    }));
+}
+
+/* ---------- 6a. línea de seguidores (cian, índice base 100) ---------- */
+function pintarLinea(w){
+  const cont = $("#linea");
+  const series = w.accounts
+    .map((c, i) => ({handle:c.handle, color:RAMPA_CIAN[i % RAMPA_CIAN.length],
+      puntos:c.serieSeguidores}))
+    .filter(s => s.puntos.length >= 2);
+  if (!w.hasGrowth || !series.length) return vacio(cont, MSG_SEGUNDA_FOTO);
+
+  const W = 640, H = 300, m = {t:16, r:92, b:30, l:46};
+  const fechas = [...new Set(series.flatMap(s => s.puntos.map(p => p[0])))].sort();
+  const t0 = +new Date(fechas[0]), t1 = +new Date(fechas[fechas.length-1]);
+  /* índice base 100: un solo eje aunque las cuentas difieran en tamaño ×40 */
+  const idx = series.map(s => s.puntos.map(p =>
+    [ +new Date(p[0]), p[1] / s.puntos[0][1] * 100 ]));
+  const ys = idx.flat().map(p => p[1]);
+  const y0 = Math.min(...ys, 99.9), y1 = Math.max(...ys, 100.1);
+  const X = t => m.l + (t - t0) / (t1 - t0 || 1) * (W - m.l - m.r);
+  const Y = v => H - m.b - (v - y0) / (y1 - y0) * (H - m.t - m.b);
+
+  const svg = svgEl("svg", {viewBox:`0 0 ${W} ${H}`, role:"img",
+    "aria-label":"Evolución de seguidores, índice base 100"});
+
+  /* grid horizontal: 3 hairlines con ticks limpios */
+  for (const v of [y0, (y0+y1)/2, y1]){
+    svg.append(svgEl("line", {x1:m.l, x2:W-m.r, y1:Y(v), y2:Y(v), stroke:"var(--grid)", "stroke-width":1}));
+    const t = svgEl("text", {x:m.l-6, y:Y(v)+4, "text-anchor":"end", fill:"var(--tinta-3)", "font-size":10.5});
+    t.textContent = v.toFixed(1);
+    svg.append(t);
+  }
+
+  /* etiquetas de punta: si dos chocan (<14px), la segunda se omite —
+     la leyenda y el tooltip llevan la identidad, nunca etiquetas apiladas */
+  const etiquetasPuestas = [];
+  series.forEach((s, i) => {
+    const pts = idx[i];
+    const d = pts.map((p, j) => (j ? "L" : "M") + X(p[0]) + " " + Y(p[1])).join(" ");
+    svg.append(svgEl("path", {d, fill:"none", stroke:s.color, "stroke-width":2,
+      "stroke-linejoin":"round", "stroke-linecap":"round"}));
+    /* marcador final ≥8px con anillo de superficie */
+    const ult = pts[pts.length-1];
+    const dot = svgEl("circle", {cx:X(ult[0]), cy:Y(ult[1]), r:4.5, fill:s.color,
+      stroke:"var(--panel)", "stroke-width":2});
+    const yEtq = Y(ult[1]) + 4;
+    if (etiquetasPuestas.every(y => Math.abs(y - yEtq) > 14)){
+      const etq = svgEl("text", {x:X(ult[0])+8, y:yEtq, fill:"var(--tinta-2)", "font-size":11});
+      etq.textContent = "@" + s.handle;
+      svg.append(etq);
+      etiquetasPuestas.push(yEtq);
+    }
+    dot.addEventListener("mousemove", e => mostrarTip(e,
+      `<strong>@${s.handle}</strong>índice ${ult[1].toFixed(2)} (base 100)`));
+    dot.addEventListener("mouseleave", ocultarTip);
+    svg.append(dot);
+  });
+
+  /* leyenda (≥2 series ⇒ siempre presente) */
+  const leyenda = `<div class="leyenda">` + series.map(s =>
+    `<span><i style="background:${s.color}"></i>@${s.handle}</span>`).join("") + `</div>`;
+  cont.innerHTML = leyenda; cont.append(svg);
+}
+
+/* ---------- 6b. barras de velocidad (ámbar) ---------- */
+function pintarBarras(w){
+  const cont = $("#barras");
+  const datos = w.accounts.filter(c => c.velocidad != null)
+    .sort((a, b) => b.velocidad - a.velocidad);
+  if (!datos.length) return vacio(cont, MSG_SEGUNDA_FOTO);
+
+  const W = 420, alto = 34, m = {t:6, r:70, b:6, l:110};
+  const H = m.t + m.b + datos.length * alto;
+  const max = Math.max(...datos.map(d => d.velocidad));
+  const svg = svgEl("svg", {viewBox:`0 0 ${W} ${H}`, role:"img",
+    "aria-label":"Velocidad de views por cuenta"});
+
+  datos.forEach((d, i) => {
+    const y = m.t + i * alto + (alto - 22) / 2;   /* barra ≤24px con aire */
+    const ancho = Math.max((d.velocidad / max) * (W - m.l - m.r), 2);
+    /* punta redondeada 4px, base cuadrada: rect con clip a la izquierda */
+    const barra = svgEl("path", {d:
+      `M${m.l} ${y} H${m.l + ancho - 4} q4 0 4 4 v14 q0 4 -4 4 H${m.l} Z`,
+      fill:"var(--ambar)"});
+    const nombre = svgEl("text", {x:m.l - 8, y:y + 15, "text-anchor":"end",
+      fill:"var(--tinta-2)", "font-size":11.5});
+    nombre.textContent = "@" + d.handle;
+    /* valor en la punta, en tinta (el texto nunca viste el color del dato) */
+    const val = svgEl("text", {x:m.l + ancho + 8, y:y + 15, fill:"var(--tinta)", "font-size":11.5});
+    val.textContent = fmtDec(d.velocidad);
+    barra.addEventListener("mousemove", e => mostrarTip(e,
+      `<strong>@${d.handle}</strong>${fmtDec(d.velocidad)} views/día por 1.000 seguidores`));
+    barra.addEventListener("mouseleave", ocultarTip);
+    svg.append(barra, nombre, val);
+  });
+  cont.innerHTML = ""; cont.append(svg);
+}
+
+/* ---------- 7. breakouts ---------- */
+function pintarBreakouts(w){
+  const cards = w.accounts.flatMap(c => c.breakouts.map(b => ({...b, handle:c.handle})));
+  $("#breakouts").innerHTML = cards.length
+    ? cards.map(b => `
+        <div class="card">
+          <div class="quien">@${b.handle} · ${fmtDec(b.ratio,1)}× su mediana</div>
+          <div class="views mono">${fmtCompacto(b.views)} <span style="font-size:13px;color:var(--tinta-3)">views</span></div>
+          <div class="cap">${(b.caption || "(sin caption)").replace(/</g,"&lt;")}</div>
+        </div>`).join("")
+    : `<div class="vacio" style="grid-column:1/-1">Ningún video superó 3× la mediana de su cuenta en esta ventana.</div>`;
+}
+
+/* ---------- 8. alertas ---------- */
+function pintarAlertas(w){
+  $("#alertas").innerHTML = w.alertas.length
+    ? w.alertas.map(a => `<li style="padding-left:0"><span class="chip ${a.tipo}">${a.tipo}</span>@${a.handle} — ${a.texto}</li>`).join("")
+    : `<li style="padding-left:0;color:var(--tinta-3)">Sin alertas en esta ventana. Las alertas se activan al comparar fotos sucesivas.</li>`;
+}
+
+/* ---------- orquestación ---------- */
+function pintarTodo(){
+  const w = DATA.windows[ventana];
+  document.querySelectorAll(".vent").forEach(b =>
+    b.setAttribute("aria-pressed", b.dataset.dias === ventana));
+  pintarMomentum(w); pintarTiles(w); pintarInsights(w); pintarIA();
+  pintarTabla(w); pintarLinea(w); pintarBarras(w);
+  pintarBreakouts(w); pintarAlertas(w);
+}
+
+document.querySelectorAll(".vent").forEach(b =>
+  b.addEventListener("click", () => { ventana = b.dataset.dias; pintarTodo(); }));
+
+fetch("data.json")
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    DATA = data;
+    const s = data.snapshots;
+    $("#meta-fechas").textContent =
+      `${s.count} foto${s.count === 1 ? "" : "s"} · última: ${s.last.slice(0, 10)}`;
+    $("#meta-pie").textContent = `generado ${data.generatedAt.slice(0, 16).replace("T", " ")} UTC`;
+    pintarTodo();
+  })
+  .catch(() => {
+    document.body.insertAdjacentHTML("beforeend",
+      `<div class="vacio" style="margin-top:30px">No se pudo cargar data.json.<br>
+       Genera el reporte con <b>python src/build_report.py</b> y sirve la carpeta con
+       <b>python -m http.server</b> (abrir el archivo directo con doble clic no funciona:
+       el navegador bloquea fetch en file://).</div>`);
+  });
+</script>
+</body>
+</html>

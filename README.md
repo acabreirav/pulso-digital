@@ -38,7 +38,16 @@ docs/                   # dashboard estático que servirá GitHub Pages
 tests/                  # tests de las fórmulas de métricas
 ```
 
+## Ver el dashboard en local
+
+```bash
+python src/build_report.py       # regenera docs/data.json desde los snapshots
+python -m http.server -d docs    # sirve el dashboard
+# abrir http://localhost:8000 en el navegador
+```
+
 ## Estado
 
-Fase 0 (setup local) completa. Siguiente: Fase 1 — fetch mínimo de 2-3 cuentas
-vía Apify (requiere confirmar costo antes de correr). Ver plan completo en `CLAUDE.md` §12.
+Fases 0-2 completas: fetch + normalizador + métricas + dashboard funcionando con el
+primer snapshot real. Siguiente: Fase 3 — segunda foto para activar las tasas de
+crecimiento. Ver plan completo en `CLAUDE.md` §12.
