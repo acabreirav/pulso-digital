@@ -1,8 +1,13 @@
-# CLAUDE.md — Radar de Tracción (monitor de cuentas TikTok)
+# CLAUDE.md — Pulso Digital · Radar de Tracción
 
-> Este archivo es la memoria del proyecto. Léelo completo antes de escribir código.
-> Contiene el objetivo, las decisiones ya tomadas, la arquitectura, y **cómo guiar a la persona**,
+> **Nombres:** empresa = **Pulso Digital**. Producto = **Radar de Tracción** (tentativo). Repo actual `tiktok_dashboard` → se renombrará a algo neutro (pendiente; ojo: cambia la URL de Pages).
+>
+> Este archivo es la **memoria técnica** del proyecto. Léelo completo antes de escribir código.
+> Contiene el objetivo del producto, las decisiones ya tomadas, la arquitectura, y **cómo guiar a la persona**,
 > que sabe programar a nivel básico pero **nunca ha desplegado nada en GitHub**.
+>
+> **Estrategia de negocio (modelo, precios, clientes, go-to-market) NO vive aquí.** Vive en `contexto-maestro.md`.
+> Este archivo solo captura el **rumbo comercial** en la medida en que condiciona decisiones técnicas (ver §0.5).
 
 ---
 
@@ -16,6 +21,19 @@
 - **Pide confirmación antes de cualquier cosa que gaste dinero** (correr actors de Apify) o sea irreversible (borrar, force-push).
 - Explica el *por qué* en una frase cuando introduzcas algo nuevo (git, cron, secrets). Quiero aprender, no solo copiar.
 - Si algo puede hacerse simple o "elegante-pero-complejo", elige **simple**. Es un proyecto pequeño.
+
+---
+
+## 0.5 Rumbo del producto (contexto de negocio que condiciona lo técnico)
+
+> Resumen para que las decisiones técnicas apunten al lugar correcto. El detalle completo está en `contexto-maestro.md`; **no re-decidir negocio aquí**.
+
+- **Qué se vende:** no el dashboard, sino **inteligencia competitiva** (asesoría + informes) sobre presencia digital de políticos. El dashboard público es la **vitrina/demo**; el activo es el **histórico** (por eso el pipeline no puede detenerse y el snapshot crudo es sagrado).
+- **Implicancia técnica #1 — vitrina + paneles privados:** el día que haya un cliente pagando, lo que él ve (su panel filtrado + informe) **no puede quedar público** para su adversario. Habrá que separar: panel público básico (gratis) vs. **paneles privados por cliente** con autenticación. Ver Fase 8.
+- **Implicancia técnica #2 — informe automatizado:** el retainer se materializa como "informe en tu correo cada lunes". Eso apoya la capa narrativa IA (Fase 6) + export a PDF + envío. Ver Fase 9.
+- **Implicancia técnica #3 — war-room:** algunos clientes (comandos de campaña) pedirán cadencia diaria/2×día y **velocidad temprana 24-48h**. El gancho ya está previsto (§8); implementar cuando haya demanda pagada.
+- **Restricción transversal:** la data es pública y el producto es la interpretación. **Nada de login a plataformas, contenido privado, ni promesas de causalidad.** Mantener neutralidad (ya reflejada en el color = bloque, no partido).
+- **Nota de migración:** el proyecto nació 100% en GitHub (Pages público). Antes de vender hay que migrar a un hosting que soporte acceso privado. Es trabajo conocido; está como Fase 8. Por ahora **no** se toca el desarrollo salvo que la persona lo pida.
 
 ---
 
@@ -246,6 +264,14 @@ Cuando lleguemos a esta fase, guiar en este orden, explicando cada paso:
 - **Tope duro de cuentas a scrapear** para no reventar la cuota de Apify: el fetch se niega a correr si las cuentas activas superan el máximo (hoy `MAX_CUENTAS = 60` en `src/fetch.py`; pasaría a configuración).
 - Decidir qué pasa con el histórico de una cuenta que se quita (¿se archiva? los snapshots viejos no se tocan).
 - Validar handles al agregarlos (que existan y sean públicos) antes de gastar crédito en una corrida completa.
+
+> **Las fases 8-10 nacen del rumbo comercial (§0.5). Están descritas para dar contexto y dirección; NO ejecutar hasta que la persona lo pida — hoy el desarrollo está en pausa.**
+
+**Fase 8 — Acceso privado / monetización (migración).** Preparar el terreno para vender: separar **vitrina pública** (panel básico gratis, gancho) de **paneles privados por cliente** (filtrados por su coalición/figura, con informe). Requiere salir de "todo público en GitHub Pages" hacia un hosting con autenticación. *Decisiones a tomar cuando lleguemos:* dónde alojar (mantener Pages para la vitrina + app privada aparte, o migrar todo), cómo autenticar (simple primero), y cómo aislar los datos de cada cliente. Empezar simple; no sobre-ingenierizar antes de tener el primer cliente pagando.
+
+**Fase 9 — Informe automatizado (el retainer como producto).** Convertir la capa narrativa IA (Fase 6) en un **informe ejecutivo semanal**: una página con 3 hallazgos con nombre y apellido + 1 recomendación, exportable a PDF y enviable por correo. Este es el entregable que sostiene el retainer y también la pieza de venta ("Informe #1") para las primeras reuniones. Reutiliza las métricas ya calculadas; no recalcular.
+
+**Fase 10 — Modo war-room (bajo demanda).** Para comandos de campaña: cadencia diaria o 2×/día configurable por cliente/segmento, velocidad temprana 24-48h (gancho ya previsto en §8), y alertas de breakout del adversario. Solo implementar si hay demanda pagada — sube costo de Apify de forma importante.
 
 ---
 
