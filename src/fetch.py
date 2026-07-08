@@ -79,6 +79,9 @@ def main() -> int:
                         help="videos recientes por cuenta (default 10)")
     parser.add_argument("--si", action="store_true",
                         help="no pedir confirmación (para automatización futura)")
+    parser.add_argument("--solo-ig", action="store_true",
+                        help="solo perfiles de Instagram, sin corrida TikTok "
+                             "(útil para tomar la primera foto IG sin costo extra)")
     args = parser.parse_args()
 
     # Token desde .env (local). En GitHub Actions vendrá como variable de entorno.
@@ -99,11 +102,12 @@ def main() -> int:
     cuentas_ig = cargar_cuentas_ig()
 
     # --- Guarda de costo: mostrar el plan y confirmar antes de gastar ---
-    resultados_estimados = len(cuentas) * (1 + args.videos)
+    resultados_estimados = 0 if args.solo_ig else len(cuentas) * (1 + args.videos)
     print("Plan de la corrida:")
-    print(f"  actor:    {ACTOR}")
-    print(f"  cuentas:  {len(cuentas)} ({', '.join(cuentas)})")
-    print(f"  videos:   hasta {args.videos} por cuenta")
+    if not args.solo_ig:
+        print(f"  actor:    {ACTOR}")
+        print(f"  cuentas:  {len(cuentas)} ({', '.join(cuentas)})")
+        print(f"  videos:   hasta {args.videos} por cuenta")
     if cuentas_ig:
         print(f"  instagram (solo perfil): {len(cuentas_ig)} cuentas via {ACTOR_IG}")
     print(f"  items estimados: ~{resultados_estimados} TikTok + {len(cuentas_ig)} IG "
@@ -114,40 +118,42 @@ def main() -> int:
             print("Corrida cancelada. No se gastó nada.")
             return 0
 
-    entrada = {
-        "profiles": cuentas,
-        "resultsPerPage": args.videos,
-    }
-
-    print("Llamando a Apify (puede tardar 1-3 minutos)...")
-    try:
-        items = correr_actor(ACTOR, entrada, token)
-    except ApifyError as e:
-        print(f"[error] {e}")
-        return 1
-
-    # Guardar el crudo tal cual: un archivo por corrida, nunca se sobreescribe.
     CARPETA_RAW.mkdir(parents=True, exist_ok=True)
     marca = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M")
-    ruta_salida = CARPETA_RAW / f"{marca}-raw.json"
-    # encoding explícito: en Windows el default (cp1252) no soporta los emojis
-    # que traen los captions de TikTok
-    ruta_salida.write_text(json.dumps(items, ensure_ascii=False, indent=2),
-                           encoding="utf-8")
-
-    print(f"[ok] {len(items)} items crudos guardados en {ruta_salida.relative_to(ROOT)}")
-
-    # Normalizar al esquema interno y guardar el snapshot del día.
     fecha_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    snapshot = normalizar_items(items, fecha_iso)
-    ruta_snapshot = guardar_snapshot(snapshot, fecha_iso[:10])
 
-    print(f"[ok] snapshot normalizado: {ruta_snapshot.relative_to(ROOT)}")
-    for cuenta in snapshot["accounts"]:
-        print(f"  @{cuenta['handle']}: {cuenta['followers']:,} seguidores, "
-              f"{len(cuenta['videos'])} videos")
-    for error in snapshot["errors"]:
-        print(f"  [aviso] {error}")
+    if not args.solo_ig:
+        entrada = {
+            "profiles": cuentas,
+            "resultsPerPage": args.videos,
+        }
+
+        print("Llamando a Apify (puede tardar 1-3 minutos)...")
+        try:
+            items = correr_actor(ACTOR, entrada, token)
+        except ApifyError as e:
+            print(f"[error] {e}")
+            return 1
+
+        # Guardar el crudo tal cual: un archivo por corrida, nunca se sobreescribe.
+        ruta_salida = CARPETA_RAW / f"{marca}-raw.json"
+        # encoding explícito: en Windows el default (cp1252) no soporta los emojis
+        # que traen los captions de TikTok
+        ruta_salida.write_text(json.dumps(items, ensure_ascii=False, indent=2),
+                               encoding="utf-8")
+
+        print(f"[ok] {len(items)} items crudos guardados en {ruta_salida.relative_to(ROOT)}")
+
+        # Normalizar al esquema interno y guardar el snapshot del día.
+        snapshot = normalizar_items(items, fecha_iso)
+        ruta_snapshot = guardar_snapshot(snapshot, fecha_iso[:10])
+
+        print(f"[ok] snapshot normalizado: {ruta_snapshot.relative_to(ROOT)}")
+        for cuenta in snapshot["accounts"]:
+            print(f"  @{cuenta['handle']}: {cuenta['followers']:,} seguidores, "
+                  f"{len(cuenta['videos'])} videos")
+        for error in snapshot["errors"]:
+            print(f"  [aviso] {error}")
 
     # --- Instagram (solo perfil) — si falla, NO tumba la corrida TikTok ---
     if cuentas_ig:
