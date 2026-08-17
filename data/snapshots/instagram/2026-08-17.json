@@ -1,0 +1,422 @@
+{
+  "date": "2026-08-17T12:17:55Z",
+  "profiles": [
+    {
+      "handle": "gonzalo.winter",
+      "followers": 432318,
+      "following": 3053,
+      "posts": 2572,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "zandraparisi_",
+      "followers": 12231,
+      "following": 865,
+      "posts": 748,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "hans_marowski",
+      "followers": 17258,
+      "following": 1988,
+      "posts": 553,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "tatiurru",
+      "followers": 21342,
+      "following": 6400,
+      "posts": 3201,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "juanirarrazavaldiputado",
+      "followers": 9315,
+      "following": 7503,
+      "posts": 1776,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "diputadoeduardoduran",
+      "followers": 5027,
+      "following": 3618,
+      "posts": 1085,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "jakastadriasola",
+      "followers": 65163,
+      "following": 4301,
+      "posts": 426,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "danielaserranosalazar",
+      "followers": 25275,
+      "following": 3634,
+      "posts": 2796,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "diputadocesarvalenzuela",
+      "followers": 26248,
+      "following": 3069,
+      "posts": 400,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "cristianarayal",
+      "followers": 33775,
+      "following": 1085,
+      "posts": 2092,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "conyschon",
+      "followers": 48605,
+      "following": 5371,
+      "posts": 1719,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "mario.olavarria.diputado",
+      "followers": 9020,
+      "following": 2028,
+      "posts": 741,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "felipeross.cl",
+      "followers": 7486,
+      "following": 5088,
+      "posts": 502,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "lorenapizarrosierra",
+      "followers": 17350,
+      "following": 1859,
+      "posts": 1851,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "rojoedwards",
+      "followers": 28955,
+      "following": 4654,
+      "posts": 1695,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "maca_santelices",
+      "followers": 81459,
+      "following": 2924,
+      "posts": 1354,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "constanzahube",
+      "followers": 95315,
+      "following": 1875,
+      "posts": 1296,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "alvaro_carter_fernandez",
+      "followers": 30439,
+      "following": 3332,
+      "posts": 580,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "pierkarlezi",
+      "followers": 61459,
+      "following": 1243,
+      "posts": 1140,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "raulleivacarvajal",
+      "followers": 21880,
+      "following": 5476,
+      "posts": 3353,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "valebecerra.cl",
+      "followers": 34996,
+      "following": 5952,
+      "posts": 702,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "ignacioachurra",
+      "followers": 184167,
+      "following": 2112,
+      "posts": 560,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "josemezapereira",
+      "followers": 15533,
+      "following": 7245,
+      "posts": 2402,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "marcosbarrazag",
+      "followers": 15872,
+      "following": 1660,
+      "posts": 1514,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "ebassaletti",
+      "followers": 23460,
+      "following": 2606,
+      "posts": 793,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "tamararamirezdiputada",
+      "followers": 2446,
+      "following": 1159,
+      "posts": 428,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "claudiamoradiputada",
+      "followers": 6761,
+      "following": 2323,
+      "posts": 1116,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "anamariagazmuriv",
+      "followers": 103439,
+      "following": 1951,
+      "posts": 3986,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "pancho.orregog",
+      "followers": 260882,
+      "following": 7367,
+      "posts": 872,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "lcruzcoke",
+      "followers": 69786,
+      "following": 7133,
+      "posts": 1283,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "jorge_alessandri",
+      "followers": 89933,
+      "following": 3181,
+      "posts": 3721,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "fabiolacampillai_senadora",
+      "followers": 95370,
+      "following": 597,
+      "posts": 1765,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "guillermoramirezdiez",
+      "followers": 44644,
+      "following": 1504,
+      "posts": 2626,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "mariseka",
+      "followers": 208172,
+      "following": 4582,
+      "posts": 6745,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "catadelrealcl",
+      "followers": 14262,
+      "following": 7578,
+      "posts": 971,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "capitanarod",
+      "followers": 76285,
+      "following": 1380,
+      "posts": 1627,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "pamelajilesdiputada",
+      "followers": 368884,
+      "following": 1195,
+      "posts": 2227,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "claudiapascualsenadora",
+      "followers": 24508,
+      "following": 2068,
+      "posts": 3226,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "agustinromerodiputado",
+      "followers": 16633,
+      "following": 6488,
+      "posts": 3294,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "lorena.fries",
+      "followers": 27307,
+      "following": 1955,
+      "posts": 1511,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "jaimecolomat",
+      "followers": 75905,
+      "following": 5721,
+      "posts": 6470,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "cuadradoprats",
+      "followers": 7945,
+      "following": 815,
+      "posts": 821,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "diego_vergara_diputado",
+      "followers": 8191,
+      "following": 5316,
+      "posts": 819,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "gustavogaticav",
+      "followers": 139267,
+      "following": 683,
+      "posts": 475,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "diego_schalper",
+      "followers": 65463,
+      "following": 3912,
+      "posts": 4601,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "docfilesoficial",
+      "followers": 81760,
+      "following": 171,
+      "posts": 722,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "gaelyeomans",
+      "followers": 85353,
+      "following": 2028,
+      "posts": 2482,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "emischneiderv",
+      "followers": 101980,
+      "following": 3048,
+      "posts": 1429,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "ximenaossandon.oficial",
+      "followers": 17292,
+      "following": 4367,
+      "posts": 2461,
+      "verified": false,
+      "private": false
+    },
+    {
+      "handle": "diputadoborisbarrera",
+      "followers": 24776,
+      "following": 7546,
+      "posts": 5029,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "iraci.hassler",
+      "followers": 168482,
+      "following": 5022,
+      "posts": 5417,
+      "verified": true,
+      "private": false
+    },
+    {
+      "handle": "manueljoseossandon",
+      "followers": 42703,
+      "following": 6909,
+      "posts": 1792,
+      "verified": false,
+      "private": false
+    }
+  ],
+  "errors": []
+}
